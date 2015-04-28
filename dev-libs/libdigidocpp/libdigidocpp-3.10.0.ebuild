@@ -1,4 +1,4 @@
-# Copyright 1999-2008 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -21,6 +21,7 @@ RDEPEND="dev-libs/libxml2
 	dev-libs/openssl:=
 	sys-libs/zlib
 	dev-libs/libdigidoc"
+
 DEPEND="${RDEPEND}
 	>=dev-cpp/xsd-4.0.0"
 

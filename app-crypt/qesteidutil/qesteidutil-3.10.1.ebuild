@@ -1,4 +1,4 @@
-# Copyright 1999-2008 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -18,7 +18,8 @@ SRC_URI="https://github.com/open-eid/${PN}/releases/download/v${PV}/${P}.tar.gz"
 RDEPEND="dev-libs/openssl:=
 	sys-apps/pcsc-lite
 	dev-qt/qtwidgets:5
-	dev-qt/qtnetwork:5"
+	dev-qt/qtnetwork:5
+	dev-libs/xerces-c[icu]"
 
 DEPEND="${RDEPEND}
 	dev-qt/linguist-tools:5"
