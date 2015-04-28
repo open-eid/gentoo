@@ -1,0 +1,16 @@
+X-Git-Url: 
+http://scm.codesynthesis.com/?p=cli%2Fcli.git;a=blobdiff_plain;f=cli%2Ftraversal%2Felements.hxx;h=c6e4aeb8d041b37fdd3d8124bb3b7c3a168d0911;hp=ce5758dc4b9809dacf21607eaad34c0eefa3a138;hb=6c3e61edcfaae6f35f7f5cacceb806d351c08241;hpb=80a611d355a31e0f11e3f69339ccacf378cb3bb3
+
+diff --git a/cli/traversal/elements.hxx b/cli/traversal/elements.hxx
+index ce5758d..c6e4aeb 100644
+--- a/cli/traversal/elements.hxx
++++ b/cli/traversal/elements.hxx
+@@ -131,7 +131,7 @@ namespace traversal
+     virtual void
+     names (T& s, edge_dispatcher& d)
+     {
+-      iterate_and_dispatch (s.names_begin (), s.names_end (), d);
++      this->iterate_and_dispatch (s.names_begin (), s.names_end (), d);
+     }
+   };
+ 

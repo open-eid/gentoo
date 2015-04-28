@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+<repo quality="experimental" status="unofficial">
+    <name>esteid</name>
+    <description>ID-kaardi kraam</description>
+    <homepage>https://github.com/urmet/esteid-overlay</homepage>
+    <owner>
+        <email>urmet.saar@gmail.com</email>
+        <name>Urmet Saar</name>
+    </owner>
+    <source type="git">https://github.com/urmet/esteid-overlay.git</source>
+</repo>
+</repositories>
