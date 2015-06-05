@@ -4,7 +4,7 @@
 
 EAPI="5"
 
-inherit cmake-utils flag-o-matic
+inherit cmake-utils flag-o-matic versionator
 
 DESCRIPTION="Library for handling digitally signed documents"
 HOMEPAGE="https://id.ee/"
@@ -13,7 +13,10 @@ KEYWORDS="~amd64 ~x86"
 SLOT="0"
 IUSE=""
 
-SRC_URI="https://github.com/open-eid/${PN}/archive/v${PV}/${P}.tar.gz"
+MY_PV=$(replace_version_separator '_' '-')
+MY_P="${PN}-${MY_PV}"
+
+SRC_URI="https://github.com/open-eid/${PN}/archive/v${MY_PV}/${MY_P}.tar.gz"
 
 RDEPEND="dev-libs/libxml2
 	dev-libs/xml-security-c
