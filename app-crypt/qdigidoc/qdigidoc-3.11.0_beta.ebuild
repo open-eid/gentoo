@@ -15,6 +15,7 @@ IUSE=""
 
 MY_PV=$(replace_version_separator '_' '-')
 MY_P="${PN}-${MY_PV}"
+S="${WORKDIR}/${MY_P}"
 
 SRC_URI="https://github.com/open-eid/${PN}/archive/v${MY_PV}/${MY_P}.tar.gz"
 
