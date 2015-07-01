@@ -4,7 +4,7 @@
 
 EAPI="5"
 
-inherit cmake-utils flag-o-matic versionator
+inherit cmake-utils flag-o-matic git-r3
 
 DESCRIPTION="Library for handling digitally signed documents"
 HOMEPAGE="https://id.ee/"
@@ -13,11 +13,10 @@ KEYWORDS="~amd64 ~x86"
 SLOT="0"
 IUSE=""
 
-MY_PV=$(replace_version_separator '_' '-')
-MY_P="${PN}-${MY_PV}"
-S="${WORKDIR}/${MY_P}"
-
-SRC_URI="https://github.com/open-eid/${PN}/archive/v${MY_PV}/${MY_P}.tar.gz"
+EGIT_REPO_URI="https://github.com/open-eid/${PN}.git"
+#if !LIVE
+EGIT_COMMIT="v3.11.0-RC"
+#endif
 
 RDEPEND="dev-libs/libxml2
 	dev-libs/xml-security-c
