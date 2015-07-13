@@ -15,7 +15,7 @@ IUSE=""
 
 EGIT_REPO_URI="https://github.com/open-eid/${PN}.git"
 #if !LIVE
-EGIT_COMMIT="v3.11.0-RC"
+EGIT_COMMIT="v3.11.0"
 #endif
 
 RDEPEND="dev-libs/libxml2
