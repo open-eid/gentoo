@@ -4,7 +4,7 @@
 
 EAPI="5"
 
-inherit cmake-utils flag-o-matic
+inherit cmake-utils flag-o-matic git-r3
 
 DESCRIPTION="Digidoc client"
 HOMEPAGE="https://id.ee/"
@@ -13,7 +13,10 @@ KEYWORDS="~amd64 ~x86"
 SLOT="0"
 IUSE=""
 
-SRC_URI="https://github.com/open-eid/${PN}/releases/download/v${PV}/${P}.tar.gz"
+EGIT_REPO_URI="https://github.com/open-eid/${PN}.git"
+#if !LIVE
+EGIT_COMMIT="v3.11.0"
+#endif
 
 RDEPEND="dev-libs/openssl:=
 	dev-libs/opensc
