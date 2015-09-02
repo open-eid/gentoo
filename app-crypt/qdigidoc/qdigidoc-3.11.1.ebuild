@@ -15,7 +15,7 @@ IUSE=""
 
 EGIT_REPO_URI="https://github.com/open-eid/${PN}.git"
 #if !LIVE
-EGIT_COMMIT="v3.11.0"
+EGIT_COMMIT="v3.11.1"
 #endif
 
 RDEPEND="dev-libs/openssl:=
