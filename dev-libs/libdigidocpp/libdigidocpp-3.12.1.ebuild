@@ -1,4 +1,4 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -15,7 +15,7 @@ IUSE=""
 
 EGIT_REPO_URI="https://github.com/open-eid/${PN}.git"
 #if !LIVE
-EGIT_COMMIT="v3.11.0"
+EGIT_COMMIT="v3.12.1"
 #endif
 
 RDEPEND="dev-libs/libxml2

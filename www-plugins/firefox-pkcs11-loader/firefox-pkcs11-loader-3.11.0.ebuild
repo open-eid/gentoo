@@ -1,4 +1,4 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -18,7 +18,7 @@ SRC_URI="https://addons.mozilla.org/firefox/downloads/file/319698/estonian_id_ca
 S=${WORKDIR}
 
 src_unpack() {
-        xpi_unpack "estonian_id_card_pkcs11_module_loader-3.11.0.6179-fx.xpi"
+	xpi_unpack "estonian_id_card_pkcs11_module_loader-3.11.0.6179-fx.xpi"
 }
 
 src_prepare() {
@@ -26,6 +26,6 @@ src_prepare() {
 }
 
 src_install() {
-        insinto /usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}
-        doins -r {aa84ce40-4253-a00a-8cd6-0800200f9a66}
+	insinto /usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}
+	doins -r {aa84ce40-4253-a00a-8cd6-0800200f9a66}
 }
