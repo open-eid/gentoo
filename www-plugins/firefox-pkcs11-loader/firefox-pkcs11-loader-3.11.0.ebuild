@@ -7,7 +7,7 @@ EAPI="5"
 inherit mozextension
 
 DESCRIPTION="Estonian ID Card PKCS11 module loader"
-HOMEPAGE="https://id.ee/"
+HOMEPAGE="https://github.com/open-eid/"
 LICENSE="LGPL-2.1"
 KEYWORDS="~amd64 ~x86"
 SLOT="0"
