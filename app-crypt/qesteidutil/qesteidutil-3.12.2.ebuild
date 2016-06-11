@@ -6,7 +6,7 @@ EAPI="5"
 
 inherit cmake-utils flag-o-matic
 
-DESCRIPTION="Digidoc client"
+DESCRIPTION="ID-card utility"
 HOMEPAGE="https://github.com/open-eid/"
 LICENSE="LGPL-2.1"
 KEYWORDS="~amd64 ~x86"
