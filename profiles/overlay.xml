@@ -3,12 +3,12 @@
 <repositories xmlns="" version="1.0">
 <repo quality="experimental" status="unofficial">
     <name>esteid</name>
-    <description>ID-kaardi kraam</description>
-    <homepage>https://github.com/urmet/esteid-overlay</homepage>
+    <description>Estonian Electronic Identity Software</description>
+    <homepage>https://github.com/open-eid</homepage>
     <owner>
         <email>urmet.saar@gmail.com</email>
         <name>Urmet Saar</name>
     </owner>
-    <source type="git">https://github.com/urmet/esteid-overlay.git</source>
+    <source type="git">https://github.com/open-eid/gentoo.git</source>
 </repo>
 </repositories>

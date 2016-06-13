@@ -5,7 +5,7 @@ add overlay definition to your layman.conf so it looks something like that
 
     overlays :
         https://api.gentoo.org/overlays/repositories.xml
-        https://raw.githubusercontent.com/urmet/esteid-overlay/master/profiles/overlay.xml
+        https://raw.githubusercontent.com/open-eid/gentoo/master/profiles/overlay.xml
 
 and then just 
 
