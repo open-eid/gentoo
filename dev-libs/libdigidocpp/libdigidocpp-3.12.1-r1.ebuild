@@ -27,7 +27,7 @@ RDEPEND="dev-libs/libxml2
 
 DEPEND="${RDEPEND}
 	>=dev-cpp/xsd-4.0.0
-	dev-util/xxdi"
+	|| ( dev-util/xxdi app-editors/vim-core )"
 
 DOCS="AUTHORS RELEASE-NOTES.txt README.md"
 
@@ -35,5 +35,7 @@ DOCS="AUTHORS RELEASE-NOTES.txt README.md"
 append-cppflags "-DOF=_Z_OF"
 
 src_prepare() {
-	epatch "${FILESDIR}/xxdi.patch"
+	if ! has_version app-editors/vim-core; then
+		epatch "${FILESDIR}/xxdi.patch"
+	fi
 }
