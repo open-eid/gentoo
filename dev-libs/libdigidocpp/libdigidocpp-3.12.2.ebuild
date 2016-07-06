@@ -4,7 +4,7 @@
 
 EAPI="5"
 
-inherit cmake-utils flag-o-matic git-r3
+inherit cmake-utils flag-o-matic git-r3 eutils
 
 DESCRIPTION="Library for handling digitally signed documents"
 HOMEPAGE="https://github.com/open-eid/"
@@ -15,7 +15,7 @@ IUSE=""
 
 EGIT_REPO_URI="https://github.com/open-eid/${PN}.git"
 #if !LIVE
-EGIT_COMMIT="v3.12.1"
+EGIT_COMMIT="v${PV}"
 #endif
 
 RDEPEND="dev-libs/libxml2
@@ -26,9 +26,16 @@ RDEPEND="dev-libs/libxml2
 	dev-libs/libdigidoc"
 
 DEPEND="${RDEPEND}
-	>=dev-cpp/xsd-4.0.0"
+	>=dev-cpp/xsd-4.0.0
+	|| ( dev-util/xxdi app-editors/vim-core )"
 
 DOCS="AUTHORS RELEASE-NOTES.txt README.md"
 
 # gentoo specific zlib internal macro names
 append-cppflags "-DOF=_Z_OF"
+
+src_prepare() {
+	if ! has_version app-editors/vim-core; then
+		epatch "${FILESDIR}/xxdi.patch"
+	fi
+}
