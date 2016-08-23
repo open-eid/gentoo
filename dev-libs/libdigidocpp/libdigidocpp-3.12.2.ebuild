@@ -20,7 +20,7 @@ EGIT_COMMIT="v${PV}"
 
 RDEPEND="dev-libs/libxml2
 	dev-libs/xml-security-c
-	dev-libs/opensc
+	>=dev-libs/opensc-0.14
 	dev-libs/openssl:=
 	sys-libs/zlib
 	dev-libs/libdigidoc"

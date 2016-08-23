@@ -16,7 +16,7 @@ IUSE=""
 SRC_URI="https://github.com/open-eid/${PN}/releases/download/v${PV}/${P}.tar.gz"
 
 RDEPEND="dev-libs/libxml2
-	dev-libs/opensc
+	>=dev-libs/opensc-0.14
 	dev-libs/openssl:=
 	sys-libs/zlib"
 DEPEND="${RDEPEND}"
