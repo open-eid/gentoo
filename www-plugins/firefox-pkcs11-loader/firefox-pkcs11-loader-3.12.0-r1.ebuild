@@ -22,10 +22,10 @@ src_unpack() {
 }
 
 src_prepare() {
-	mv firefox-pkcs11-loader_3.12.0-fx {aa84ce40-4253-a00a-8cd6-0800200f9a66} || die
+	mv firefox-pkcs11-loader_3.12.0-fx {aa84ce40-4253-a00a-8cd6-0800200f9a67} || die
 }
 
 src_install() {
 	insinto /usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}
-	doins -r {aa84ce40-4253-a00a-8cd6-0800200f9a66}
+	doins -r {aa84ce40-4253-a00a-8cd6-0800200f9a67}
 }
