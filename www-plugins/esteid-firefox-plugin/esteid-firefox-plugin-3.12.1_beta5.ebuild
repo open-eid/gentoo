@@ -26,7 +26,8 @@ DEPEND="${CDEPEND}
 	sys-devel/gcc"
 
 RDEPEND="${CDEPEND}
-	>=dev-libs/opensc-0.14"
+	>=dev-libs/opensc-0.14[pcsc-lite]
+	>=www-plugins/firefox-pkcs11-loader-3.11.0"
 
 S="${WORKDIR}/${MY_P}"
 
