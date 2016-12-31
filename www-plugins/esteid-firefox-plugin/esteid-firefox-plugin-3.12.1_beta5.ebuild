@@ -26,7 +26,8 @@ DEPEND="${CDEPEND}
 	sys-devel/gcc"
 
 RDEPEND="${CDEPEND}
-	>=dev-libs/opensc-0.14"
+	>=dev-libs/opensc-0.14[pcsc-lite]
+	autoloader? ( >=www-plugins/firefox-pkcs11-loader-3.11.0 )"
 
 S="${WORKDIR}/${MY_P}"
 
@@ -40,3 +41,8 @@ src_install() {
 	dodoc README.txt RELEASE-NOTES.txt
 }
 
+pkg_postinst() {
+    ewarn "If autoloader flag is not set, esteid-firefox-plugin will not work"
+    ewarn "unless you add onepin-opensc-pkcs11.so from dev-libs/opensc"
+    ewarn "as a security device in Firefox settings."
+}

@@ -19,7 +19,7 @@ EGIT_COMMIT="v${PV}"
 #endif
 
 RDEPEND="dev-libs/openssl:=
-	>=dev-libs/opensc-0.14
+	>=dev-libs/opensc-0.14[pcsc-lite]
 	>=dev-libs/libdigidocpp-3.12.0
 	dev-qt/qtwidgets:5
 	dev-qt/qtnetwork:5
