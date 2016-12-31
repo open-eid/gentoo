@@ -41,3 +41,8 @@ src_install() {
 	dodoc README.txt RELEASE-NOTES.txt
 }
 
+pkg_postinst() {
+    ewarn "If autoloader flag is not set, esteid-firefox-plugin will not work"
+    ewarn "unless you add onepin-opensc-pkcs11.so from dev-libs/opensc"
+    ewarn "as a security device in Firefox settings."
+}
