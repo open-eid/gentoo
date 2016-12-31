@@ -1,4 +1,4 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -16,8 +16,7 @@ SRC_URI="https://github.com/open-eid/${MY_PN}/archive/v${MY_PV}.tar.gz -> ${P}.t
 LICENSE="LGPL-2.1"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE=""
-
+IUSE="-autoloader"
 
 CDEPEND="x11-libs/gtk+:2
 	dev-libs/openssl"
@@ -36,13 +35,13 @@ src_compile() {
 }
 
 src_install() {
-	insinto "${EPREFIX}/usr/$(get_libdir)/nsbrowser/plugins/"
+	insinto "/usr/$(get_libdir)/nsbrowser/plugins/"
 	doins npesteid-firefox-plugin.so
 	dodoc README.txt RELEASE-NOTES.txt
 }
 
 pkg_postinst() {
-    ewarn "If autoloader flag is not set, esteid-firefox-plugin will not work"
-    ewarn "unless you add onepin-opensc-pkcs11.so from dev-libs/opensc"
-    ewarn "as a security device in Firefox settings."
+	ewarn "If autoloader flag is not set, esteid-firefox-plugin will not work"
+	ewarn "unless you add onepin-opensc-pkcs11.so from dev-libs/opensc"
+	ewarn "as a security device in Firefox settings."
 }

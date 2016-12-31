@@ -2,4 +2,9 @@
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 <maintainer type="person"><email>urmet.saar@gmail.com</email></maintainer>
+<use>
+        <flag name="autoloader">Depend on www-plugins/firefox-pkcs11-loader
+		to automatically configure the PKCS11 security device
+		in Firefox</flag>
+</use>
 </pkgmetadata>
