@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -21,6 +21,7 @@ EGIT_COMMIT="v${PV}"
 RDEPEND="dev-libs/openssl:=
 	>=dev-libs/opensc-0.14[pcsc-lite]
 	>=dev-libs/libdigidocpp-3.12.0
+	dev-libs/xerces-c[icu]
 	dev-qt/qtwidgets:5
 	dev-qt/qtnetwork:5
 	dev-qt/qtprintsupport:5"
