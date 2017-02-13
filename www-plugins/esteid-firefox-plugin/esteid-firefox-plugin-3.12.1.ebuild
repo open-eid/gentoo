@@ -26,7 +26,8 @@ DEPEND="${CDEPEND}
 
 RDEPEND="${CDEPEND}
 	>=dev-libs/opensc-0.14[pcsc-lite]
-	autoloader? ( >=www-plugins/firefox-pkcs11-loader-3.11.0 )"
+	autoloader? ( >=www-plugins/firefox-pkcs11-loader-3.11.0 )
+	|| ( <www-client/firefox-bin-52.0 <www-client/firefox-52.0 )"
 
 S="${WORKDIR}/${MY_P}"
 
