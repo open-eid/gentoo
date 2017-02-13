@@ -1,0 +1,25 @@
+From 8cb76991faf544895fc21ee9e2305e2b2974dc0e Mon Sep 17 00:00:00 2001
+From: Raul Metsma <raul@metsma.ee>
+Date: Fri, 3 Feb 2017 13:09:35 +0200
+Subject: [PATCH] Install Firefox ee.ria.esteid.json to lib folder
+
+https://bugzilla.mozilla.org/show_bug.cgi?id=1318461
+Signed-off-by: Raul Metsma <raul@metsma.ee>
+---
+ host-linux/chrome-token-signing.pro | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/host-linux/chrome-token-signing.pro b/host-linux/chrome-token-signing.pro
+index f24f580..f0396a3 100644
+--- a/host-linux/chrome-token-signing.pro
++++ b/host-linux/chrome-token-signing.pro
+@@ -19,7 +19,8 @@ RESOURCES += chrome-token-signing.qrc
+ target.path = /usr/bin
+ hostconf.path = /etc/opt/chrome/native-messaging-hosts
+ hostconf.files += ee.ria.esteid.json
+-ffconf.path = /usr/share/mozilla/native-messaging-hosts
++# https://bugzilla.mozilla.org/show_bug.cgi?id=1318461
++ffconf.path = /usr/lib/mozilla/native-messaging-hosts
+ ffconf.files += ff/ee.ria.esteid.json
+ extension.path = /opt/google/chrome/extensions
+ extension.files += ../ckjefchnfjhjfedoccjbhjpbncimppeg.json
