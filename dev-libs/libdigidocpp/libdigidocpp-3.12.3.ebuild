@@ -1,10 +1,10 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
 EAPI="5"
 
-inherit cmake-utils flag-o-matic git-r3 eutils
+inherit cmake-utils flag-o-matic eutils versionator
 
 DESCRIPTION="Library for handling digitally signed documents"
 HOMEPAGE="https://github.com/open-eid/"
@@ -13,10 +13,12 @@ KEYWORDS="~amd64 ~x86"
 SLOT="0"
 IUSE=""
 
-EGIT_REPO_URI="https://github.com/open-eid/${PN}.git"
-#if !LIVE
-EGIT_COMMIT="v${PV}"
-#endif
+# replace underscore for beta versions
+MY_PV=$(replace_version_separator '_' '-')
+MY_P="${PN}-${MY_PV}"
+S="${WORKDIR}/${MY_P}"
+
+SRC_URI="https://github.com/open-eid/${PN}/releases/download/v${MY_PV}/${MY_P}.tar.gz"
 
 RDEPEND="dev-libs/libxml2
 	dev-libs/xml-security-c
