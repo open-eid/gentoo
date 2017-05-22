@@ -4,7 +4,7 @@
 
 EAPI="5"
 
-inherit cmake-utils flag-o-matic git-r3
+inherit cmake-utils flag-o-matic versionator
 
 DESCRIPTION="Digidoc client"
 HOMEPAGE="https://github.com/open-eid/"
@@ -13,10 +13,12 @@ KEYWORDS="~amd64 ~x86"
 SLOT="0"
 IUSE=""
 
-EGIT_REPO_URI="https://github.com/open-eid/${PN}.git"
-#if !LIVE
-EGIT_COMMIT="v${PV}"
-#endif
+# replace underscore for beta tarballs
+MY_PV=$(replace_version_separator '_' '-')
+MY_P="${PN}-${MY_PV}"
+S="${WORKDIR}/${MY_P}"
+
+SRC_URI="https://github.com/open-eid/${PN}/releases/download/v${MY_PV}/${MY_P}.tar.gz"
 
 RDEPEND="dev-libs/openssl:=
 	>=dev-libs/opensc-0.14[pcsc-lite]
