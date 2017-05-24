@@ -8,7 +8,6 @@ inherit qmake-utils git-r3
 DESCRIPTION="Give signatures with your eID on the web"
 HOMEPAGE="https://github.com/open-eid/"
 LICENSE="LGPL-2.1"
-KEYWORDS="~amd64 ~x86"
 SLOT="0"
 IUSE="firefox"
 
