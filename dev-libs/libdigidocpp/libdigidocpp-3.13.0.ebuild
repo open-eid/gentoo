@@ -28,6 +28,7 @@ RDEPEND="dev-libs/libxml2
 
 DEPEND="${RDEPEND}
 	>=dev-cpp/xsd-4.0.0
+        >=dev-cpp/libcutl-1.10.0-r1
 	|| ( dev-util/xxdi app-editors/vim-core )"
 
 DOCS="AUTHORS RELEASE-NOTES.md README.md"
