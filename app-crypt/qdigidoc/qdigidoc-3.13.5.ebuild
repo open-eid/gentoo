@@ -34,9 +34,3 @@ DOCS="AUTHORS README.md"
 
 # gentoo specific zlib internal macro names
 append-cppflags "-DOF=_Z_OF"
-
-src_configure() {
-# disable Breakpad integration
-local mycmakeargs=( '-DBREAKPAD=FALSE' )
-cmake-utils_src_configure
-}
