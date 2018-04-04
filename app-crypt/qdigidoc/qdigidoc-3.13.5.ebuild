@@ -1,9 +1,9 @@
 # Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="5"
+EAPI="6"
 
-inherit cmake-utils flag-o-matic versionator
+inherit cmake-utils eutils flag-o-matic versionator
 
 DESCRIPTION="Digidoc client"
 HOMEPAGE="https://github.com/open-eid/qdigidoc"
@@ -18,6 +18,10 @@ MY_P="${PN}-${MY_PV}"
 S="${WORKDIR}/${MY_P}"
 
 SRC_URI="https://github.com/open-eid/${PN}/releases/download/v${MY_PV}/${MY_P}.tar.gz"
+
+PATCHES=(
+	"${FILESDIR}/sandbox-compat.patch"
+)
 
 RDEPEND="dev-libs/openssl:=
 	>=dev-libs/opensc-0.14[pcsc-lite]
