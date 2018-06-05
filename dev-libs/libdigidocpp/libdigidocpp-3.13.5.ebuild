@@ -6,7 +6,7 @@ EAPI="5"
 inherit cmake-utils flag-o-matic eutils versionator
 
 DESCRIPTION="Library for handling digitally signed documents"
-HOMEPAGE="https://github.com/open-eid/"
+HOMEPAGE="https://github.com/open-eid/libdigidocpp"
 LICENSE="LGPL-2.1"
 KEYWORDS="~amd64 ~x86"
 SLOT="0"
@@ -40,4 +40,5 @@ src_prepare() {
 	if ! has_version app-editors/vim-core; then
 		epatch "${FILESDIR}/xxdi.patch"
 	fi
+	cmake-utils_src_prepare
 }

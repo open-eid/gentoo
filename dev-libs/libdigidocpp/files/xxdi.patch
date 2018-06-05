@@ -2,14 +2,12 @@ Avoid excessive dependency on app-editors/vim-core
 
 --- a/src/CMakeLists.txt
 +++ b/src/CMakeLists.txt
-@@ -129,6 +129,6 @@ else()
-         COMMAND ln -sf ${TSL_CERT4} tslcert4.crt
--        COMMAND xxd -i tslcert1.crt tslcert1.h
--        COMMAND xxd -i tslcert2.crt tslcert2.h
--        COMMAND xxd -i tslcert3.crt tslcert3.h
--        COMMAND xxd -i tslcert4.crt tslcert4.h
-+        COMMAND xxdi.pl tslcert1.crt > tslcert1.h
-+        COMMAND xxdi.pl tslcert2.crt > tslcert2.h
-+        COMMAND xxdi.pl tslcert3.crt > tslcert3.h
-+        COMMAND xxdi.pl tslcert4.crt > tslcert4.h
-         COMMENT "Generating tslcert1.h from ${TSL_CERT1}, tslcert2.h from ${TSL_CERT2}, tslcert3.h from ${TSL_CERT3}, tslcert4.h from ${TSL_CERT4}"
+@@ -119,7 +119,7 @@
+     else()
+         add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/${BASE}.h
+             COMMAND ln -sf ${TSL_CERT} ${BASE}.crt
+-            COMMAND xxd -i ${BASE}.crt ${BASE}.h
++            COMMAND xxdi.pl ${BASE}.crt > ${BASE}.h
+             COMMENT "Generating ${BASE}.h from ${TSL_CERT}"
+             )
+     endif()
