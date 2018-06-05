@@ -3,7 +3,7 @@
 
 EAPI="6"
 
-inherit cmake-utils eutils flag-o-matic versionator
+inherit cmake-utils eutils flag-o-matic versionator xdg-utils
 
 DESCRIPTION="Digidoc client"
 HOMEPAGE="https://github.com/open-eid/qdigidoc"
@@ -38,3 +38,13 @@ DOCS="AUTHORS README.md"
 
 # gentoo specific zlib internal macro names
 append-cppflags "-DOF=_Z_OF"
+
+pkg_postinst() {
+	xdg_mimeinfo_database_update
+	xdg_desktop_database_update
+}
+
+pkg_postrm() {
+	xdg_mimeinfo_database_update
+	xdg_desktop_database_update
+}
