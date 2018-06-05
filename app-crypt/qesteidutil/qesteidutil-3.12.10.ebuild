@@ -3,7 +3,7 @@
 
 EAPI="5"
 
-inherit cmake-utils flag-o-matic
+inherit cmake-utils flag-o-matic versionator
 
 DESCRIPTION="ID-card utility"
 HOMEPAGE="https://github.com/open-eid/qesteidutil"
