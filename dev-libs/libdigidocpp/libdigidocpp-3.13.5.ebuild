@@ -1,4 +1,4 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="5"
@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/open-eid/libdigidocpp"
 LICENSE="LGPL-2.1"
 KEYWORDS="~amd64 ~x86"
 SLOT="0"
-IUSE=""
+IUSE="-pdf"
 
 # replace underscore for beta versions
 MY_PV=$(replace_version_separator '_' '-')
@@ -24,11 +24,12 @@ RDEPEND="dev-libs/libxml2
 	>=dev-libs/opensc-0.14
 	dev-libs/openssl:=
 	sys-libs/zlib
-	dev-libs/libdigidoc"
+	dev-libs/libdigidoc
+	pdf? ( <app-text/podofo-0.9.5 )"
 
 DEPEND="${RDEPEND}
 	>=dev-cpp/xsd-4.0.0
-        >=dev-cpp/libcutl-1.10.0-r1
+	>=dev-cpp/libcutl-1.10.0-r1
 	|| ( dev-util/xxdi app-editors/vim-core )"
 
 DOCS="AUTHORS RELEASE-NOTES.md README.md"
@@ -41,4 +42,11 @@ src_prepare() {
 		epatch "${FILESDIR}/xxdi.patch"
 	fi
 	cmake-utils_src_prepare
+}
+
+src_configure() {
+	local mycmakeargs=(
+		$(cmake-utils_use_find_package pdf PoDoFo)
+	)
+	cmake-utils_src_configure
 }

@@ -2,4 +2,8 @@
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 <maintainer type="person"><email>urmet.saar@gmail.com</email></maintainer>
+<use>
+        <flag name="pdf">Enable experimental support for PDF signing.
+                Currently depends on old PoDoFo version(0.9.4)</flag>
+</use>
 </pkgmetadata>
