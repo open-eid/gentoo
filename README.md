@@ -5,7 +5,7 @@ To use this overlay, get the `app-eselect/eselect-repository` package and then:
 
     # eselect repository add esteid git https://github.com/open-eid/gentoo.git
 
-Alternatively, get the `app-portage/layman` add an overlay definition to your layman.conf so it looks something like
+Alternatively, get the `app-portage/layman` and add an overlay definition to your layman.conf so it looks something like
 
     overlays :
         https://api.gentoo.org/overlays/repositories.xml
