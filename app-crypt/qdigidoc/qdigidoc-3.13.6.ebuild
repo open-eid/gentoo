@@ -40,7 +40,7 @@ DOCS="AUTHORS README.md"
 append-cppflags "-DOF=_Z_OF"
 
 src_prepare() {
-	default
+	cmake-utils_src_prepare
 	# https://github.com/open-eid/qdigidoc/wiki/DeveloperTips#building-in-sandboxed-environment
 	cp ${FILESDIR}/TSL.qrc		${S}/client/TSL.qrc
 	# https://sr.riik.ee/tsl/estonian-tsl.xml
