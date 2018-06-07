@@ -39,6 +39,22 @@ DOCS="AUTHORS README.md"
 # gentoo specific zlib internal macro names
 append-cppflags "-DOF=_Z_OF"
 
+src_prepare() {
+	cmake-utils_src_prepare
+	# https://github.com/open-eid/qdigidoc/wiki/DeveloperTips#building-in-sandboxed-environment
+	cp ${FILESDIR}/TSL.qrc		${S}/client/TSL.qrc
+	# https://sr.riik.ee/tsl/estonian-tsl.xml
+	cp ${FILESDIR}/estonian-tsl.xml	${S}/client/EE.xml
+	# https://ec.europa.eu/information_society/policy/esignature/trusted-list/tl-mp.xml
+	cp ${FILESDIR}/tl-mp.xml	${S}/client/tl-mp.xml
+	# https://id.eesti.ee/config.json
+	cp ${FILESDIR}/config.json	${S}/common/config.json
+	# https://id.eesti.ee/config.rsa
+	cp ${FILESDIR}/config.rsa	${S}/common/config.rsa
+	# https://id.eesti.ee/config.pub
+	cp ${FILESDIR}/config.pub	${S}/common/config.pub
+}
+
 pkg_postinst() {
 	xdg_mimeinfo_database_update
 	xdg_desktop_database_update
