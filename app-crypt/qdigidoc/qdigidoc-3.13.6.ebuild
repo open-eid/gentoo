@@ -39,6 +39,16 @@ DOCS="AUTHORS README.md"
 # gentoo specific zlib internal macro names
 append-cppflags "-DOF=_Z_OF"
 
+src_prepare() {
+	default
+	cp ${FILESDIR}/estonian-tsl.xml	${S}/client/EE.xml
+	cp ${FILESDIR}/tl-mp.xml	${S}/client/tl-mp.xml
+	cp ${FILESDIR}/TSL.qrc		${S}/client/TSL.qrc
+	cp ${FILESDIR}/config.json	${S}/common/config.json
+	cp ${FILESDIR}/config.rsa	${S}/common/config.rsa
+	cp ${FILESDIR}/config.pub	${S}/common/config.pub
+}
+
 pkg_postinst() {
 	xdg_mimeinfo_database_update
 	xdg_desktop_database_update
