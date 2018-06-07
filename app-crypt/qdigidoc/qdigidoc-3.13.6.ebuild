@@ -42,11 +42,16 @@ append-cppflags "-DOF=_Z_OF"
 src_prepare() {
 	default
 	cp ${FILESDIR}/estonian-tsl.xml	${S}/client/EE.xml
+	# https://sr.riik.ee/tsl/estonian-tsl.xml
 	cp ${FILESDIR}/tl-mp.xml	${S}/client/tl-mp.xml
-	cp ${FILESDIR}/TSL.qrc		${S}/client/TSL.qrc
+	# https://ec.europa.eu/information_society/policy/esignature/trusted-list/tl-mp.xml
 	cp ${FILESDIR}/config.json	${S}/common/config.json
+	# https://id.eesti.ee/config.json
 	cp ${FILESDIR}/config.rsa	${S}/common/config.rsa
+	# https://id.eesti.ee/config.rsa
 	cp ${FILESDIR}/config.pub	${S}/common/config.pub
+	# https://id.eesti.ee/config.pub
+	cp ${FILESDIR}/TSL.qrc		${S}/client/TSL.qrc
 }
 
 pkg_postinst() {
