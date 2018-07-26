@@ -1,0 +1,45 @@
+diff --git a/client/CMakeLists.txt b/client/CMakeLists.txt
+index 4bd5948..abfd90b 100644
+--- a/client/CMakeLists.txt
++++ b/client/CMakeLists.txt
+@@ -1,20 +1,11 @@
+ set_app_name( PROGNAME qdigidoc4 )
+ 
+-add_executable( TSLDownload TSLDownload.cpp )
+-target_link_libraries( TSLDownload Qt5::Network )
+-add_custom_command(
+-	OUTPUT TSL.qrc
+-	DEPENDS TSLDownload
+-	COMMAND $<TARGET_FILE:TSLDownload> "${CMAKE_CURRENT_BINARY_DIR}" ${TSL_URL} ${TSL_INCLUDE}
+-	WORKING_DIRECTORY ${_qt5Core_install_prefix}/bin
+-)
+-
+ add_definitions( -DPKCS11_MODULE="${PKCS11_MODULE}" )
+ include_directories( ${CMAKE_SOURCE_DIR} ${CMAKE_SOURCE_DIR}/common ${OPENSSL_INCLUDE_DIR} ${Qt5Svg_INCLUDE_DIRS} )
+ 
+ configure_file( translations/tr.qrc tr.qrc COPYONLY )
+ qt5_add_translation( SOURCES translations/en.ts translations/et.ts translations/ru.ts )
+-qt5_add_resources( SOURCES images/images.qrc fonts/fonts.qrc ${CMAKE_CURRENT_BINARY_DIR}/tr.qrc ${CMAKE_CURRENT_BINARY_DIR}/TSL.qrc )
++qt5_add_resources( SOURCES images/images.qrc fonts/fonts.qrc ${CMAKE_CURRENT_BINARY_DIR}/tr.qrc TSL.qrc )
+ qt5_wrap_ui( SOURCES MainWindow.ui dialogs/AddRecipients.ui dialogs/CertificateHistory.ui dialogs/CertificateDetails.ui dialogs/FirstRun.ui dialogs/KeyDialog.ui dialogs/MobileDialog.ui dialogs/MobileProgress.ui 
+ 	dialogs/PinPopup.ui dialogs/PinUnblock.ui dialogs/SettingsDialog.ui dialogs/SignatureDialog.ui dialogs/Updater.ui dialogs/WaitDialog.ui dialogs/WarningDialog.ui 
+ 	widgets/Accordion.ui widgets/AccordionTitle.ui widgets/AddressItem.ui widgets/CardWidget.ui widgets/ContainerPage.ui widgets/FileItem.ui 
+diff --git a/common/CMakeLists.txt b/common/CMakeLists.txt
+index 52f3bd0..5efdf25 100644
+--- a/common/CMakeLists.txt
++++ b/common/CMakeLists.txt
+@@ -16,13 +16,7 @@ if( CONFIG_URL )
+ 	endif()
+ 	add_definitions( -DCONFIG_URL="${CONFIG_URL}" )
+ 	list( APPEND SOURCES Configuration.cpp )
+-	file( DOWNLOAD ${CONFIG_URL} ${CMAKE_CURRENT_BINARY_DIR}/config.json )
+-	string( REPLACE ".json" ".rsa" RSA_URL ${CONFIG_URL} )
+-	file( DOWNLOAD ${RSA_URL} ${CMAKE_CURRENT_BINARY_DIR}/config.rsa )
+-	string( REPLACE ".json" ".pub" PUB_URL ${CONFIG_URL} )
+-	file( DOWNLOAD ${PUB_URL} ${CMAKE_CURRENT_BINARY_DIR}/config.pub )
+-	configure_file( config.qrc config.qrc COPYONLY )
+-	qt5_add_resources( SOURCES ${CMAKE_CURRENT_BINARY_DIR}/config.qrc )
++	qt5_add_resources( SOURCES config.qrc )
+ endif()
+ 
+ if( WIN32 )
