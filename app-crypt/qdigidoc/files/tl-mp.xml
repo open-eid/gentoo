@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><TrustServiceStatusList xmlns="http://uri.etsi.org/02231/v2#" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="http://uri.etsi.org/02231/v2/additionaltypes#" xmlns:ns4="http://uri.etsi.org/01903/v1.3.2#" xmlns:ns5="http://uri.etsi.org/TrstSvc/SvcInfoExt/eSigDir-1999-93-EC-TrustedList/#" xmlns:ns6="http://uri.etsi.org/01903/v1.4.1#" Id="ID0001" TSLTag="http://uri.etsi.org/19612/TSLTag">
+<?xml version="1.0" encoding="UTF-8"?><TrustServiceStatusList xmlns="http://uri.etsi.org/02231/v2#" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="http://uri.etsi.org/01903/v1.3.2#" xmlns:ns4="http://uri.etsi.org/02231/v2/additionaltypes#" xmlns:ns5="http://uri.etsi.org/TrstSvc/SvcInfoExt/eSigDir-1999-93-EC-TrustedList/#" xmlns:ns6="http://uri.etsi.org/01903/v1.4.1#" Id="ID0001" TSLTag="http://uri.etsi.org/19612/TSLTag">
     <SchemeInformation>
         <TSLVersionIdentifier>5</TSLVersionIdentifier>
-        <TSLSequenceNumber>210</TSLSequenceNumber>
+        <TSLSequenceNumber>214</TSLSequenceNumber>
         <TSLType>http://uri.etsi.org/TrstSvc/TrustedList/TSLType/EUlistofthelists</TSLType>
         <SchemeOperatorName>
             <Name xml:lang="en">European Commission</Name>
@@ -243,7 +243,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>EU</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -279,7 +279,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>AT</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -327,7 +327,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>BE</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -365,7 +365,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                     </ServiceDigitalIdentity>
                     <ServiceDigitalIdentity>
                         <DigitalId>
-                            <X509Certificate>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</X509Certificate>
+                            <X509Certificate>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</X509Certificate>
                         </DigitalId>
                     </ServiceDigitalIdentity>
                 </ServiceDigitalIdentities>
@@ -378,7 +378,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>BG</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/pdf</ns3:MimeType>
+                        <ns4:MimeType>application/pdf</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -414,7 +414,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                     </ServiceDigitalIdentity>
                     <ServiceDigitalIdentity>
                         <DigitalId>
-                            <X509Certificate>MIIHNTCCBZ2gAwIBAgIJAMlCMooFTe1IMA0GCSqGSIb3DQEBCwUAMIHAMSIwIAYKCZImiZPyLGQBGRYScXVhbGlmaWVkLWxlZ2FsLWNhMTIwMAYDVQQDDClJbmZvTm90YXJ5IFF1YWxpZmllZCBMZWdhbCBQZXJzb24gU2VhbCBDQTELMAkGA1UEBhMCQkcxDjAMBgNVBAcMBVNvZmlhMRcwFQYDVQQKDA5JbmZvTm90YXJ5IFBMQzEWMBQGA1UECwwNUXVhbGlmaWVkIFRTUDEYMBYGA1UEYQwPTlRSQkctMTMxMjc2ODI3MB4XDTE4MDUyMTEyNDExMloXDTIxMDUyMTEyNDExMlowgdIxIjAgBgoJkiaJk/IsZAEZFhJxdWFsaWZpZWQtbGVnYWwtY2ExKjAoBgNVBAMMIUJ1bGdhcmlhbiBUcnVzdGVkIExpc3QgT3BlcmF0b3IgMjEaMBgGCSqGSIb3DQEJARYLaW5mb0BjcmMuYmcxCzAJBgNVBAYTAkJHMQ4wDAYDVQQHDAVTb2ZpYTEtMCsGA1UECgwkQ29tbXVuaWNhdGlvbnMgUmVndWxhdGlvbiBDb21taXNzaW9uMRgwFgYDVQRhEw9OVFJCRy0xMjE3NDc4NjQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCQkVqZLtDrBTNrjJkI3CUSaaYiixJNiK9EjSTDnCWU2ZZwaSFiHKxf5hfNTfkcUblYw4mU4Sw86XHGek3IL+LHqaNpXKCRH+Q7DzJyV3g7+VmxnErtZgDLR0I/4UVQrI49ikHEAmXDMfoXeVAN4nswoxjmpYI+rQTqh3D1M7ByzPMbPZWkCqVV+dgPfcgupfZrpsklq7zK+MoNI1fxfOT1VTXQr/NDPL7JD7MKGkIIl3a2GTkBwYDqvQ1ZLJYuXcOVU7dK13tntyxGEJiHtZiFp809VHMijbdi7k+xIpXAzYWHDxbz1qgH+jcq1a/nGgTR5Q47LYr3wJGAvkw1qLPrAgMBAAGjggKcMIICmDAOBgNVHQ8BAf8EBAMCBsAwEQYDVR0lBAowCAYGBACRNwMAMEAGCCsGAQUFBwEBBDQwMjAwBggrBgEFBQcwAYYkaHR0cDovL29jc3AuaW5mb25vdGFyeS5jb20vcXVhbGlmaWVkMIHZBggrBgEFBQcBAwSBzDCByTAVBggrBgEFBQcLAjAJBgcEAIvsSQECMBMGBgQAjkYBBjAJBgcEAI5GAQYCMAgGBgQAjkYBATAIBgYEAI5GAQQwCwYGBACORgEDAgEKMHoGBgQAjkYBBTBwMDYWMGh0dHBzOi8vcmVwb3NpdG9yeS5pbmZvbm90YXJ5LmNvbS9wZHMvcGRzX2JnLnBkZhMCYmcwNhYwaHR0cHM6Ly9yZXBvc2l0b3J5LmluZm9ub3RhcnkuY29tL3Bkcy9wZHNfZW4ucGRmEwJlbjCBvAYDVR0gBIG0MIGxMIGZBgwrBgEEAYGtAAMCAQEwgYgwRAYIKwYBBQUHAgEWOGh0dHBzOi8vcmVwb3NpdG9yeS5pbmZvbm90YXJ5LmNvbS9jcHMvcXVhbGlmaWVkLXRzcC5odG1sMEAGCCsGAQUFBwICMDQaMkluZm9Ob3RhcnkgUXVhbGlmaWVkIExlZ2FsIFBlcnNvbiBTZWFsIENlcnRpZmljYXRlMAkGBwQAi+xAAQMwCAYGBACLMAEBMEUGA1UdHwQ+MDwwOqA4oDaGNGh0dHA6Ly9jcmwuaW5mb25vdGFyeS5jb20vY3JsL3F1YWxpZmllZC1sZWdhbC1jYS5jcmwwDwYDVR0TAQH/BAUwAwEBADAdBgNVHQ4EFgQUDpar++A9yrJWraNP8Utie8lRj/IwHwYDVR0jBBgwFoAUifsg0Gcq9TDggU4QjHGvTs+SJJowDQYJKoZIhvcNAQELBQADggGBAEecajYkEOmLkbMrLzszM8HSKhp6FfMYx3BVXjD1EhiI60oaNfp1tfvmTJ20G8/w7mdUeK7ddd5oHMn6myqQtWaQ57ZsfN3VjKHV1Z36a08pI4qVbw4Was28XXh6+bW4+5F+jvaSKTUWGh933y6Ncqg7u3wNhkYcBS3/S+CAR5ZJYKauo6jrvNO2v93PQH5430iFaF0Iiz2tyIn0qzHLXIDEVXTepoOosADrHeabvTZwScxmZweQQHSpiwvQgXHua34DnjyEKWoAB8UOOltIhjRwubvzXUuqtetEUMJWa6bPeE7XfIpUfCCEEH/+/xe3Jq+M906kY++yZbt4ye5mpo03XxWITAOQm4XfXfYCrzdDaVSleDMB4DEICmf3aOoPmmQWPPnIty3qu9mqFnI2+bxVFWyfkjGiRdFd3QsClCcQadhfeX5wCMUTTouAXSaCaZLJhsfGjfgLQ43MbUMsSMl6W7QBvGskde0fB2Swb8NwRTbL7YxPGjaH5NsDsJDjEA==</X509Certificate>
+                            <X509Certificate>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</X509Certificate>
                         </DigitalId>
                     </ServiceDigitalIdentity>
                 </ServiceDigitalIdentities>
@@ -427,7 +427,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>BG</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -475,7 +475,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>CY</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -518,7 +518,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>CZ</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/pdf</ns3:MimeType>
+                        <ns4:MimeType>application/pdf</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -561,7 +561,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>CZ</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -599,7 +599,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>DE</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -642,7 +642,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>DK</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/pdf</ns3:MimeType>
+                        <ns4:MimeType>application/pdf</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -685,7 +685,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>DK</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -723,7 +723,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>EE</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/pdf</ns3:MimeType>
+                        <ns4:MimeType>application/pdf</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -761,7 +761,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>EE</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -799,7 +799,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>EL</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -839,7 +839,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>ES</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/pdf</ns3:MimeType>
+                        <ns4:MimeType>application/pdf</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -877,7 +877,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>ES</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -920,7 +920,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>FI</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/pdf</ns3:MimeType>
+                        <ns4:MimeType>application/pdf</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -963,7 +963,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>FI</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -1011,7 +1011,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>FR</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/pdf</ns3:MimeType>
+                        <ns4:MimeType>application/pdf</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -1059,7 +1059,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>FR</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -1107,7 +1107,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>HR</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -1145,7 +1145,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>HU</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/pdf</ns3:MimeType>
+                        <ns4:MimeType>application/pdf</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -1183,7 +1183,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>HU</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -1231,7 +1231,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>IE</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -1274,7 +1274,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>IS</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/pdf</ns3:MimeType>
+                        <ns4:MimeType>application/pdf</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -1317,7 +1317,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>IS</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -1355,7 +1355,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>IT</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -1398,7 +1398,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>LI</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -1436,7 +1436,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>LT</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -1479,7 +1479,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>LU</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/pdf</ns3:MimeType>
+                        <ns4:MimeType>application/pdf</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -1524,7 +1524,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>LU</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -1564,7 +1564,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>LV</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -1602,7 +1602,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>MT</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -1639,7 +1639,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>NL</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -1677,7 +1677,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>NO</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/pdf</ns3:MimeType>
+                        <ns4:MimeType>application/pdf</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -1714,7 +1714,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>NO</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -1751,7 +1751,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>PL</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -1789,7 +1789,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>PT</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/pdf</ns3:MimeType>
+                        <ns4:MimeType>application/pdf</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -1827,7 +1827,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>PT</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -1875,7 +1875,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>RO</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/pdf</ns3:MimeType>
+                        <ns4:MimeType>application/pdf</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -1924,7 +1924,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>RO</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -1945,12 +1945,12 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                 <ServiceDigitalIdentities>
                     <ServiceDigitalIdentity>
                         <DigitalId>
-                            <X509Certificate>MIIDyTCCArGgAwIBAgIJAKRRAbnpt+1mMA0GCSqGSIb3DQEBCwUAMIGVMS4wLAYDVQQKEyVTd2VkaXNoIFBvc3QgYW5kIFRlbGVjb20gQWdlbmN5IChQVFMpMRIwEAYDVQQHEwlTdG9ja2hvbG0xEjAQBgNVBAgTCVN0b2NraG9sbTELMAkGA1UEBhMCU0UxLjAsBgNVBAMTJVN3ZWRpc2ggUG9zdCBhbmQgVGVsZWNvbSBBZ2VuY3kgKFBUUykwHhcNMTQxMjE5MDk1NDM2WhcNMTcxMjE4MDk1NDM2WjCBlTEuMCwGA1UEChMlU3dlZGlzaCBQb3N0IGFuZCBUZWxlY29tIEFnZW5jeSAoUFRTKTESMBAGA1UEBxMJU3RvY2tob2xtMRIwEAYDVQQIEwlTdG9ja2hvbG0xCzAJBgNVBAYTAlNFMS4wLAYDVQQDEyVTd2VkaXNoIFBvc3QgYW5kIFRlbGVjb20gQWdlbmN5IChQVFMpMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtn8ADLkkBdFUWnKOYg1dDoJ7evZxP/jsqmFPVuZsOlAifQ6/NGWqyHMyj8r1/BmyEB/2WPLf+jrbtOKwSGtEHHkJ3nZnv1U9CBgIHDotzHrrEUI2b0r3ETaz80KsIlTZ5HaN0jPt+gfBETXCyT6H2cJ7uM5S/zhFeV7YMS2kzg9StgAMOQdZVAD4/2X1je97pBfH3AB4ZwLWsAA1OvQJ1NaE1gftqBuxiQkm5FOh8PnECmcT9dMveRLUKAbup5I1i1m3Ql9QvtyPv8E0/zSZUIN5XsRw9KXtgWema1oKSXBKyytg+XESSKm6BNYR2jTYQI8Vr0Z3MRl1zz9jcSh53QIDAQABoxowGDAJBgNVHRMEAjAAMAsGA1UdDwQEAwIGQDANBgkqhkiG9w0BAQsFAAOCAQEAiQ1Uns2aYVrlKthS8uf7gSkCI9hxmUOw1oryvNKu6q8OakYrbM2Z04+brJlzaX5gH1xFKC+6V6AaFHoAXP3G5is/BuGNhsRNwUluEsiqbxX6sKIQnyHyxhWDM3gfqHZwN4WDPb6W8UNfdMn5QabFi/MaecQgFCY505BJkBIKJA+apyj6zHYPSALjN4NewdheiCJ4jLoUpiJFKObbGNeZMcXqRRZaynOda9N8iKvACR4vScOYHG3HFn4NF0HnMbVh+0cyzzkzzjcd+oVsBQYLU9Oer+Axluj4E+AxvGmRfE/9S4VBctu1h/65iC5fcV8wdGdnE/UW1IDfk5UGXuWhmQ==</X509Certificate>
+                            <X509Certificate>MIID+zCCAuOgAwIBAgIJAJQ9RQFU8czIMA0GCSqGSIb3DQEBCwUAMIGVMS4wLAYDVQQKDCVTd2VkaXNoIFBvc3QgYW5kIFRlbGVjb20gQWdlbmN5IChQVFMpMRIwEAYDVQQHDAlTdG9ja2hvbG0xEjAQBgNVBAgMCVN0b2NraG9sbTELMAkGA1UEBhMCU0UxLjAsBgNVBAMMJVN3ZWRpc2ggUG9zdCBhbmQgVGVsZWNvbSBBZ2VuY3kgKFBUUykwHhcNMTcwMjA2MTE0MjU1WhcNMjAwMjA2MTE0MjU1WjCBlTEuMCwGA1UECgwlU3dlZGlzaCBQb3N0IGFuZCBUZWxlY29tIEFnZW5jeSAoUFRTKTESMBAGA1UEBwwJU3RvY2tob2xtMRIwEAYDVQQIDAlTdG9ja2hvbG0xCzAJBgNVBAYTAlNFMS4wLAYDVQQDDCVTd2VkaXNoIFBvc3QgYW5kIFRlbGVjb20gQWdlbmN5IChQVFMpMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArF1Tfs9qxGo7Bnnyx00SQhTVT8gYwhroX4P4G46hu+o4KV13iro0EzE0v4qhNBVJALqDlUlUhRjTuHN/mzjjDnYTe55bJTrS0SotEOT47Nq0qlhKbT50Zsu6AyFvIhsvX3blIOcxYDPNVVI8enGby8RHMFeAmCPEUX3i6CBg/X2nf7DtKc9K6cIw5By0z38pkdEsg5g1GhAoELoMUSI/EW8sJeDIZDj0Fb96tGz7xyV25B+7YclJCcJJDpLzfxFHK+9veh5HCHk6rNS56r2D3q3aowj218fQ7MTo8fwBYQy+UgI15jILiDBaRIfOUGpNsX3ln8PpjY1UQTx+YHHlJQIDAQABo0wwSjAJBgNVHRMEAjAAMAsGA1UdDwQEAwIGQDARBgNVHSUECjAIBgYEAJE3AwAwHQYDVR0OBBYEFL2M2/Z7z12w0va3QqvpaZGR+TbMMA0GCSqGSIb3DQEBCwUAA4IBAQBaujdxsR2laXbXsZPvwe35B0/9vlPQy/OxoY08OhPIyQ9Laloc8sWyX92ed7byPGAw6cO5X6aTH+e5d1OqUhv5hdfs7h4yR3dRTGdSFxK9rirMkvWAsrx/ILuwi9dq/KXDbgx8XIg+1yecCkLDVwQoOcYi5jQNhGJsW0BT7/Yy/SSTUSq9Apzq+3oVLzefqnGP8ZUKCXP5vOtdxVyBIom+L4pMS4rBxOJi4bLV2l6Pc3CoL4HgpRr/tTkDqlK7/jDx5lClDVOzRzr9CnCDze0K9jirXJTrlrUVw7KvA2ow7idwla2Cl9g+yHrbzZTmm3fhUFcRooke14emfoWOSTUV</X509Certificate>
                         </DigitalId>
                     </ServiceDigitalIdentity>
                     <ServiceDigitalIdentity>
                         <DigitalId>
-                            <X509Certificate>MIID+zCCAuOgAwIBAgIJAJQ9RQFU8czIMA0GCSqGSIb3DQEBCwUAMIGVMS4wLAYDVQQKDCVTd2VkaXNoIFBvc3QgYW5kIFRlbGVjb20gQWdlbmN5IChQVFMpMRIwEAYDVQQHDAlTdG9ja2hvbG0xEjAQBgNVBAgMCVN0b2NraG9sbTELMAkGA1UEBhMCU0UxLjAsBgNVBAMMJVN3ZWRpc2ggUG9zdCBhbmQgVGVsZWNvbSBBZ2VuY3kgKFBUUykwHhcNMTcwMjA2MTE0MjU1WhcNMjAwMjA2MTE0MjU1WjCBlTEuMCwGA1UECgwlU3dlZGlzaCBQb3N0IGFuZCBUZWxlY29tIEFnZW5jeSAoUFRTKTESMBAGA1UEBwwJU3RvY2tob2xtMRIwEAYDVQQIDAlTdG9ja2hvbG0xCzAJBgNVBAYTAlNFMS4wLAYDVQQDDCVTd2VkaXNoIFBvc3QgYW5kIFRlbGVjb20gQWdlbmN5IChQVFMpMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArF1Tfs9qxGo7Bnnyx00SQhTVT8gYwhroX4P4G46hu+o4KV13iro0EzE0v4qhNBVJALqDlUlUhRjTuHN/mzjjDnYTe55bJTrS0SotEOT47Nq0qlhKbT50Zsu6AyFvIhsvX3blIOcxYDPNVVI8enGby8RHMFeAmCPEUX3i6CBg/X2nf7DtKc9K6cIw5By0z38pkdEsg5g1GhAoELoMUSI/EW8sJeDIZDj0Fb96tGz7xyV25B+7YclJCcJJDpLzfxFHK+9veh5HCHk6rNS56r2D3q3aowj218fQ7MTo8fwBYQy+UgI15jILiDBaRIfOUGpNsX3ln8PpjY1UQTx+YHHlJQIDAQABo0wwSjAJBgNVHRMEAjAAMAsGA1UdDwQEAwIGQDARBgNVHSUECjAIBgYEAJE3AwAwHQYDVR0OBBYEFL2M2/Z7z12w0va3QqvpaZGR+TbMMA0GCSqGSIb3DQEBCwUAA4IBAQBaujdxsR2laXbXsZPvwe35B0/9vlPQy/OxoY08OhPIyQ9Laloc8sWyX92ed7byPGAw6cO5X6aTH+e5d1OqUhv5hdfs7h4yR3dRTGdSFxK9rirMkvWAsrx/ILuwi9dq/KXDbgx8XIg+1yecCkLDVwQoOcYi5jQNhGJsW0BT7/Yy/SSTUSq9Apzq+3oVLzefqnGP8ZUKCXP5vOtdxVyBIom+L4pMS4rBxOJi4bLV2l6Pc3CoL4HgpRr/tTkDqlK7/jDx5lClDVOzRzr9CnCDze0K9jirXJTrlrUVw7KvA2ow7idwla2Cl9g+yHrbzZTmm3fhUFcRooke14emfoWOSTUV</X509Certificate>
+                            <X509Certificate>MIID+zCCAuOgAwIBAgIJAPtkxiEwI3qhMA0GCSqGSIb3DQEBCwUAMIGVMS4wLAYDVQQKDCVTd2VkaXNoIFBvc3QgYW5kIFRlbGVjb20gQWdlbmN5IChQVFMpMRIwEAYDVQQHDAlTdG9ja2hvbG0xEjAQBgNVBAgMCVN0b2NraG9sbTELMAkGA1UEBhMCU0UxLjAsBgNVBAMMJVN3ZWRpc2ggUG9zdCBhbmQgVGVsZWNvbSBBZ2VuY3kgKFBUUykwHhcNMTgwNjI3MTIyMDI0WhcNMjEwNjI2MTIyMDI0WjCBlTEuMCwGA1UECgwlU3dlZGlzaCBQb3N0IGFuZCBUZWxlY29tIEFnZW5jeSAoUFRTKTESMBAGA1UEBwwJU3RvY2tob2xtMRIwEAYDVQQIDAlTdG9ja2hvbG0xCzAJBgNVBAYTAlNFMS4wLAYDVQQDDCVTd2VkaXNoIFBvc3QgYW5kIFRlbGVjb20gQWdlbmN5IChQVFMpMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA43vAUf3XLwbA7+MlbP9RTQgqPmQLgHMEeKO7uS1r1Nkui76JgmpjDW75bXIcA3BZL4xiJrpQ3VGBqTLjMZ8nhLVQB50UDQmMyklue+yYe28bgTTTGhP1pBeLe3fsr6e742ZaU/UExQPepZr4CByZ74tkn2X62HkbfxszM5CGSaj2dr3ZYniAVVEHJD/FjAaijZMoo7bYC5BO5wvUM1P91Hv+KQGIxqh2C9So+1xd1VSWl6pCnCtcHnjyNx/rZ6Caj1L8HqA8nkNo+YTNQbE0lLvFexwUTF08WNlYAhwmqwqIQkGVjYM78zEdWSVseTGqY7dR98n7jjZDJWpw5gc9VQIDAQABo0wwSjAJBgNVHRMEAjAAMAsGA1UdDwQEAwIGQDARBgNVHSUECjAIBgYEAJE3AwAwHQYDVR0OBBYEFII8YcpAp1XAAXYEmnvC7lmGVBHLMA0GCSqGSIb3DQEBCwUAA4IBAQDd94uJERnFSTsGi0FUya9eR+hlpgHGnD+Qo5w/V6tDBpllovvIIp7DhXBhJS961J8XakxeUyMZ5A5MAsEPzA/lbQ3G+6iT7ux3b7HrTXSdKPb25oy8hdkI/Tdtv9jTKR+LLrhynSl2U4aMZYqnO7Mi56deN8YACRFtXr9EMCdN7rw+s2AERLOC9Rm9LIhIVWOfFXiN0rPqBY3T4SnInY861+Jutcjus5lSZ+iiUxbjXwoLEphLx2IY5r6JnGIUQ4iViypzNUerff9KHdBl7GtHmIFMiwG6NxUhgSkjTbn4Ksev8cKNmhoYSqutp6JDPbSSHyP7ChqFduvh39xchmR4</X509Certificate>
                         </DigitalId>
                     </ServiceDigitalIdentity>
                 </ServiceDigitalIdentities>
@@ -1963,7 +1963,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>SE</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -1981,11 +1981,6 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
             </OtherTSLPointer>
             <OtherTSLPointer>
                 <ServiceDigitalIdentities>
-                    <ServiceDigitalIdentity>
-                        <DigitalId>
-                            <X509Certificate>MIIFdDCCBFygAwIBAgIEOl6PRjANBgkqhkiG9w0BAQUFADA9MQswCQYDVQQGEwJzaTEbMBkGA1UEChMSc3RhdGUtaW5zdGl0dXRpb25zMREwDwYDVQQLEwhzaWdvdi1jYTAeFw0xMzAzMDUxMDU2MDZaFw0xODAzMDUxMzI4MzVaMIGJMQswCQYDVQQGEwJzaTEbMBkGA1UEChMSc3RhdGUtaW5zdGl0dXRpb25zMRkwFwYDVQQLExB3ZWItY2VydGlmaWNhdGVzMRMwEQYDVQQLEwpHb3Zlcm5tZW50MS0wFAYDVQQFEw0xMjM1MTc0MjE0MDI3MBUGA1UEAxMORGltaXRyaWogU2themEwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCJxPypF9ZVssjvPT/he9cZ/DdBn3htrapLJqHISc1ylop1CpkL0fbPTL9xK3JnaMzzmucbeTkwj2fyEaluP2bl1+ElpMWDYUq59mDOGvpB5KaJvTCXGUdf3rZTFSVOf7WarhI9uR25sjZg1wwVKGJ9VTqVtAlD5WBsIyT2CN1xWj3DXy+faqGtYbd/4mpzMW+qvTJQ9act6rlmTXJXwOVBTYwVEciTqX+IMX1nIn93FEOl6Q9BQeAYFe8pVXbTjoveY7KIE2SyWETogYplMDesK3hWB6cGfnWD05+Vbj78hKFyxSjoKTJegxzk6+8nGy0dzkjup1nlpTrjDBr1Zgt9AgMBAAGjggItMIICKTAOBgNVHQ8BAf8EBAMCBaAwSgYDVR0gBEMwQTA1BgorBgEEAa9ZAQcBMCcwJQYIKwYBBQUHAgEWGWh0dHA6Ly93d3cuY2EuZ292LnNpL2Nwcy8wCAYGBACLMAEBMCIGCCsGAQUFBwEDBBYwFDAIBgYEAI5GAQEwCAYGBACORgEEMCAGA1UdEQQZMBeBFWRpbWl0cmlqLnNrYXphQGdvdi5zaTCB8QYDVR0fBIHpMIHmMFWgU6BRpE8wTTELMAkGA1UEBhMCc2kxGzAZBgNVBAoTEnN0YXRlLWluc3RpdHV0aW9uczERMA8GA1UECxMIc2lnb3YtY2ExDjAMBgNVBAMTBUNSTDQxMIGMoIGJoIGGhldsZGFwOi8veDUwMC5nb3Yuc2kvb3U9c2lnb3YtY2Esbz1zdGF0ZS1pbnN0aXR1dGlvbnMsYz1zaT9jZXJ0aWZpY2F0ZVJldm9jYXRpb25MaXN0P2Jhc2WGK2h0dHA6Ly93d3cuc2lnb3YtY2EuZ292LnNpL2NybC9zaWdvdi1jYS5jcmwwKwYDVR0QBCQwIoAPMjAxMzAzMDUxMDU2MDZagQ8yMDE4MDMwNTEzMjgzNVowHwYDVR0jBBgwFoAUHvjUU2uzgwbpBAZXAvmlv8ZYPHIwHQYDVR0OBBYEFPkW6/pilxObPEzBAucEf/wHqwgdMAkGA1UdEwQCMAAwGQYJKoZIhvZ9B0EABAwwChsEVjcuMQMCA6gwDQYJKoZIhvcNAQEFBQADggEBAI+3jSydwmTfTuFJxIys5PFZGzWNX8pCcyyuYFnbPbsnWwVMA1wE/FazkN51U0E2nTsYlooal4uiZ0u5jgbXW7wBvAIept/mJNyXXLd/il5JiB0Bz76GsGNmw1DoX2lvV06x39NI9X3+ea2rp7L56co3kVJPmFbJImyYc5OK5H9dXjGpIcxzVyWXNoUSbhVZpljIw5Tka+c5/G0gE49o3PiexXH2fziGBAmbICn+eX6+zeSo80OB0DiPRMD0s31IitQfEv1N3H+lz21Pa8gKEKpKw7Ns7b4nMGfw8WQyiVHNNSo95RlCaHPFfeFR5vkDuUayHqGwErB1Zdx8AIjzR+w=</X509Certificate>
-                        </DigitalId>
-                    </ServiceDigitalIdentity>
                     <ServiceDigitalIdentity>
                         <DigitalId>
                             <X509Certificate>MIIEFzCCAv+gAwIBAgIFLvZjf3YwDQYJKoZIhvcNAQELBQAwgaIxCzAJBgNVBAYTAlNJMWEwXwYDVQQKE1hSZXB1YmxpYyBvZiBTbG92ZW5pYSwgTWluaXN0cnkgb2YgUHVibGljIEFkbWluaXN0cmF0aW9uLCBJbmZvcm1hdGlvbiBTb2NpZXR5IERpcmVjdG9yYXRlMRIwEAYDVQQDEwlTYW1vIFpvcmMxDTALBgNVBCoTBFNhbW8xDTALBgNVBAQTBFpvcmMwHhcNMTcwMjIxMTM0NTAwWhcNMjAwNTIxMTM0NTAwWjCBojELMAkGA1UEBhMCU0kxYTBfBgNVBAoTWFJlcHVibGljIG9mIFNsb3ZlbmlhLCBNaW5pc3RyeSBvZiBQdWJsaWMgQWRtaW5pc3RyYXRpb24sIEluZm9ybWF0aW9uIFNvY2lldHkgRGlyZWN0b3JhdGUxEjAQBgNVBAMTCVNhbW8gWm9yYzENMAsGA1UEKhMEU2FtbzENMAsGA1UEBBMEWm9yYzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKt5D4e04aXE/KrgslYQIh9nuUl7s4ns5jlkgI1RBcn3XFsObzN6qMJ7O656SnmwA/A4iU1vejZaHx1B2LGxpIpRDRsoxl3UyTLbgGMgiMVNX5UPPelT13JLJ643ogc7kbpDavmkiFp4SLjdKBxX8DZidEKeirgV4ZIu2AvvVq2muecilAHOwXRX2TOMo1MhnU5APDMRF2pfnlpO9JHEHX7Me7nJKE38FQSHY0cWTjao5hhuRBSkI3NjbtvqoyaUMJd+eEtntPPMBiYx9UPjfOO+fZ5bVHPB1OYrT6ds7IECxp1BhwFca+2uBnIn+cSIGp8Ndwd0hDpsCAIEFspIEccCAwEAAaNSMFAwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUT0+19FYfQFd1RCE3XKN8Jj289E0wDgYDVR0PAQH/BAQDAgbAMBEGA1UdJQQKMAgGBgQAkTcDADANBgkqhkiG9w0BAQsFAAOCAQEAh0VSEvMFUdp8VNPD9mqZBbx+HGnoAo2rO71yHg7+GZiPi8jQZYVRh/ftEXSbeJadNgHPcoQfIIGZZIez3u6PK2QPtiSLOWg/46ji6XjtmYHjYRqxrZz/B92jHVNXKhK2JD69AtlX2/bocU08jNTUi+OXchTzlNbCJl9xorPxwVnJp238LD9WqVxe/WZymHhgqJXi4obH89RK5ws9VXFMFhtyocMCxiGGqm1NRhFGDb13tCOCNB3oVslkLohIOZnxkwLLwboLBQaCevf0TDRFJjITZl4GMajVWSyGiX/HvdaGvph+6t9oGiwuDTvnlnjhUJb1qku97bzrs590pZBwrA==</X509Certificate>
@@ -2011,7 +2006,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>SI</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -2049,7 +2044,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>SK</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -2088,7 +2083,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         </DigitalId>
                     </ServiceDigitalIdentity>
                 </ServiceDigitalIdentities>
-                <TSLLocation>http://www.tscheme.org/UK_TSL/HR_TSL-UKsigned.pdf</TSLLocation>
+                <TSLLocation>http://www.tscheme.eu/UK_TSL/HR_TSL-UKsigned.pdf</TSLLocation>
                 <AdditionalInformation>
                     <OtherInformation>
                         <TSLType>http://uri.etsi.org/TrstSvc/TrustedList/TSLType/EUgeneric</TSLType>
@@ -2097,7 +2092,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>UK</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/pdf</ns3:MimeType>
+                        <ns4:MimeType>application/pdf</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -2135,7 +2130,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         </DigitalId>
                     </ServiceDigitalIdentity>
                 </ServiceDigitalIdentities>
-                <TSLLocation>http://www.tscheme.org/UK_TSL/TSL-UKsigned.xml</TSLLocation>
+                <TSLLocation>http://www.tscheme.eu/UK_TSL/TSL-UKsigned.xml</TSLLocation>
                 <AdditionalInformation>
                     <OtherInformation>
                         <TSLType>http://uri.etsi.org/TrstSvc/TrustedList/TSLType/EUgeneric</TSLType>
@@ -2144,7 +2139,7 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                         <SchemeTerritory>UK</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
+                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -2160,12 +2155,12 @@ Europska Komisija održava ovo web-mjesto kao sredstvo za postizanje interoperab
                 </AdditionalInformation>
             </OtherTSLPointer>
         </PointersToOtherTSL>
-        <ListIssueDateTime>2018-05-30T06:00:00Z</ListIssueDateTime>
+        <ListIssueDateTime>2018-07-11T15:00:00Z</ListIssueDateTime>
         <NextUpdate>
-            <dateTime>2018-11-30T00:00:00Z</dateTime>
+            <dateTime>2019-01-11T00:00:00Z</dateTime>
         </NextUpdate>
         <DistributionPoints>
             <URI>https://ec.europa.eu/information_society/policy/esignature/trusted-list/tl-mp.xml</URI>
         </DistributionPoints>
     </SchemeInformation>
-<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="id-627d8ac2d9055962d061f1ce86f5dee8"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><ds:Reference Id="xml_ref_id" Type="" URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>lIMxocatOO6HNUd8olhTSOA9iMcWMsM5T8wSiWgraYY=</ds:DigestValue></ds:Reference><ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xades-id-627d8ac2d9055962d061f1ce86f5dee8"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>cfwwLPkuUbNIkqCbkrUSfxL8DcfxtNE2fgUuZUTPuLg=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue Id="value-id-627d8ac2d9055962d061f1ce86f5dee8">aXs8d1fHGzhftL0OeoLCNag32MHIiSgbqprJ0Ouof31HV28QZAnfe6wwqOHEo0ST6ADOqwaA20mvY3IHf/Hqt9je+xrvXYbfyq650hzofxISi1XeZjn2YXODmIp8HIcKK8rAr1NnnJfdqMchCAQPvTguaL4yIA/v490kKMBIP/kuJ0y24Pq/bE8mOH6KqJOwZGrSC5SAas4YkqFeIir7jDqnN//+gJvFFsQrSZn9RHeGiujrlP3w1iUCZFgfdU+GH+PzEQZ7hL/+ypH6dSDRLT/CKY3ttR1ELfeYO5hN0uuh92NJXL0g/EP0PHOxNhOch49OwxWYtVHNVAj6Sa/w6g==</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>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</ds:X509Certificate></ds:X509Data></ds:KeyInfo><ds:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" Target="#id-627d8ac2d9055962d061f1ce86f5dee8"><xades:SignedProperties Id="xades-id-627d8ac2d9055962d061f1ce86f5dee8"><xades:SignedSignatureProperties><xades:SigningTime>2018-05-30T12:59:12Z</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>Wys1w5cOoKr5Qecyb2yEwICCMXo=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>CN=LuxTrust Global Qualified CA 3,O=LuxTrust S.A.,C=LU</ds:X509IssuerName><ds:X509SerialNumber>1974568</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate></xades:SignedSignatureProperties><xades:SignedDataObjectProperties><xades:DataObjectFormat ObjectReference="#xml_ref_id"><xades:MimeType>application/octet-stream</xades:MimeType></xades:DataObjectFormat></xades:SignedDataObjectProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object></ds:Signature></TrustServiceStatusList>
+<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="id-354f90caa4f357b92bdf5d1167a839c4"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><ds:Reference Id="xml_ref_id" Type="" URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>F5PJHp+60++TfsY9Hbu8vdqLSDPrIELqQ/tnG/hVDjE=</ds:DigestValue></ds:Reference><ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xades-id-354f90caa4f357b92bdf5d1167a839c4"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>LnQbl3e3cSxqlE8BQY/fm8l9nfHeCNLRUkDIbvljTm0=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue Id="value-id-354f90caa4f357b92bdf5d1167a839c4">GYSzq+kOeOWfUXqT7fAr8UvIpEF/4fbbTOUwuNjdoJolhoT4KAkTNtkkhm4JhSmJF88Y/ztKw3OwWan94A67lu+QGFKAq+5Ps8RgHOIkawMe6sfSdEuhTAY6E1Ao2yOWS54iCLyZfABcDJZQAY/3kr+6vMWJKkQpBYiuxMe2zqDVVKWtbDLq7EWkiFDvczTEpl3lMfsNxc6U4HOx2MJdS391qaNnPB5obl40AZXPcyJYCsvRg2isAZi1enIgL/tq75+8o96dbp2+gSBAQKx19V14ORapEzc3CCYjNMISquY7chDiFG+Tt9XqHDnjkmlVe4BIyXn+hSwSezZVBxnlkQ==</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>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</ds:X509Certificate></ds:X509Data></ds:KeyInfo><ds:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" Target="#id-354f90caa4f357b92bdf5d1167a839c4"><xades:SignedProperties Id="xades-id-354f90caa4f357b92bdf5d1167a839c4"><xades:SignedSignatureProperties><xades:SigningTime>2018-07-11T15:55:35Z</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>Wys1w5cOoKr5Qecyb2yEwICCMXo=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>CN=LuxTrust Global Qualified CA 3,O=LuxTrust S.A.,C=LU</ds:X509IssuerName><ds:X509SerialNumber>1974568</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate></xades:SignedSignatureProperties><xades:SignedDataObjectProperties><xades:DataObjectFormat ObjectReference="#xml_ref_id"><xades:MimeType>application/octet-stream</xades:MimeType></xades:DataObjectFormat></xades:SignedDataObjectProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object></ds:Signature></TrustServiceStatusList>
