@@ -1,4 +1,4 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="6"
@@ -17,10 +17,17 @@ MY_PV=$(replace_version_separator '_' '-')
 MY_P="${PN}-${MY_PV}"
 S="${WORKDIR}/${MY_P}"
 
-SRC_URI="https://github.com/open-eid/${PN}/releases/download/v${MY_PV}/${MY_P}.tar.gz"
+SRC_URI="
+	https://github.com/open-eid/${PN}/releases/download/v${MY_PV}/${MY_P}.tar.gz
+	https://id.eesti.ee/config.json -> ${PF}-config.json
+	https://sr.riik.ee/tsl/estonian-tsl.xml -> ${PF}-EE.xml
+	https://ec.europa.eu/information_society/policy/esignature/trusted-list/tl-mp.xml -> ${PF}-tl-mp.xml
+	https://id.eesti.ee/config.rsa -> ${PF}-config.rsa
+	https://id.eesti.ee/config.pub -> ${PF}-config.pub
+"
 
 PATCHES=(
-	"${FILESDIR}/sandbox-compat.patch"
+	"${FILESDIR}"/sandbox-compat.patch
 )
 
 RDEPEND="dev-libs/openssl:=
@@ -42,17 +49,13 @@ append-cppflags "-DOF=_Z_OF"
 src_prepare() {
 	cmake-utils_src_prepare
 	# https://github.com/open-eid/qdigidoc/wiki/DeveloperTips#building-in-sandboxed-environment
-	cp ${FILESDIR}/TSL.qrc		${S}/client/TSL.qrc
-	# https://sr.riik.ee/tsl/estonian-tsl.xml
-	cp ${FILESDIR}/estonian-tsl.xml	${S}/client/EE.xml
-	# https://ec.europa.eu/information_society/policy/esignature/trusted-list/tl-mp.xml
-	cp ${FILESDIR}/tl-mp.xml	${S}/client/tl-mp.xml
-	# https://id.eesti.ee/config.json
-	cp ${FILESDIR}/config.json	${S}/common/config.json
-	# https://id.eesti.ee/config.rsa
-	cp ${FILESDIR}/config.rsa	${S}/common/config.rsa
-	# https://id.eesti.ee/config.pub
-	cp ${FILESDIR}/config.pub	${S}/common/config.pub
+	cp "${FILESDIR}"/TSL.qrc		"${S}"/client/TSL.qrc
+	cp "${DISTDIR}/${PF}"-EE.xml		"${S}"/client/EE.xml
+	cp "${DISTDIR}/${PF}"-tl-mp.xml		"${S}"/client/tl-mp.xml
+	cp "${DISTDIR}/${PF}"-config.json	"${S}"/common/config.json
+	cp "${DISTDIR}/${PF}"-config.rsa	"${S}"/common/config.rsa
+	cp "${DISTDIR}/${PF}"-config.pub	"${S}"/common/config.pub
+
 }
 
 pkg_postinst() {
