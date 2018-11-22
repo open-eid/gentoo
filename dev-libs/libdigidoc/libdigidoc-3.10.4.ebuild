@@ -1,7 +1,7 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="5"
+EAPI="6"
 
 inherit cmake-utils flag-o-matic
 
@@ -20,7 +20,14 @@ RDEPEND="dev-libs/libxml2
 	sys-libs/zlib"
 DEPEND="${RDEPEND}"
 
-DOCS="AUTHORS RELEASE-NOTES.txt README.md"
+DOCS="AUTHORS RELEASE-NOTES.md README.md"
 
 # gentoo specific zlib internal macro names
 append-cppflags "-DOF=_Z_OF"
+
+src_configure(){
+	local mycmakeargs=(
+		-DCMAKE_INSTALL_SYSCONFDIR="${EPREFIX}/etc"
+	)
+	cmake-utils_src_configure
+}
