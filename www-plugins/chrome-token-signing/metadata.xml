@@ -3,7 +3,7 @@
 <pkgmetadata>
 <maintainer type="person"><email>urmet.saar@gmail.com</email></maintainer>
 <use>
-        <flag name="firefox">Depend on new enough version of
+	<flag name="firefox">Depend on new enough version of
 		www-client/firefox-(bin)in Firefox</flag>
 </use>
 </pkgmetadata>
