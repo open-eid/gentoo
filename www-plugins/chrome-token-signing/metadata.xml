@@ -3,7 +3,7 @@
 <pkgmetadata>
 <maintainer type="person"><email>urmet.saar@gmail.com</email></maintainer>
 <use>
-	<flag name="firefox">Depend on new enough version of
-		www-client/firefox-(bin)in Firefox</flag>
+	<flag name="chrome">Install Chrome extension and pcks11 setup scripts</flag>
+	<flag name="firefox">Install Firefox extension</flag>
 </use>
 </pkgmetadata>
