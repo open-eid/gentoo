@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><TrustServiceStatusList xmlns="http://uri.etsi.org/02231/v2#" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="http://uri.etsi.org/01903/v1.3.2#" xmlns:ns4="http://uri.etsi.org/02231/v2/additionaltypes#" xmlns:ns5="http://uri.etsi.org/TrstSvc/SvcInfoExt/eSigDir-1999-93-EC-TrustedList/#" xmlns:ns6="http://uri.etsi.org/01903/v1.4.1#" Id="EE0001" TSLTag="http://uri.etsi.org/19612/TSLTag">
+<?xml version="1.0" encoding="UTF-8"?><TrustServiceStatusList xmlns="http://uri.etsi.org/02231/v2#" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="http://uri.etsi.org/02231/v2/additionaltypes#" xmlns:ns4="http://uri.etsi.org/01903/v1.3.2#" xmlns:ns5="http://uri.etsi.org/TrstSvc/SvcInfoExt/eSigDir-1999-93-EC-TrustedList/#" xmlns:ns6="http://uri.etsi.org/01903/v1.4.1#" Id="EE0001" TSLTag="http://uri.etsi.org/19612/TSLTag">
     <SchemeInformation>
         <TSLVersionIdentifier>5</TSLVersionIdentifier>
-        <TSLSequenceNumber>42</TSLSequenceNumber>
+        <TSLSequenceNumber>45</TSLSequenceNumber>
         <TSLType>http://uri.etsi.org/TrstSvc/TrustedList/TSLType/EUgeneric</TSLType>
         <SchemeOperatorName>
             <Name xml:lang="en">Estonian Technical Regulatory Authority</Name>
@@ -79,7 +79,7 @@
                         <SchemeTerritory>EU</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
+                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -94,9 +94,9 @@
                 </AdditionalInformation>
             </OtherTSLPointer>
         </PointersToOtherTSL>
-        <ListIssueDateTime>2018-03-21T06:40:00Z</ListIssueDateTime>
+        <ListIssueDateTime>2018-11-09T13:00:00Z</ListIssueDateTime>
         <NextUpdate>
-            <dateTime>2018-09-19T00:00:00Z</dateTime>
+            <dateTime>2019-05-09T12:00:00Z</dateTime>
         </NextUpdate>
         <DistributionPoints>
             <URI>https://sr.riik.ee/tsl/estonian-tsl.xml</URI>
@@ -130,8 +130,8 @@
                     </ElectronicAddress>
                 </TSPAddress>
                 <TSPInformationURI>
-                    <URI xml:lang="en">https://www.sk.ee/en/repository/CPS</URI>
-                    <URI xml:lang="et">https://www.sk.ee/repositoorium/CPS</URI>
+                    <URI xml:lang="en">https://www.sk.ee/en/repository/</URI>
+                    <URI xml:lang="et">https://www.sk.ee/repositoorium/</URI>
                 </TSPInformationURI>
             </TSPInformation>
             <TSPServices>
@@ -152,8 +152,8 @@
                         <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/withdrawn</ServiceStatus>
                         <StatusStartingTime>2017-06-30T22:00:00Z</StatusStartingTime>
                         <TSPServiceDefinitionURI>
-                            <URI xml:lang="en">https://sk.ee/en/repository/CP/</URI>
-                            <URI xml:lang="et">https://sk.ee/repositoorium/CP/</URI>
+                            <URI xml:lang="en">https://sk.ee/en/repository/</URI>
+                            <URI xml:lang="et">https://sk.ee/repositoorium/</URI>
                         </TSPServiceDefinitionURI>
                         <ServiceInformationExtensions>
                             <Extension Critical="true">
@@ -313,8 +313,8 @@
                         <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/withdrawn</ServiceStatus>
                         <StatusStartingTime>2017-06-30T22:00:00Z</StatusStartingTime>
                         <TSPServiceDefinitionURI>
-                            <URI xml:lang="et">https://sk.ee/repositoorium/CP/</URI>
-                            <URI xml:lang="en">https://sk.ee/en/repository/CP/</URI>
+                            <URI xml:lang="en">https://sk.ee/en/repository/</URI>
+                            <URI xml:lang="et">https://sk.ee/repositoorium/</URI>
                         </TSPServiceDefinitionURI>
                         <ServiceInformationExtensions>
                             <Extension Critical="true">
@@ -461,7 +461,8 @@
                     <ServiceInformation>
                         <ServiceTypeIdentifier>http://uri.etsi.org/TrstSvc/Svctype/CA/QC</ServiceTypeIdentifier>
                         <ServiceName>
-                            <Name xml:lang="en">ESTEID-SK 2011 qualified certificates for electronic signatures</Name>
+                            <Name xml:lang="en">ESTEID qualified certificates for electronic signatures (ESTEID-SK 2011)</Name>
+                            <Name xml:lang="et">ESTEID kvalifitseeritud e-allkirjastamise sertifikaatide väljastamise teenus (ESTEID-SK 2011)</Name>
                         </ServiceName>
                         <ServiceDigitalIdentity>
                             <DigitalId>
@@ -472,10 +473,10 @@
                             </DigitalId>
                         </ServiceDigitalIdentity>
                         <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted</ServiceStatus>
-                        <StatusStartingTime>2016-06-30T22:00:00Z</StatusStartingTime>
+                        <StatusStartingTime>2018-11-02T14:00:00Z</StatusStartingTime>
                         <TSPServiceDefinitionURI>
-                            <URI xml:lang="et">https://sk.ee/repositoorium/CP/</URI>
-                            <URI xml:lang="en">https://sk.ee/en/repository/CP/</URI>
+                            <URI xml:lang="en">https://sk.ee/en/repository/</URI>
+                            <URI xml:lang="et">https://sk.ee/repositoorium/</URI>
                         </TSPServiceDefinitionURI>
                         <ServiceInformationExtensions>
                             <Extension Critical="true">
@@ -491,6 +492,22 @@
             <ns5:KeyUsage>
                 <ns5:KeyUsageBit name="nonRepudiation">true</ns5:KeyUsageBit>
             </ns5:KeyUsage>
+            <ns5:PolicySet>
+                <ns5:PolicyIdentifier>
+                    <ns4:Identifier>1.3.6.1.4.1.10015.1.1</ns4:Identifier>
+                    <ns4:Description>Certificate Policy for ID card and Digi-ID</ns4:Description>
+                    <ns4:DocumentationReferences>
+                        <ns4:DocumentationReference>https://sk.ee/en/repository/CP/</ns4:DocumentationReference>
+                    </ns4:DocumentationReferences>
+                </ns5:PolicyIdentifier>
+                <ns5:PolicyIdentifier>
+                    <ns4:Identifier>1.3.6.1.4.1.10015.1.3</ns4:Identifier>
+                    <ns4:Description>Certificate Policy for the digital identity card in form of the Mobile-ID</ns4:Description>
+                    <ns4:DocumentationReferences>
+                        <ns4:DocumentationReference>https://sk.ee/en/repository/CP/</ns4:DocumentationReference>
+                    </ns4:DocumentationReferences>
+                </ns5:PolicyIdentifier>
+            </ns5:PolicySet>
             <ns5:Description>This service issues qualified certificates for e-signing and e-authentication within the same process. The Relying Party shall make distinction by inspection of keyUsage field contents - e-signature certificates have nonRepudation bit set exclusively. Any certificate issued under the CA/QC Sdi certificate and is issued as a QC (i.e. containing a QcCompliance statement) and that has either its nR or its dS bit set is to be considered as supported by an QSCD</ns5:Description>
         </ns5:CriteriaList>
     </ns5:QualificationElement>
@@ -503,6 +520,22 @@
             <ns5:KeyUsage>
                 <ns5:KeyUsageBit name="nonRepudiation">true</ns5:KeyUsageBit>
             </ns5:KeyUsage>
+            <ns5:PolicySet>
+                <ns5:PolicyIdentifier>
+                    <ns4:Identifier>1.3.6.1.4.1.10015.1.1</ns4:Identifier>
+                    <ns4:Description>Certificate Policy for ID card and Digi-ID</ns4:Description>
+                    <ns4:DocumentationReferences>
+                        <ns4:DocumentationReference>https://sk.ee/en/repository/CP/</ns4:DocumentationReference>
+                    </ns4:DocumentationReferences>
+                </ns5:PolicyIdentifier>
+                <ns5:PolicyIdentifier>
+                    <ns4:Identifier>1.3.6.1.4.1.10015.1.3</ns4:Identifier>
+                    <ns4:Description>Certificate Policy for the digital identity card in form of the Mobile-ID</ns4:Description>
+                    <ns4:DocumentationReferences>
+                        <ns4:DocumentationReference>https://sk.ee/en/repository/CP/</ns4:DocumentationReference>
+                    </ns4:DocumentationReferences>
+                </ns5:PolicyIdentifier>
+            </ns5:PolicySet>
             <ns5:Description>All certificates issued under this CA/QC service that have nonRepudiation bit set exclusively are issued as qualified certificates</ns5:Description>
         </ns5:CriteriaList>
     </ns5:QualificationElement>
@@ -516,6 +549,59 @@
                         </ServiceInformationExtensions>
                     </ServiceInformation>
                     <ServiceHistory>
+                        <ServiceHistoryInstance>
+                            <ServiceTypeIdentifier>http://uri.etsi.org/TrstSvc/Svctype/CA/QC</ServiceTypeIdentifier>
+                            <ServiceName>
+<Name xml:lang="en">ESTEID-SK 2011 qualified certificates for electronic signatures</Name>
+                            </ServiceName>
+                            <ServiceDigitalIdentity>
+<DigitalId>
+    <X509SubjectName>EMAILADDRESS=pki@sk.ee, CN=ESTEID-SK 2011, O=AS Sertifitseerimiskeskus, C=EE</X509SubjectName>
+</DigitalId>
+<DigitalId>
+    <X509SKI>e2ryVVBcuNl6CIdBrvqiKz1bV3Y=</X509SKI>
+</DigitalId>
+                            </ServiceDigitalIdentity>
+                            <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted</ServiceStatus>
+                            <StatusStartingTime>2016-06-30T22:00:00Z</StatusStartingTime>
+                            <ServiceInformationExtensions>
+<Extension Critical="true">
+    <ns5:Qualifications>
+        <ns5:QualificationElement>
+            <ns5:Qualifiers>
+                <ns5:Qualifier uri="http://uri.etsi.org/TrstSvc/TrustedList/SvcInfoExt/QCWithQSCD"/>
+            </ns5:Qualifiers>
+            <ns5:CriteriaList assert="atLeastOne">
+                <ns5:KeyUsage>
+                    <ns5:KeyUsageBit name="digitalSignature">true</ns5:KeyUsageBit>
+                </ns5:KeyUsage>
+                <ns5:KeyUsage>
+                    <ns5:KeyUsageBit name="nonRepudiation">true</ns5:KeyUsageBit>
+                </ns5:KeyUsage>
+                <ns5:Description>This service issues qualified certificates for e-signing and e-authentication within the same process. The Relying Party shall make distinction by inspection of keyUsage field contents - e-signature certificates have nonRepudation bit set exclusively. Any certificate issued under the CA/QC Sdi certificate and is issued as a QC (i.e. containing a QcCompliance statement) and that has either its nR or its dS bit set is to be considered as supported by an QSCD</ns5:Description>
+            </ns5:CriteriaList>
+        </ns5:QualificationElement>
+        <ns5:QualificationElement>
+            <ns5:Qualifiers>
+                <ns5:Qualifier uri="http://uri.etsi.org/TrstSvc/TrustedList/SvcInfoExt/QCStatement"/>
+                <ns5:Qualifier uri="http://uri.etsi.org/TrstSvc/TrustedList/SvcInfoExt/QCForESig"/>
+            </ns5:Qualifiers>
+            <ns5:CriteriaList assert="all">
+                <ns5:KeyUsage>
+                    <ns5:KeyUsageBit name="nonRepudiation">true</ns5:KeyUsageBit>
+                </ns5:KeyUsage>
+                <ns5:Description>All certificates issued under this CA/QC service that have nonRepudiation bit set exclusively are issued as qualified certificates</ns5:Description>
+            </ns5:CriteriaList>
+        </ns5:QualificationElement>
+    </ns5:Qualifications>
+</Extension>
+<Extension Critical="true">
+    <AdditionalServiceInformation>
+        <URI xml:lang="en">http://uri.etsi.org/TrstSvc/TrustedList/SvcInfoExt/ForeSignatures</URI>
+    </AdditionalServiceInformation>
+</Extension>
+                            </ServiceInformationExtensions>
+                        </ServiceHistoryInstance>
                         <ServiceHistoryInstance>
                             <ServiceTypeIdentifier>http://uri.etsi.org/TrstSvc/Svctype/CA/QC</ServiceTypeIdentifier>
                             <ServiceName>
@@ -569,7 +655,8 @@
                     <ServiceInformation>
                         <ServiceTypeIdentifier>http://uri.etsi.org/TrstSvc/Svctype/CA/QC</ServiceTypeIdentifier>
                         <ServiceName>
-                            <Name xml:lang="en">ESTEID-SK 2015 qualified certificates for electronic signatures</Name>
+                            <Name xml:lang="en">ESTEID qualified certificates for electronic signatures (ESTEID-SK 2015)</Name>
+                            <Name xml:lang="et">ESTEID kvalifitseeritud e-allkirjastamise sertifikaatide väljastamise teenus (ESTEID-SK 2015)</Name>
                         </ServiceName>
                         <ServiceDigitalIdentity>
                             <DigitalId>
@@ -580,10 +667,10 @@
                             </DigitalId>
                         </ServiceDigitalIdentity>
                         <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted</ServiceStatus>
-                        <StatusStartingTime>2016-06-30T22:00:00Z</StatusStartingTime>
+                        <StatusStartingTime>2018-11-02T14:00:00Z</StatusStartingTime>
                         <TSPServiceDefinitionURI>
-                            <URI xml:lang="et">https://sk.ee/repositoorium/CP/</URI>
-                            <URI xml:lang="en">https://sk.ee/en/repository/CP/</URI>
+                            <URI xml:lang="en">https://sk.ee/en/repository/</URI>
+                            <URI xml:lang="et">https://sk.ee/repositoorium/</URI>
                         </TSPServiceDefinitionURI>
                         <ServiceInformationExtensions>
                             <Extension Critical="true">
@@ -599,6 +686,22 @@
             <ns5:KeyUsage>
                 <ns5:KeyUsageBit name="nonRepudiation">true</ns5:KeyUsageBit>
             </ns5:KeyUsage>
+            <ns5:PolicySet>
+                <ns5:PolicyIdentifier>
+                    <ns4:Identifier>1.3.6.1.4.1.10015.1.1</ns4:Identifier>
+                    <ns4:Description>Certificate Policy for ID card and Digi-ID</ns4:Description>
+                    <ns4:DocumentationReferences>
+                        <ns4:DocumentationReference>https://sk.ee/en/repository/CP/</ns4:DocumentationReference>
+                    </ns4:DocumentationReferences>
+                </ns5:PolicyIdentifier>
+                <ns5:PolicyIdentifier>
+                    <ns4:Identifier>1.3.6.1.4.1.10015.1.3</ns4:Identifier>
+                    <ns4:Description>Certificate Policy for the digital identity card in form of the Mobile-ID</ns4:Description>
+                    <ns4:DocumentationReferences>
+                        <ns4:DocumentationReference>https://sk.ee/en/repository/CP/</ns4:DocumentationReference>
+                    </ns4:DocumentationReferences>
+                </ns5:PolicyIdentifier>
+            </ns5:PolicySet>
             <ns5:Description>This service issues qualified certificates for e-signing and e-authentication within the same process. The Relying Party shall make distinction by inspection of keyUsage field contents - e-signature certificates have nonRepudation bit set exclusively. Any certificate issued under the CA/QC Sdi certificate and is issued as a QC (i.e. containing a QcCompliance statement) and that has either its nR or its dS bit set is to be considered as supported by an QSCD</ns5:Description>
         </ns5:CriteriaList>
     </ns5:QualificationElement>
@@ -611,6 +714,22 @@
             <ns5:KeyUsage>
                 <ns5:KeyUsageBit name="nonRepudiation">true</ns5:KeyUsageBit>
             </ns5:KeyUsage>
+            <ns5:PolicySet>
+                <ns5:PolicyIdentifier>
+                    <ns4:Identifier>1.3.6.1.4.1.10015.1.1</ns4:Identifier>
+                    <ns4:Description>Certificate Policy for ID card and Digi-ID</ns4:Description>
+                    <ns4:DocumentationReferences>
+                        <ns4:DocumentationReference>https://sk.ee/en/repository/CP/</ns4:DocumentationReference>
+                    </ns4:DocumentationReferences>
+                </ns5:PolicyIdentifier>
+                <ns5:PolicyIdentifier>
+                    <ns4:Identifier>1.3.6.1.4.1.10015.1.3</ns4:Identifier>
+                    <ns4:Description>Certificate Policy for the digital identity card in form of the Mobile-ID</ns4:Description>
+                    <ns4:DocumentationReferences>
+                        <ns4:DocumentationReference>https://sk.ee/en/repository/CP/</ns4:DocumentationReference>
+                    </ns4:DocumentationReferences>
+                </ns5:PolicyIdentifier>
+            </ns5:PolicySet>
             <ns5:Description>All certificates issued under this CA/QC service that have nonRepudiation bit set exclusively are issued as qualified certificates</ns5:Description>
         </ns5:CriteriaList>
     </ns5:QualificationElement>
@@ -624,6 +743,59 @@
                         </ServiceInformationExtensions>
                     </ServiceInformation>
                     <ServiceHistory>
+                        <ServiceHistoryInstance>
+                            <ServiceTypeIdentifier>http://uri.etsi.org/TrstSvc/Svctype/CA/QC</ServiceTypeIdentifier>
+                            <ServiceName>
+<Name xml:lang="en">ESTEID-SK 2015 qualified certificates for electronic signatures</Name>
+                            </ServiceName>
+                            <ServiceDigitalIdentity>
+<DigitalId>
+    <X509SubjectName>CN=ESTEID-SK 2015, OID.2.5.4.97=NTREE-10747013, O=AS Sertifitseerimiskeskus, C=EE</X509SubjectName>
+</DigitalId>
+<DigitalId>
+    <X509SKI>s6uIvJnVYqSFKgjNtB1yO4NyR1E=</X509SKI>
+</DigitalId>
+                            </ServiceDigitalIdentity>
+                            <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted</ServiceStatus>
+                            <StatusStartingTime>2016-06-30T22:00:00Z</StatusStartingTime>
+                            <ServiceInformationExtensions>
+<Extension Critical="true">
+    <ns5:Qualifications>
+        <ns5:QualificationElement>
+            <ns5:Qualifiers>
+                <ns5:Qualifier uri="http://uri.etsi.org/TrstSvc/TrustedList/SvcInfoExt/QCWithQSCD"/>
+            </ns5:Qualifiers>
+            <ns5:CriteriaList assert="atLeastOne">
+                <ns5:KeyUsage>
+                    <ns5:KeyUsageBit name="digitalSignature">true</ns5:KeyUsageBit>
+                </ns5:KeyUsage>
+                <ns5:KeyUsage>
+                    <ns5:KeyUsageBit name="nonRepudiation">true</ns5:KeyUsageBit>
+                </ns5:KeyUsage>
+                <ns5:Description>This service issues qualified certificates for e-signing and e-authentication within the same process. The Relying Party shall make distinction by inspection of keyUsage field contents - e-signature certificates have nonRepudation bit set exclusively. Any certificate issued under the CA/QC Sdi certificate and is issued as a QC (i.e. containing a QcCompliance statement) and that has either its nR or its dS bit set is to be considered as supported by an QSCD</ns5:Description>
+            </ns5:CriteriaList>
+        </ns5:QualificationElement>
+        <ns5:QualificationElement>
+            <ns5:Qualifiers>
+                <ns5:Qualifier uri="http://uri.etsi.org/TrstSvc/TrustedList/SvcInfoExt/QCStatement"/>
+                <ns5:Qualifier uri="http://uri.etsi.org/TrstSvc/TrustedList/SvcInfoExt/QCForESig"/>
+            </ns5:Qualifiers>
+            <ns5:CriteriaList assert="all">
+                <ns5:KeyUsage>
+                    <ns5:KeyUsageBit name="nonRepudiation">true</ns5:KeyUsageBit>
+                </ns5:KeyUsage>
+                <ns5:Description>All certificates issued under this CA/QC service that have nonRepudiation bit set exclusively are issued as qualified certificates</ns5:Description>
+            </ns5:CriteriaList>
+        </ns5:QualificationElement>
+    </ns5:Qualifications>
+</Extension>
+<Extension Critical="true">
+    <AdditionalServiceInformation>
+        <URI xml:lang="en">http://uri.etsi.org/TrstSvc/TrustedList/SvcInfoExt/ForeSignatures</URI>
+    </AdditionalServiceInformation>
+</Extension>
+                            </ServiceInformationExtensions>
+                        </ServiceHistoryInstance>
                         <ServiceHistoryInstance>
                             <ServiceTypeIdentifier>http://uri.etsi.org/TrstSvc/Svctype/CA/QC</ServiceTypeIdentifier>
                             <ServiceName>
@@ -677,6 +849,87 @@
                     <ServiceInformation>
                         <ServiceTypeIdentifier>http://uri.etsi.org/TrstSvc/Svctype/CA/QC</ServiceTypeIdentifier>
                         <ServiceName>
+                            <Name xml:lang="en">ESTEID qualified certificates for electronic signatures (ESTEID2018)</Name>
+                            <Name xml:lang="et">ESTEID kvalifitseeritud e-allkirjastamise sertifikaatide väljastamise teenus (ESTEID2018)</Name>
+                        </ServiceName>
+                        <ServiceDigitalIdentity>
+                            <DigitalId>
+<X509Certificate>MIIFVzCCBLigAwIBAgIQdUf6rBR0S4tbo2bU/mZV7TAKBggqhkjOPQQDBDBaMQswCQYDVQQGEwJFRTEbMBkGA1UECgwSU0sgSUQgU29sdXRpb25zIEFTMRcwFQYDVQRhDA5OVFJFRS0xMDc0NzAxMzEVMBMGA1UEAwwMRUUtR292Q0EyMDE4MB4XDTE4MDkyMDA5MjIyOFoXDTMzMDkwNTA5MTEwM1owWDELMAkGA1UEBhMCRUUxGzAZBgNVBAoMElNLIElEIFNvbHV0aW9ucyBBUzEXMBUGA1UEYQwOTlRSRUUtMTA3NDcwMTMxEzARBgNVBAMMCkVTVEVJRDIwMTgwgZswEAYHKoZIzj0CAQYFK4EEACMDgYYABAHHOBlv7UrRPYP1yHhOb7RA/YBDbtgynSVMqYdxnFrKHUXh6tFkghvHuA1k2DSom1hE5kqhB5VspDembwWDJBOQWQGOI/0t3EtccLYjeM7F9xOPdzUbZaIbpNRHpQgVBpFX0xpLTgW27MpIMhU8DHBWFpeAaNX3eUpD4gC5cvhsK0RFEqOCAx0wggMZMB8GA1UdIwQYMBaAFH4pVuc0knhOd+FvLjMqmHHB/TSfMB0GA1UdDgQWBBTZrHDbX36+lPig5L5HotA0rZoqEjAOBgNVHQ8BAf8EBAMCAQYwEgYDVR0TAQH/BAgwBgEB/wIBADCCAc0GA1UdIASCAcQwggHAMAgGBgQAj3oBAjAJBgcEAIvsQAECMDIGCysGAQQBg5EhAQEBMCMwIQYIKwYBBQUHAgEWFWh0dHBzOi8vd3d3LnNrLmVlL0NQUzANBgsrBgEEAYORIQEBAjANBgsrBgEEAYORfwEBATANBgsrBgEEAYORIQEBBTANBgsrBgEEAYORIQEBBjANBgsrBgEEAYORIQEBBzANBgsrBgEEAYORIQEBAzANBgsrBgEEAYORIQEBBDANBgsrBgEEAYORIQEBCDANBgsrBgEEAYORIQEBCTANBgsrBgEEAYORIQEBCjANBgsrBgEEAYORIQEBCzANBgsrBgEEAYORIQEBDDANBgsrBgEEAYORIQEBDTANBgsrBgEEAYORIQEBDjANBgsrBgEEAYORIQEBDzANBgsrBgEEAYORIQEBEDANBgsrBgEEAYORIQEBETANBgsrBgEEAYORIQEBEjANBgsrBgEEAYORIQEBEzANBgsrBgEEAYORIQEBFDANBgsrBgEEAYORfwEBAjANBgsrBgEEAYORfwEBAzANBgsrBgEEAYORfwEBBDANBgsrBgEEAYORfwEBBTANBgsrBgEEAYORfwEBBjAqBgNVHSUBAf8EIDAeBggrBgEFBQcDCQYIKwYBBQUHAwIGCCsGAQUFBwMEMGoGCCsGAQUFBwEBBF4wXDApBggrBgEFBQcwAYYdaHR0cDovL2FpYS5zay5lZS9lZS1nb3ZjYTIwMTgwLwYIKwYBBQUHMAKGI2h0dHA6Ly9jLnNrLmVlL0VFLUdvdkNBMjAxOC5kZXIuY3J0MBgGCCsGAQUFBwEDBAwwCjAIBgYEAI5GAQEwMAYDVR0fBCkwJzAloCOgIYYfaHR0cDovL2Muc2suZWUvRUUtR292Q0EyMDE4LmNybDAKBggqhkjOPQQDBAOBjAAwgYgCQgDeuUY4HczUbFKS002HZ88gclgYdztHqglENyTMtXE6dMBRnCbgUmhBCAA0mJSHbyFJ8W9ikLiSyurmkJM0hDE9KgJCASOqA405Ia5nKjTJPNsHQlMi7KZsIcTHOoBccx+54N8ZX1MgBozJmT59rZY/2/OeE163BAwD0UdUQAnMPP6+W3Vd</X509Certificate>
+                            </DigitalId>
+                            <DigitalId>
+<X509SubjectName>CN=ESTEID2018, OID.2.5.4.97=NTREE-10747013, O=SK ID Solutions AS, C=EE</X509SubjectName>
+                            </DigitalId>
+                            <DigitalId>
+<X509SKI>2axw219+vpT4oOS+R6LQNK2aKhI=</X509SKI>
+                            </DigitalId>
+                        </ServiceDigitalIdentity>
+                        <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted</ServiceStatus>
+                        <StatusStartingTime>2018-11-02T14:00:00Z</StatusStartingTime>
+                        <TSPServiceDefinitionURI>
+                            <URI xml:lang="en">https://sk.ee/en/repository/</URI>
+                            <URI xml:lang="et">https://sk.ee/repositoorium/</URI>
+                        </TSPServiceDefinitionURI>
+                        <ServiceInformationExtensions>
+                            <Extension Critical="true">
+<ns5:Qualifications>
+    <ns5:QualificationElement>
+        <ns5:Qualifiers>
+            <ns5:Qualifier uri="http://uri.etsi.org/TrstSvc/TrustedList/SvcInfoExt/QCWithQSCD"/>
+        </ns5:Qualifiers>
+        <ns5:CriteriaList assert="atLeastOne">
+            <ns5:KeyUsage>
+                <ns5:KeyUsageBit name="digitalSignature">true</ns5:KeyUsageBit>
+            </ns5:KeyUsage>
+            <ns5:KeyUsage>
+                <ns5:KeyUsageBit name="nonRepudiation">true</ns5:KeyUsageBit>
+            </ns5:KeyUsage>
+            <ns5:PolicySet>
+                <ns5:PolicyIdentifier>
+                    <ns4:Identifier>1.3.6.1.4.1.51361.1</ns4:Identifier>
+                    <ns4:Description>Certificate Policy for ID-card, Digi-ID, RP-card and Diplomatic-ID</ns4:Description>
+                    <ns4:DocumentationReferences>
+                        <ns4:DocumentationReference>https://www.id.ee/?id=30500</ns4:DocumentationReference>
+                    </ns4:DocumentationReferences>
+                </ns5:PolicyIdentifier>
+            </ns5:PolicySet>
+            <ns5:Description>This service issues qualified certificates for e-signing and e-authentication within the same process. The Relying Party shall make distinction by inspection of keyUsage field contents - e-signature certificates have nonRepudation bit set exclusively. Any certificate issued under the CA/QC Sdi certificate and is issued as a QC (i.e. containing a QcCompliance statement) and that has either its nR or its dS bit set is to be considered as supported by an QSCD</ns5:Description>
+        </ns5:CriteriaList>
+    </ns5:QualificationElement>
+    <ns5:QualificationElement>
+        <ns5:Qualifiers>
+            <ns5:Qualifier uri="http://uri.etsi.org/TrstSvc/TrustedList/SvcInfoExt/QCStatement"/>
+            <ns5:Qualifier uri="http://uri.etsi.org/TrstSvc/TrustedList/SvcInfoExt/QCForESig"/>
+        </ns5:Qualifiers>
+        <ns5:CriteriaList assert="all">
+            <ns5:KeyUsage>
+                <ns5:KeyUsageBit name="nonRepudiation">true</ns5:KeyUsageBit>
+            </ns5:KeyUsage>
+            <ns5:PolicySet>
+                <ns5:PolicyIdentifier>
+                    <ns4:Identifier>1.3.6.1.4.1.51361.1</ns4:Identifier>
+                    <ns4:Description>Certificate Policy for ID-card, Digi-ID, RP-card and Diplomatic-ID</ns4:Description>
+                    <ns4:DocumentationReferences>
+                        <ns4:DocumentationReference>https://www.id.ee/?id=30500</ns4:DocumentationReference>
+                    </ns4:DocumentationReferences>
+                </ns5:PolicyIdentifier>
+            </ns5:PolicySet>
+            <ns5:Description>All certificates issued under this CA/QC service that have nonRepudiation bit set exclusively are issued as qualified certificates</ns5:Description>
+        </ns5:CriteriaList>
+    </ns5:QualificationElement>
+</ns5:Qualifications>
+                            </Extension>
+                            <Extension Critical="true">
+<AdditionalServiceInformation>
+    <URI xml:lang="en">http://uri.etsi.org/TrstSvc/TrustedList/SvcInfoExt/ForeSignatures</URI>
+</AdditionalServiceInformation>
+                            </Extension>
+                        </ServiceInformationExtensions>
+                    </ServiceInformation>
+                </TSPService>
+                <TSPService>
+                    <ServiceInformation>
+                        <ServiceTypeIdentifier>http://uri.etsi.org/TrstSvc/Svctype/CA/QC</ServiceTypeIdentifier>
+                        <ServiceName>
                             <Name xml:lang="en">EID-SK 2007</Name>
                         </ServiceName>
                         <ServiceDigitalIdentity>
@@ -690,8 +943,8 @@
                         <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/withdrawn</ServiceStatus>
                         <StatusStartingTime>2017-06-30T22:00:00Z</StatusStartingTime>
                         <TSPServiceDefinitionURI>
-                            <URI xml:lang="et">https://sk.ee/repositoorium/CP/</URI>
-                            <URI xml:lang="en">https://sk.ee/en/repository/CP/</URI>
+                            <URI xml:lang="en">https://sk.ee/en/repository/</URI>
+                            <URI xml:lang="et">https://sk.ee/repositoorium/</URI>
                         </TSPServiceDefinitionURI>
                         <ServiceInformationExtensions>
                             <Extension Critical="true">
@@ -851,8 +1104,8 @@
                         <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted</ServiceStatus>
                         <StatusStartingTime>2016-06-30T22:00:00Z</StatusStartingTime>
                         <TSPServiceDefinitionURI>
-                            <URI xml:lang="et">https://sk.ee/repositoorium/CP/</URI>
-                            <URI xml:lang="en">https://sk.ee/en/repository/CP/</URI>
+                            <URI xml:lang="en">https://sk.ee/en/repository/</URI>
+                            <URI xml:lang="et">https://sk.ee/repositoorium/</URI>
                         </TSPServiceDefinitionURI>
                         <ServiceInformationExtensions>
                             <Extension Critical="true">
@@ -962,8 +1215,8 @@
                         <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted</ServiceStatus>
                         <StatusStartingTime>2016-12-21T10:00:00Z</StatusStartingTime>
                         <TSPServiceDefinitionURI>
-                            <URI xml:lang="et">https://sk.ee/repositoorium/CP/</URI>
-                            <URI xml:lang="en">https://sk.ee/en/repository/CP/</URI>
+                            <URI xml:lang="en">https://sk.ee/en/repository/</URI>
+                            <URI xml:lang="et">https://sk.ee/repositoorium/</URI>
                         </TSPServiceDefinitionURI>
                         <ServiceInformationExtensions>
                             <Extension Critical="true">
@@ -979,7 +1232,11 @@
             </ns5:KeyUsage>
             <ns5:PolicySet>
                 <ns5:PolicyIdentifier>
-                    <ns3:Identifier>1.3.6.1.4.1.10015.17.2</ns3:Identifier>
+                    <ns4:Identifier>1.3.6.1.4.1.10015.17.2</ns4:Identifier>
+                    <ns4:Description>Certificate Policy for Qualified Smart-ID</ns4:Description>
+                    <ns4:DocumentationReferences>
+                        <ns4:DocumentationReference>https://sk.ee/en/repository/CP/</ns4:DocumentationReference>
+                    </ns4:DocumentationReferences>
                 </ns5:PolicyIdentifier>
             </ns5:PolicySet>
             <ns5:Description>All certificates issued under this CA/QC service that have nonRepudiation bit set exclusively are issued as qualified certificates</ns5:Description>
@@ -1010,10 +1267,10 @@
                             </DigitalId>
                         </ServiceDigitalIdentity>
                         <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/withdrawn</ServiceStatus>
-                        <StatusStartingTime>2016-06-30T22:00:00Z</StatusStartingTime>
+                        <StatusStartingTime>2016-06-30T22:00:01Z</StatusStartingTime>
                         <TSPServiceDefinitionURI>
-                            <URI xml:lang="et">https://sk.ee/repositoorium/CP/</URI>
-                            <URI xml:lang="en">https://sk.ee/en/repository/CP/</URI>
+                            <URI xml:lang="en">https://sk.ee/en/repository/</URI>
+                            <URI xml:lang="et">https://sk.ee/repositoorium/</URI>
                         </TSPServiceDefinitionURI>
                         <ServiceInformationExtensions>
                             <Extension Critical="true">
@@ -1047,12 +1304,64 @@
                             </Extension>
                             <Extension Critical="true">
 <AdditionalServiceInformation>
-    <URI xml:lang="en">http://uri.etsi.org/TrstSvc/TrustedList/SvcInfoExt/ForeSignatures</URI>
+    <URI xml:lang="en">http://uri.etsi.org/TrstSvc/TrustedList/SvcInfoExt/ForeSeals</URI>
 </AdditionalServiceInformation>
                             </Extension>
                         </ServiceInformationExtensions>
                     </ServiceInformation>
                     <ServiceHistory>
+                        <ServiceHistoryInstance>
+                            <ServiceTypeIdentifier>http://uri.etsi.org/TrstSvc/Svctype/CA/QC</ServiceTypeIdentifier>
+                            <ServiceName>
+<Name xml:lang="en">KLASS3-SK</Name>
+                            </ServiceName>
+                            <ServiceDigitalIdentity>
+<DigitalId>
+    <X509SubjectName>CN=KLASS3-SK, SERIALNUMBER=1, OU=Sertifitseerimisteenused, O=AS Sertifitseerimiskeskus, C=EE, EMAILADDRESS=pki@sk.ee</X509SubjectName>
+</DigitalId>
+<DigitalId>
+    <X509SKI>5T8MnXE9b7wZv5r0br8J/kDrnZY=</X509SKI>
+</DigitalId>
+                            </ServiceDigitalIdentity>
+                            <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted</ServiceStatus>
+                            <StatusStartingTime>2016-06-30T22:00:00Z</StatusStartingTime>
+                            <ServiceInformationExtensions>
+<Extension Critical="true">
+    <ns5:Qualifications>
+        <ns5:QualificationElement>
+            <ns5:Qualifiers>
+                <ns5:Qualifier uri="http://uri.etsi.org/TrstSvc/TrustedList/SvcInfoExt/QCWithQSCD"/>
+            </ns5:Qualifiers>
+            <ns5:CriteriaList assert="all">
+                <ns5:KeyUsage>
+                    <ns5:KeyUsageBit name="nonRepudiation">true</ns5:KeyUsageBit>
+                </ns5:KeyUsage>
+                <ns5:Description>Any certificate that is issued under the CA/QC Sdi certificate and that is issued as a QC (i.e. containing a QcCompliance statement) and having its non-repudation bit set exclusively, is to be considered as  supported by an SSCD. They are issued for digital stamping according to Estonian Digital Signature Act</ns5:Description>
+            </ns5:CriteriaList>
+        </ns5:QualificationElement>
+        <ns5:QualificationElement>
+            <ns5:Qualifiers>
+                <ns5:Qualifier uri="http://uri.etsi.org/TrstSvc/TrustedList/SvcInfoExt/NotQualified"/>
+            </ns5:Qualifiers>
+            <ns5:CriteriaList assert="atLeastOne">
+                <ns5:KeyUsage>
+                    <ns5:KeyUsageBit name="nonRepudiation">true</ns5:KeyUsageBit>
+                </ns5:KeyUsage>
+                <ns5:KeyUsage>
+                    <ns5:KeyUsageBit name="nonRepudiation">false</ns5:KeyUsageBit>
+                </ns5:KeyUsage>
+                <ns5:Description>Any certificate issued under the CA/QC Sdi certificate and is issued as a QC (i.e. containing a QcCompliance statement) is to be considered as issued to a Legal Person</ns5:Description>
+            </ns5:CriteriaList>
+        </ns5:QualificationElement>
+    </ns5:Qualifications>
+</Extension>
+<Extension Critical="true">
+    <AdditionalServiceInformation>
+        <URI xml:lang="en">http://uri.etsi.org/TrstSvc/TrustedList/SvcInfoExt/ForeSignatures</URI>
+    </AdditionalServiceInformation>
+</Extension>
+                            </ServiceInformationExtensions>
+                        </ServiceHistoryInstance>
                         <ServiceHistoryInstance>
                             <ServiceTypeIdentifier>http://uri.etsi.org/TrstSvc/Svctype/CA/QC</ServiceTypeIdentifier>
                             <ServiceName>
@@ -1136,8 +1445,8 @@
                         <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted</ServiceStatus>
                         <StatusStartingTime>2016-06-30T22:00:00Z</StatusStartingTime>
                         <TSPServiceDefinitionURI>
-                            <URI xml:lang="en">https://sk.ee/en/repository/CP/</URI>
-                            <URI xml:lang="et">https://sk.ee/repositoorium/CP/</URI>
+                            <URI xml:lang="en">https://sk.ee/en/repository/</URI>
+                            <URI xml:lang="et">https://sk.ee/repositoorium/</URI>
                         </TSPServiceDefinitionURI>
                         <ServiceInformationExtensions>
                             <Extension Critical="true">
@@ -1152,7 +1461,7 @@
             </ns5:KeyUsage>
             <ns5:PolicySet>
                 <ns5:PolicyIdentifier>
-                    <ns3:Identifier>0.4.0.194112.1.3</ns3:Identifier>
+                    <ns4:Identifier>0.4.0.194112.1.3</ns4:Identifier>
                 </ns5:PolicyIdentifier>
             </ns5:PolicySet>
             <ns5:Description>Any certificate that is issued under the CA/QC Sdi certificate and that is issued as a QC (i.e. containing a QcCompliance statement) and having its Certificate Policy PolicyIdentifier OID set as 0.4.0.194112.1.3, is to be considered as supported by a QSCD. They are issued for digital stamping according to eIDAS regulation</ns5:Description>
@@ -1336,8 +1645,8 @@
                         <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted</ServiceStatus>
                         <StatusStartingTime>2017-06-03T06:00:00Z</StatusStartingTime>
                         <TSPServiceDefinitionURI>
-                            <URI xml:lang="en">https://sk.ee/en/repository/CP/</URI>
-                            <URI xml:lang="et">https://sk.ee/repositoorium/CP/</URI>
+                            <URI xml:lang="en">https://sk.ee/en/repository/</URI>
+                            <URI xml:lang="et">https://sk.ee/repositoorium/</URI>
                         </TSPServiceDefinitionURI>
                         <ServiceInformationExtensions>
                             <Extension Critical="true">
@@ -1352,7 +1661,7 @@
             </ns5:KeyUsage>
             <ns5:PolicySet>
                 <ns5:PolicyIdentifier>
-                    <ns3:Identifier>0.4.0.194112.1.3</ns3:Identifier>
+                    <ns4:Identifier>0.4.0.194112.1.3</ns4:Identifier>
                 </ns5:PolicyIdentifier>
             </ns5:PolicySet>
             <ns5:Description>Any certificate that is issued under the CA/QC Sdi certificate and that is issued as a QC (i.e. containing a QcCompliance statement) and having its Certificate Policy PolicyIdentifier OID set as 0.4.0.194112.1.3, is to be considered as supported by a QSCD. They are issued for digital stamping according to eIDAS regulation</ns5:Description>
@@ -2389,6 +2698,10 @@
                         <ServiceSupplyPoints>
                             <ServiceSupplyPoint>http://tsa.sk.ee</ServiceSupplyPoint>
                         </ServiceSupplyPoints>
+                        <TSPServiceDefinitionURI>
+                            <URI xml:lang="en">https://sk.ee/en/repository/</URI>
+                            <URI xml:lang="et">https://sk.ee/repositoorium/</URI>
+                        </TSPServiceDefinitionURI>
                     </ServiceInformation>
                     <ServiceHistory>
                         <ServiceHistoryInstance>
@@ -2447,7 +2760,7 @@
                         </PostalAddress>
                     </PostalAddresses>
                     <ElectronicAddress>
-                        <URI xml:lang="en">mailto:info@guardtime.com </URI>
+                        <URI xml:lang="en">mailto:info@guardtime.com</URI>
                         <URI xml:lang="en">https://www.guardtime.com</URI>
                     </ElectronicAddress>
                 </TSPAddress>
@@ -3107,4 +3420,4 @@
             </TSPServices>
         </TrustServiceProvider>
     </TrustServiceProviderList>
-<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="id-629be79d89805183ff1ca3f490fe9e31"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><ds:Reference Id="xml_ref_id" Type="" URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>P/nAZoziDU0MvWMdsAZ7Kiw8v9jjds4pOcai2EjGJiA=</ds:DigestValue></ds:Reference><ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xades-id-629be79d89805183ff1ca3f490fe9e31"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>nUe7N/1EizGLBB94iyYD+roos0lJMkLY0RAF7OGx524=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue Id="value-id-629be79d89805183ff1ca3f490fe9e31">TTlaZ6XoGJ+c8RJJUYm1vWUelGsclLDWmhN2O9CbGAcpKszpHQA/0xe4SltNqU0pkPFwLeuFb/Pss7SoJKXzeN5R28TSvZi8AFs0UatLMNG2mY4ZLhgXH6sR+BzsRWdKv5Dnbny/eUqBaxDeHnSTwR+zU6iUG4sLdKpADhPmpi4CV54VZWCfNCQQ8JfgMU5AYRd9QLn4q/6CKwk1oXLFQnjN2kL++UhSongPd5g3baHMnfWGEdqreAKJOSAk+C6Kf2dHUrMDyrRjIeN3ycOItPf45et7oZ8VxTVkbDV8ZUbXd9Mq+IkV+D/afqjFxFiI6wwIG+zEfYERbgewB3LTkw==</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIDsDCCApigAwIBAgIJALEKWhHxTIoZMA0GCSqGSIb3DQEBDQUAMG8xLjAsBgNVBAMMJUVzdG9uaWFuIFRydXN0ZWQgTGlzdCBTY2hlbWUgT3BlcmF0b3IxCzAJBgNVBAYTAkVFMTAwLgYDVQQKDCdFc3RvbmlhbiBUZWNobmljYWwgUmVndWxhdG9yeSBBdXRob3JpdHkwHhcNMTcxMjA0MTEzMTM5WhcNMjcwNjAzMTEzMTM5WjBvMS4wLAYDVQQDDCVFc3RvbmlhbiBUcnVzdGVkIExpc3QgU2NoZW1lIE9wZXJhdG9yMQswCQYDVQQGEwJFRTEwMC4GA1UECgwnRXN0b25pYW4gVGVjaG5pY2FsIFJlZ3VsYXRvcnkgQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzIn9cZEzFbdPY9fWMH1Fla+oc195JcUbKcrTMSX/mi9lgOTKVPxtE9maKwFRtsdrBpAxeJC0QLbBUHmoOc4rwoBi0Z5eo0aIhvOJZWRAjgG3CCPoyVnTyU4N+JT6Z9QLWkg/2jlX3A210bDrEb0o4pzch6PeUXDmU3tWf/H/JvxQSB3BpnleLEjz5gNfeQJc+1WLFj5gS+U4RcIRPAa2Ji3dkb/LL9W6qt0jUTYHgQcnZlolDMaFklJHugB4nO4YfOvuzSc0KEIhOh62J9eKQ/FtZq+7j+1nrhKc2Kmj9mWk0wKV17ZRiAz7BeLrUk3A/cTpaTLTn4uRRiFqXf1JfwIDAQABo08wTTAMBgNVHRMEBTADAgEAMAsGA1UdDwQEAwIHgDAdBgNVHQ4EFgQUZcjaQmAh8bjQ7HL1m4MWZl8fYxYwEQYDVR0lBAowCAYGBACRNwMAMA0GCSqGSIb3DQEBDQUAA4IBAQBom/cEP5HvY7k4hwZYkA+rxI+TcpqmOX8l4cRiYtvLDsy3AnSv9lTZQRBjf3wPq38pnY1sYXNHcJHcWnbSJe45YsCyXojXFhkVm8UtrDdkq3uE4K3TqP/Ep+7xPNm8srJ5B8pmU13/T5cYTkeHVyH2SwGUS6pW8VYj/kZ1V17GQHtDKR7iQHfiS/ltOWcdIm+Sq3/D5its5wTQPPxExNg6MvdUMB5xZJId+cfPvz4sXXBCqQmfnkEC1xbOSC1+pU0PjWnyzZDPe8wYfIrYblNk57nF+GgWlDIeMWZqNszaBqaxebZSIPZKs+Cq8q+yElE6qUst4f2CPCHl2dtKag9D</ds:X509Certificate></ds:X509Data></ds:KeyInfo><ds:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" Target="#id-629be79d89805183ff1ca3f490fe9e31"><xades:SignedProperties Id="xades-id-629be79d89805183ff1ca3f490fe9e31"><xades:SignedSignatureProperties><xades:SigningTime>2018-03-21T06:43:04Z</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>hIS1stdSbJLpfk7FG/vyN3HkyPg=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>O=Estonian Technical Regulatory Authority,C=EE,CN=Estonian Trusted List Scheme Operator</ds:X509IssuerName><ds:X509SerialNumber>12757107927589620249</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate></xades:SignedSignatureProperties><xades:SignedDataObjectProperties><xades:DataObjectFormat ObjectReference="#xml_ref_id"><xades:MimeType>application/octet-stream</xades:MimeType></xades:DataObjectFormat></xades:SignedDataObjectProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object></ds:Signature></TrustServiceStatusList>
+<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="id-16754d1212e0af5f20a8055e453ca217"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><ds:Reference Id="xml_ref_id" Type="" URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>Ut07j0ml3JoEiQPs5E3wX1barCmLYqT3WyfZTQYIQBQ=</ds:DigestValue></ds:Reference><ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xades-id-16754d1212e0af5f20a8055e453ca217"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>InlyS0wbUaKsBp3Ohnh7Z9k3qQxQi9JmxG5Kmdp/Rtk=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue Id="value-id-16754d1212e0af5f20a8055e453ca217">EDldxhimC6fsFROz25QUVXufkiGIz0JKVk/bVBarjR4WE5nHpG4D6M0q5i5kbRC+N8bfdW7nT3IMIwouMFxO7n3hbxVV4YQP4rms9xaWBK+Zfkjrn//Sxh8blTWTJI78XXm3/KMmcaXudqB+nbtKagZqDLNV/CZDKvZhTA/Ch602adQI32VDdTUoAbLD31Aj97MpvImp01n3AMRAy4pXpIPYLv7BVrTtjY5aYe3JJSesCcd3O1/GTuGkS4ueQ0rUyHUPQ8lHUkBI5lHujVuObg33hshlINLBuhfwZVeMo4/IYd4tMTXOHT+ZWNa17thsQXV4R8IEMibez6aRVKgnHw==</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIDsDCCApigAwIBAgIJALEKWhHxTIoZMA0GCSqGSIb3DQEBDQUAMG8xLjAsBgNVBAMMJUVzdG9uaWFuIFRydXN0ZWQgTGlzdCBTY2hlbWUgT3BlcmF0b3IxCzAJBgNVBAYTAkVFMTAwLgYDVQQKDCdFc3RvbmlhbiBUZWNobmljYWwgUmVndWxhdG9yeSBBdXRob3JpdHkwHhcNMTcxMjA0MTEzMTM5WhcNMjcwNjAzMTEzMTM5WjBvMS4wLAYDVQQDDCVFc3RvbmlhbiBUcnVzdGVkIExpc3QgU2NoZW1lIE9wZXJhdG9yMQswCQYDVQQGEwJFRTEwMC4GA1UECgwnRXN0b25pYW4gVGVjaG5pY2FsIFJlZ3VsYXRvcnkgQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzIn9cZEzFbdPY9fWMH1Fla+oc195JcUbKcrTMSX/mi9lgOTKVPxtE9maKwFRtsdrBpAxeJC0QLbBUHmoOc4rwoBi0Z5eo0aIhvOJZWRAjgG3CCPoyVnTyU4N+JT6Z9QLWkg/2jlX3A210bDrEb0o4pzch6PeUXDmU3tWf/H/JvxQSB3BpnleLEjz5gNfeQJc+1WLFj5gS+U4RcIRPAa2Ji3dkb/LL9W6qt0jUTYHgQcnZlolDMaFklJHugB4nO4YfOvuzSc0KEIhOh62J9eKQ/FtZq+7j+1nrhKc2Kmj9mWk0wKV17ZRiAz7BeLrUk3A/cTpaTLTn4uRRiFqXf1JfwIDAQABo08wTTAMBgNVHRMEBTADAgEAMAsGA1UdDwQEAwIHgDAdBgNVHQ4EFgQUZcjaQmAh8bjQ7HL1m4MWZl8fYxYwEQYDVR0lBAowCAYGBACRNwMAMA0GCSqGSIb3DQEBDQUAA4IBAQBom/cEP5HvY7k4hwZYkA+rxI+TcpqmOX8l4cRiYtvLDsy3AnSv9lTZQRBjf3wPq38pnY1sYXNHcJHcWnbSJe45YsCyXojXFhkVm8UtrDdkq3uE4K3TqP/Ep+7xPNm8srJ5B8pmU13/T5cYTkeHVyH2SwGUS6pW8VYj/kZ1V17GQHtDKR7iQHfiS/ltOWcdIm+Sq3/D5its5wTQPPxExNg6MvdUMB5xZJId+cfPvz4sXXBCqQmfnkEC1xbOSC1+pU0PjWnyzZDPe8wYfIrYblNk57nF+GgWlDIeMWZqNszaBqaxebZSIPZKs+Cq8q+yElE6qUst4f2CPCHl2dtKag9D</ds:X509Certificate></ds:X509Data></ds:KeyInfo><ds:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" Target="#id-16754d1212e0af5f20a8055e453ca217"><xades:SignedProperties Id="xades-id-16754d1212e0af5f20a8055e453ca217"><xades:SignedSignatureProperties><xades:SigningTime>2018-11-09T13:01:46Z</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>hIS1stdSbJLpfk7FG/vyN3HkyPg=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>O=Estonian Technical Regulatory Authority,C=EE,CN=Estonian Trusted List Scheme Operator</ds:X509IssuerName><ds:X509SerialNumber>12757107927589620249</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate></xades:SignedSignatureProperties><xades:SignedDataObjectProperties><xades:DataObjectFormat ObjectReference="#xml_ref_id"><xades:MimeType>text/xml</xades:MimeType></xades:DataObjectFormat></xades:SignedDataObjectProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object></ds:Signature></TrustServiceStatusList>
