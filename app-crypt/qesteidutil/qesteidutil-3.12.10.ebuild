@@ -1,9 +1,9 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="5"
+EAPI="6"
 
-inherit cmake-utils flag-o-matic versionator
+inherit cmake-utils flag-o-matic eapi7-ver
 
 DESCRIPTION="ID-card utility"
 HOMEPAGE="https://github.com/open-eid/qesteidutil"
@@ -13,7 +13,7 @@ SLOT="0"
 IUSE=""
 
 # replace underscore for beta tarballs
-MY_PV=$(replace_version_separator '_' '-')
+MY_PV=$(ver_rs 3-4 _)
 MY_P="${PN}-${MY_PV}"
 S="${WORKDIR}/${MY_P}"
 
@@ -27,6 +27,10 @@ RDEPEND="dev-libs/openssl:=
 
 DEPEND="${RDEPEND}
 	dev-qt/linguist-tools:5"
+
+PATCHES=(
+	"${FILESDIR}/missing-qt-includes.patch"
+)
 
 DOCS="AUTHORS README.md"
 
