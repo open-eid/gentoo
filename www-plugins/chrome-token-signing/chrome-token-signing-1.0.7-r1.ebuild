@@ -13,7 +13,7 @@ SRC_URI="https://github.com/open-eid/chrome-token-signing/archive/v${PV}.tar.gz 
 LICENSE="LGPL-2.1+"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="chrome firefox"
+IUSE="+chrome +firefox"
 
 RDEPEND="dev-qt/qtwidgets:5
 	dev-qt/qtnetwork:5
