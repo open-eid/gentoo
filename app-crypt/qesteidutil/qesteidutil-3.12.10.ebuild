@@ -9,7 +9,7 @@ DESCRIPTION="ID-card utility"
 HOMEPAGE="https://github.com/open-eid/qesteidutil"
 LICENSE="LGPL-2.1"
 KEYWORDS="~amd64 ~x86"
-SLOT="0"
+SLOT="3"
 IUSE=""
 
 # replace underscore for beta tarballs
