@@ -46,7 +46,7 @@ src_prepare() {
 	# EE.xml: https://sr.riik.ee/tsl/estonian-tsl.xml
 	# tl-mp.xml: https://ec.europa.eu/information_society/policy/esignature/trusted-list/tl-mp.xml
 	cp "${FILESDIR}"/{TSL.qrc,EE.xml,tl-mp.xml}	"${S}"/client/
-	# https://id.eesti.ee/config.(json|rsa|pub)
+	# https://id.eesti.ee/config.{json,rsa,pub}
 	cp "${FILESDIR}"/config.{json,rsa,pub}		"${S}"/common/
 }
 
