@@ -1,9 +1,9 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="6"
+EAPI="7"
 
-inherit cmake-utils eutils flag-o-matic versionator xdg-utils
+inherit cmake-utils eutils flag-o-matic xdg-utils
 
 DESCRIPTION="Digidoc4 client"
 HOMEPAGE="https://github.com/open-eid/DigiDoc4-Client"
@@ -13,8 +13,7 @@ SLOT="0"
 IUSE=""
 
 # replace underscore for beta tarballs
-MY_PV=$(replace_version_separator '_' '-')
-MY_P="${PN}_${MY_PV}"
+MY_PV=$(ver_rs 3-4 _)
 
 SRC_URI="https://github.com/open-eid/DigiDoc4-Client/releases/download/v${MY_PV}/${P}.tar.gz"
 
@@ -24,12 +23,12 @@ PATCHES=(
 
 RDEPEND="dev-libs/openssl:=
 	>=dev-libs/opensc-0.18[pcsc-lite]
-	>=dev-libs/libdigidocpp-3.13.2
+	>=dev-libs/libdigidocpp-3.13.8
 	dev-libs/xerces-c[icu]
 	dev-qt/qtwidgets:5
 	dev-qt/qtnetwork:5
 	dev-qt/qtprintsupport:5
-	!app-crypt/qdigidoc"
+	!app-crypt/qdigidoc:3"
 
 DEPEND="${RDEPEND}
 	dev-qt/linguist-tools:5"
