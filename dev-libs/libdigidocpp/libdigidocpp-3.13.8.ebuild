@@ -43,9 +43,6 @@ src_prepare() {
 	if ! has_version app-editors/vim-core; then
 		epatch "${FILESDIR}/xxdi.patch"
 	fi
-	# xml-security-c 2.x compat, included in next release
-	# https://github.com/open-eid/libdigidocpp/commit/b034d21a5f3422b29eddbe21fa385fa6fddd24b8
-	eapply ${FILESDIR}/libdigidocpp-3.13.7-xml-sec-c-2.x-compat.patch
 	cmake-utils_src_prepare
 }
 
