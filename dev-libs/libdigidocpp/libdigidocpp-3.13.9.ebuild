@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/open-eid/libdigidocpp"
 LICENSE="LGPL-2.1"
 KEYWORDS="~amd64 ~x86"
 SLOT="0"
-IUSE="-pdf -java"
+IUSE="-doc -java -pdf"
 
 # replace underscore for beta versions
 MY_PV=$(ver_rs 3-4 _)
@@ -29,6 +29,7 @@ RDEPEND="dev-libs/libxml2
 	java? ( virtual/jre:= )"
 
 DEPEND="${RDEPEND}
+	doc? ( app-doc/doxygen )
 	>=dev-cpp/xsd-4.0.0
 	>=dev-cpp/libcutl-1.10.0-r1
 	java? ( dev-lang/swig virtual/jdk:= )
@@ -48,8 +49,10 @@ src_prepare() {
 
 src_configure() {
 	local mycmakeargs=(
-		$(cmake-utils_use_find_package pdf PoDoFo)
+		-DCMAKE_INSTALL_DOCDIR="share/doc/${PF}/html"
+		$(cmake-utils_use_find_package doc Doxygen)
 		$(cmake-utils_use_find_package java SWIG)
+		$(cmake-utils_use_find_package pdf PoDoFo)
 	)
 	cmake-utils_src_configure
 }

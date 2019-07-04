@@ -1,4 +1,4 @@
-# Copyright 1999-2019 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="6"
@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/open-eid/"
 LICENSE="LGPL-2.1"
 KEYWORDS="~amd64 ~x86"
 SLOT="0"
-IUSE=""
+IUSE="-doc"
 
 SRC_URI="https://github.com/open-eid/${PN}/releases/download/v${PV}/${P}.tar.gz"
 
@@ -32,7 +32,9 @@ append-cppflags "-DOF=_Z_OF"
 
 src_configure(){
 	local mycmakeargs=(
+		$(cmake-utils_use_find_package doc Doxygen)
 		-DCMAKE_INSTALL_SYSCONFDIR="${EPREFIX}/etc"
+		-DCMAKE_INSTALL_DOCDIR="share/doc/${PF}"
 	)
 	cmake-utils_src_configure
 }
