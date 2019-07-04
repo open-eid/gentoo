@@ -1,0 +1,13 @@
+diff --git a/libdigidoc/CMakeLists.txt b/libdigidoc/CMakeLists.txt
+index 87323e4..5bfb7b4 100644
+--- a/libdigidoc/CMakeLists.txt
++++ b/libdigidoc/CMakeLists.txt
+@@ -80,7 +80,7 @@ target_link_libraries( digidoc
+ )
+ 
+ set_target_properties( digidoc PROPERTIES
+-	VERSION ${MAJOR_VER}.${MINOR_VER}.${RELEASE_VER}
++	VERSION ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH}
+ 	SOVERSION 2
+ 	PUBLIC_HEADER "${PUBLIC_HEADER}"
+ 	RESOURCE ${CMAKE_CURRENT_BINARY_DIR}/${DIGIDOC_CONF_NAME}

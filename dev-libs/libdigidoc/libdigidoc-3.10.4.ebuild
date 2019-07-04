@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="6"
@@ -18,9 +18,14 @@ RDEPEND="dev-libs/libxml2
 	>=dev-libs/opensc-0.14
 	dev-libs/openssl:=
 	sys-libs/zlib"
-DEPEND="${RDEPEND}"
+DEPEND="doc? ( app-doc/doxygen )
+	${RDEPEND}"
 
 DOCS="AUTHORS RELEASE-NOTES.md README.md"
+
+PATCHES=(
+	"${FILESDIR}"/fix-library-file-name.patch
+)
 
 # gentoo specific zlib internal macro names
 append-cppflags "-DOF=_Z_OF"
