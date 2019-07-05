@@ -24,21 +24,21 @@ index b634c0a..65af8ce 100644
  	dialogs/PinPopup.ui dialogs/PinUnblock.ui dialogs/RoleAddressDialog.ui dialogs/SettingsDialog.ui dialogs/SignatureDialog.ui dialogs/Updater.ui dialogs/WaitDialog.ui dialogs/WarningDialog.ui
  	widgets/Accordion.ui widgets/AccordionTitle.ui widgets/AddressItem.ui widgets/CardWidget.ui widgets/ContainerPage.ui widgets/FileItem.ui 
 diff --git a/common/CMakeLists.txt b/common/CMakeLists.txt
-index 52f3bd0..5efdf25 100644
+index 7d9ec17..d0675fa 100644
 --- a/common/CMakeLists.txt
 +++ b/common/CMakeLists.txt
-@@ -16,13 +16,7 @@ if( CONFIG_URL )
+@@ -45,13 +45,7 @@ if( CONFIG_URL )
+ 	if( LAST_CHECK_DAYS )
+ 		set_source_files_properties( Configuration.cpp PROPERTIES COMPILE_DEFINITIONS "LAST_CHECK_DAYS=${LAST_CHECK_DAYS}" )
  	endif()
- 	add_definitions( -DCONFIG_URL="${CONFIG_URL}" )
- 	list( APPEND SOURCES Configuration.cpp )
 -	file( DOWNLOAD ${CONFIG_URL} ${CMAKE_CURRENT_BINARY_DIR}/config.json )
 -	string( REPLACE ".json" ".rsa" RSA_URL ${CONFIG_URL} )
 -	file( DOWNLOAD ${RSA_URL} ${CMAKE_CURRENT_BINARY_DIR}/config.rsa )
 -	string( REPLACE ".json" ".pub" PUB_URL ${CONFIG_URL} )
 -	file( DOWNLOAD ${PUB_URL} ${CMAKE_CURRENT_BINARY_DIR}/config.pub )
 -	configure_file( config.qrc config.qrc COPYONLY )
--	qt5_add_resources( SOURCES ${CMAKE_CURRENT_BINARY_DIR}/config.qrc )
-+	qt5_add_resources( SOURCES config.qrc )
+-	qt5_add_resources( CONFIG_SOURCES ${CMAKE_CURRENT_BINARY_DIR}/config.qrc )
++	qt5_add_resources( CONFIG_SOURCES config.qrc )
+ 	target_compile_definitions(qdigidoccommon PUBLIC CONFIG_URL="${CONFIG_URL}")
+ 	target_sources(qdigidoccommon PRIVATE ${CONFIG_SOURCES} Configuration.cpp )
  endif()
- 
- if( WIN32 )
