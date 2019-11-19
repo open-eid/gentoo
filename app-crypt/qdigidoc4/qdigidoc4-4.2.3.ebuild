@@ -17,10 +17,6 @@ MY_PV=$(ver_rs 3-4 _)
 
 SRC_URI="https://github.com/open-eid/DigiDoc4-Client/releases/download/v${MY_PV}/${P}.tar.gz"
 
-PATCHES=(
-	"${FILESDIR}/sandbox-compat.patch"
-)
-
 RDEPEND="dev-libs/openssl:=
 	>=dev-libs/opensc-0.18[pcsc-lite]
 	>=dev-libs/libdigidocpp-3.13.8
@@ -39,6 +35,8 @@ DOCS="README.md"
 append-cppflags "-DOF=_Z_OF"
 
 src_prepare() {
+	eapply --fuzz=3 "${FILESDIR}/sandbox-compat.patch"
+
 	cmake-utils_src_prepare
 
 	# TSL.qrc: https://github.com/open-eid/qdigidoc/wiki/DeveloperTips#building-in-sandboxed-environment
