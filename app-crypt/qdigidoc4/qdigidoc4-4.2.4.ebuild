@@ -19,7 +19,7 @@ SRC_URI="https://github.com/open-eid/DigiDoc4-Client/releases/download/v${MY_PV}
 
 RDEPEND="dev-libs/openssl:=
 	>=dev-libs/opensc-0.18[pcsc-lite]
-	>=dev-libs/libdigidocpp-3.13.8
+	>=dev-libs/libdigidocpp-3.14.2
 	dev-libs/xerces-c[icu]
 	dev-qt/qtwidgets:5
 	dev-qt/qtnetwork:5
