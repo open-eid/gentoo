@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="6"
@@ -22,7 +22,7 @@ SRC_URI="https://github.com/open-eid/${PN}/releases/download/v${MY_PV}/${MY_P}.t
 RDEPEND="dev-libs/libxml2
 	dev-libs/xml-security-c
 	>=dev-libs/opensc-0.14
-	dev-libs/openssl:=
+	<dev-libs/openssl-1.1.1f:=
 	sys-libs/zlib
 	dev-libs/libdigidoc
 	pdf? ( <app-text/podofo-0.9.5 )
