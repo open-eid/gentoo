@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><TrustServiceStatusList xmlns="http://uri.etsi.org/02231/v2#" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="http://uri.etsi.org/01903/v1.3.2#" xmlns:ns4="http://uri.etsi.org/02231/v2/additionaltypes#" xmlns:ns5="http://uri.etsi.org/TrstSvc/SvcInfoExt/eSigDir-1999-93-EC-TrustedList/#" xmlns:ns6="http://uri.etsi.org/01903/v1.4.1#" Id="EE0001" TSLTag="http://uri.etsi.org/19612/TSLTag">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><TrustServiceStatusList xmlns="http://uri.etsi.org/02231/v2#" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="http://uri.etsi.org/02231/v2/additionaltypes#" xmlns:ns4="http://uri.etsi.org/01903/v1.3.2#" xmlns:ns5="http://uri.etsi.org/TrstSvc/SvcInfoExt/eSigDir-1999-93-EC-TrustedList/#" xmlns:ns6="http://uri.etsi.org/01903/v1.4.1#" Id="EE0001" TSLTag="http://uri.etsi.org/19612/TSLTag">
     <SchemeInformation>
         <TSLVersionIdentifier>5</TSLVersionIdentifier>
-        <TSLSequenceNumber>46</TSLSequenceNumber>
+        <TSLSequenceNumber>49</TSLSequenceNumber>
         <TSLType>http://uri.etsi.org/TrstSvc/TrustedList/TSLType/EUgeneric</TSLType>
         <SchemeOperatorName>
             <Name xml:lang="en">Estonian Information System Authority</Name>
@@ -85,7 +85,7 @@
                         </DigitalId>
                     </ServiceDigitalIdentity>
                 </ServiceDigitalIdentities>
-                <TSLLocation>https://ec.europa.eu/information_society/policy/esignature/trusted-list/tl-mp.xml</TSLLocation>
+                <TSLLocation>https://ec.europa.eu/tools/lotl/eu-lotl.xml</TSLLocation>
                 <AdditionalInformation>
                     <OtherInformation>
                         <TSLType>http://uri.etsi.org/TrstSvc/TrustedList/TSLType/EUlistofthelists</TSLType>
@@ -94,7 +94,7 @@
                         <SchemeTerritory>EU</SchemeTerritory>
                     </OtherInformation>
                     <OtherInformation>
-                        <ns4:MimeType>application/vnd.etsi.tsl+xml</ns4:MimeType>
+                        <ns3:MimeType>application/vnd.etsi.tsl+xml</ns3:MimeType>
                     </OtherInformation>
                     <OtherInformation>
                         <SchemeOperatorName>
@@ -109,9 +109,9 @@
                 </AdditionalInformation>
             </OtherTSLPointer>
         </PointersToOtherTSL>
-        <ListIssueDateTime>2019-03-11T01:00:00Z</ListIssueDateTime>
+        <ListIssueDateTime>2020-04-07T01:00:00Z</ListIssueDateTime>
         <NextUpdate>
-            <dateTime>2019-09-11T00:00:00Z</dateTime>
+            <dateTime>2020-10-07T00:00:00Z</dateTime>
         </NextUpdate>
         <DistributionPoints>
             <URI>https://sr.riik.ee/tsl/estonian-tsl.xml</URI>
@@ -509,18 +509,18 @@
             </ns5:KeyUsage>
             <ns5:PolicySet>
                 <ns5:PolicyIdentifier>
-                    <ns3:Identifier>1.3.6.1.4.1.10015.1.1</ns3:Identifier>
-                    <ns3:Description>Certificate Policy for ID card and Digi-ID</ns3:Description>
-                    <ns3:DocumentationReferences>
-                        <ns3:DocumentationReference>https://sk.ee/en/repository/CP/</ns3:DocumentationReference>
-                    </ns3:DocumentationReferences>
+                    <ns4:Identifier>1.3.6.1.4.1.10015.1.1</ns4:Identifier>
+                    <ns4:Description>Certificate Policy for ID card and Digi-ID</ns4:Description>
+                    <ns4:DocumentationReferences>
+                        <ns4:DocumentationReference>https://sk.ee/en/repository/CP/</ns4:DocumentationReference>
+                    </ns4:DocumentationReferences>
                 </ns5:PolicyIdentifier>
                 <ns5:PolicyIdentifier>
-                    <ns3:Identifier>1.3.6.1.4.1.10015.1.3</ns3:Identifier>
-                    <ns3:Description>Certificate Policy for the digital identity card in form of the Mobile-ID</ns3:Description>
-                    <ns3:DocumentationReferences>
-                        <ns3:DocumentationReference>https://sk.ee/en/repository/CP/</ns3:DocumentationReference>
-                    </ns3:DocumentationReferences>
+                    <ns4:Identifier>1.3.6.1.4.1.10015.1.3</ns4:Identifier>
+                    <ns4:Description>Certificate Policy for the digital identity card in form of the Mobile-ID</ns4:Description>
+                    <ns4:DocumentationReferences>
+                        <ns4:DocumentationReference>https://sk.ee/en/repository/CP/</ns4:DocumentationReference>
+                    </ns4:DocumentationReferences>
                 </ns5:PolicyIdentifier>
             </ns5:PolicySet>
             <ns5:Description>This service issues qualified certificates for e-signing and e-authentication within the same process. The Relying Party shall make distinction by inspection of keyUsage field contents - e-signature certificates have nonRepudation bit set exclusively. Any certificate issued under the CA/QC Sdi certificate and is issued as a QC (i.e. containing a QcCompliance statement) and that has either its nR or its dS bit set is to be considered as supported by an QSCD</ns5:Description>
@@ -537,18 +537,18 @@
             </ns5:KeyUsage>
             <ns5:PolicySet>
                 <ns5:PolicyIdentifier>
-                    <ns3:Identifier>1.3.6.1.4.1.10015.1.1</ns3:Identifier>
-                    <ns3:Description>Certificate Policy for ID card and Digi-ID</ns3:Description>
-                    <ns3:DocumentationReferences>
-                        <ns3:DocumentationReference>https://sk.ee/en/repository/CP/</ns3:DocumentationReference>
-                    </ns3:DocumentationReferences>
+                    <ns4:Identifier>1.3.6.1.4.1.10015.1.1</ns4:Identifier>
+                    <ns4:Description>Certificate Policy for ID card and Digi-ID</ns4:Description>
+                    <ns4:DocumentationReferences>
+                        <ns4:DocumentationReference>https://sk.ee/en/repository/CP/</ns4:DocumentationReference>
+                    </ns4:DocumentationReferences>
                 </ns5:PolicyIdentifier>
                 <ns5:PolicyIdentifier>
-                    <ns3:Identifier>1.3.6.1.4.1.10015.1.3</ns3:Identifier>
-                    <ns3:Description>Certificate Policy for the digital identity card in form of the Mobile-ID</ns3:Description>
-                    <ns3:DocumentationReferences>
-                        <ns3:DocumentationReference>https://sk.ee/en/repository/CP/</ns3:DocumentationReference>
-                    </ns3:DocumentationReferences>
+                    <ns4:Identifier>1.3.6.1.4.1.10015.1.3</ns4:Identifier>
+                    <ns4:Description>Certificate Policy for the digital identity card in form of the Mobile-ID</ns4:Description>
+                    <ns4:DocumentationReferences>
+                        <ns4:DocumentationReference>https://sk.ee/en/repository/CP/</ns4:DocumentationReference>
+                    </ns4:DocumentationReferences>
                 </ns5:PolicyIdentifier>
             </ns5:PolicySet>
             <ns5:Description>All certificates issued under this CA/QC service that have nonRepudiation bit set exclusively are issued as qualified certificates</ns5:Description>
@@ -703,18 +703,18 @@
             </ns5:KeyUsage>
             <ns5:PolicySet>
                 <ns5:PolicyIdentifier>
-                    <ns3:Identifier>1.3.6.1.4.1.10015.1.1</ns3:Identifier>
-                    <ns3:Description>Certificate Policy for ID card and Digi-ID</ns3:Description>
-                    <ns3:DocumentationReferences>
-                        <ns3:DocumentationReference>https://sk.ee/en/repository/CP/</ns3:DocumentationReference>
-                    </ns3:DocumentationReferences>
+                    <ns4:Identifier>1.3.6.1.4.1.10015.1.1</ns4:Identifier>
+                    <ns4:Description>Certificate Policy for ID card and Digi-ID</ns4:Description>
+                    <ns4:DocumentationReferences>
+                        <ns4:DocumentationReference>https://sk.ee/en/repository/CP/</ns4:DocumentationReference>
+                    </ns4:DocumentationReferences>
                 </ns5:PolicyIdentifier>
                 <ns5:PolicyIdentifier>
-                    <ns3:Identifier>1.3.6.1.4.1.10015.1.3</ns3:Identifier>
-                    <ns3:Description>Certificate Policy for the digital identity card in form of the Mobile-ID</ns3:Description>
-                    <ns3:DocumentationReferences>
-                        <ns3:DocumentationReference>https://sk.ee/en/repository/CP/</ns3:DocumentationReference>
-                    </ns3:DocumentationReferences>
+                    <ns4:Identifier>1.3.6.1.4.1.10015.1.3</ns4:Identifier>
+                    <ns4:Description>Certificate Policy for the digital identity card in form of the Mobile-ID</ns4:Description>
+                    <ns4:DocumentationReferences>
+                        <ns4:DocumentationReference>https://sk.ee/en/repository/CP/</ns4:DocumentationReference>
+                    </ns4:DocumentationReferences>
                 </ns5:PolicyIdentifier>
             </ns5:PolicySet>
             <ns5:Description>This service issues qualified certificates for e-signing and e-authentication within the same process. The Relying Party shall make distinction by inspection of keyUsage field contents - e-signature certificates have nonRepudation bit set exclusively. Any certificate issued under the CA/QC Sdi certificate and is issued as a QC (i.e. containing a QcCompliance statement) and that has either its nR or its dS bit set is to be considered as supported by an QSCD</ns5:Description>
@@ -731,18 +731,18 @@
             </ns5:KeyUsage>
             <ns5:PolicySet>
                 <ns5:PolicyIdentifier>
-                    <ns3:Identifier>1.3.6.1.4.1.10015.1.1</ns3:Identifier>
-                    <ns3:Description>Certificate Policy for ID card and Digi-ID</ns3:Description>
-                    <ns3:DocumentationReferences>
-                        <ns3:DocumentationReference>https://sk.ee/en/repository/CP/</ns3:DocumentationReference>
-                    </ns3:DocumentationReferences>
+                    <ns4:Identifier>1.3.6.1.4.1.10015.1.1</ns4:Identifier>
+                    <ns4:Description>Certificate Policy for ID card and Digi-ID</ns4:Description>
+                    <ns4:DocumentationReferences>
+                        <ns4:DocumentationReference>https://sk.ee/en/repository/CP/</ns4:DocumentationReference>
+                    </ns4:DocumentationReferences>
                 </ns5:PolicyIdentifier>
                 <ns5:PolicyIdentifier>
-                    <ns3:Identifier>1.3.6.1.4.1.10015.1.3</ns3:Identifier>
-                    <ns3:Description>Certificate Policy for the digital identity card in form of the Mobile-ID</ns3:Description>
-                    <ns3:DocumentationReferences>
-                        <ns3:DocumentationReference>https://sk.ee/en/repository/CP/</ns3:DocumentationReference>
-                    </ns3:DocumentationReferences>
+                    <ns4:Identifier>1.3.6.1.4.1.10015.1.3</ns4:Identifier>
+                    <ns4:Description>Certificate Policy for the digital identity card in form of the Mobile-ID</ns4:Description>
+                    <ns4:DocumentationReferences>
+                        <ns4:DocumentationReference>https://sk.ee/en/repository/CP/</ns4:DocumentationReference>
+                    </ns4:DocumentationReferences>
                 </ns5:PolicyIdentifier>
             </ns5:PolicySet>
             <ns5:Description>All certificates issued under this CA/QC service that have nonRepudiation bit set exclusively are issued as qualified certificates</ns5:Description>
@@ -900,11 +900,11 @@
             </ns5:KeyUsage>
             <ns5:PolicySet>
                 <ns5:PolicyIdentifier>
-                    <ns3:Identifier>1.3.6.1.4.1.51361.1</ns3:Identifier>
-                    <ns3:Description>Certificate Policy for ID-card, Digi-ID, RP-card and Diplomatic-ID</ns3:Description>
-                    <ns3:DocumentationReferences>
-                        <ns3:DocumentationReference>https://www.id.ee/?id=30500</ns3:DocumentationReference>
-                    </ns3:DocumentationReferences>
+                    <ns4:Identifier>1.3.6.1.4.1.51361.1</ns4:Identifier>
+                    <ns4:Description>Certificate Policy for ID-card, Digi-ID, RP-card and Diplomatic-ID</ns4:Description>
+                    <ns4:DocumentationReferences>
+                        <ns4:DocumentationReference>https://www.id.ee/?id=30500</ns4:DocumentationReference>
+                    </ns4:DocumentationReferences>
                 </ns5:PolicyIdentifier>
             </ns5:PolicySet>
             <ns5:Description>This service issues qualified certificates for e-signing and e-authentication within the same process. The Relying Party shall make distinction by inspection of keyUsage field contents - e-signature certificates have nonRepudation bit set exclusively. Any certificate issued under the CA/QC Sdi certificate and is issued as a QC (i.e. containing a QcCompliance statement) and that has either its nR or its dS bit set is to be considered as supported by an QSCD</ns5:Description>
@@ -921,11 +921,11 @@
             </ns5:KeyUsage>
             <ns5:PolicySet>
                 <ns5:PolicyIdentifier>
-                    <ns3:Identifier>1.3.6.1.4.1.51361.1</ns3:Identifier>
-                    <ns3:Description>Certificate Policy for ID-card, Digi-ID, RP-card and Diplomatic-ID</ns3:Description>
-                    <ns3:DocumentationReferences>
-                        <ns3:DocumentationReference>https://www.id.ee/?id=30500</ns3:DocumentationReference>
-                    </ns3:DocumentationReferences>
+                    <ns4:Identifier>1.3.6.1.4.1.51361.1</ns4:Identifier>
+                    <ns4:Description>Certificate Policy for ID-card, Digi-ID, RP-card and Diplomatic-ID</ns4:Description>
+                    <ns4:DocumentationReferences>
+                        <ns4:DocumentationReference>https://www.id.ee/?id=30500</ns4:DocumentationReference>
+                    </ns4:DocumentationReferences>
                 </ns5:PolicyIdentifier>
             </ns5:PolicySet>
             <ns5:Description>All certificates issued under this CA/QC service that have nonRepudiation bit set exclusively are issued as qualified certificates</ns5:Description>
@@ -1247,11 +1247,11 @@
             </ns5:KeyUsage>
             <ns5:PolicySet>
                 <ns5:PolicyIdentifier>
-                    <ns3:Identifier>1.3.6.1.4.1.10015.17.2</ns3:Identifier>
-                    <ns3:Description>Certificate Policy for Qualified Smart-ID</ns3:Description>
-                    <ns3:DocumentationReferences>
-                        <ns3:DocumentationReference>https://sk.ee/en/repository/CP/</ns3:DocumentationReference>
-                    </ns3:DocumentationReferences>
+                    <ns4:Identifier>1.3.6.1.4.1.10015.17.2</ns4:Identifier>
+                    <ns4:Description>Certificate Policy for Qualified Smart-ID</ns4:Description>
+                    <ns4:DocumentationReferences>
+                        <ns4:DocumentationReference>https://sk.ee/en/repository/CP/</ns4:DocumentationReference>
+                    </ns4:DocumentationReferences>
                 </ns5:PolicyIdentifier>
             </ns5:PolicySet>
             <ns5:Description>All certificates issued under this CA/QC service that have nonRepudiation bit set exclusively are issued as qualified certificates</ns5:Description>
@@ -1476,7 +1476,7 @@
             </ns5:KeyUsage>
             <ns5:PolicySet>
                 <ns5:PolicyIdentifier>
-                    <ns3:Identifier>0.4.0.194112.1.3</ns3:Identifier>
+                    <ns4:Identifier>0.4.0.194112.1.3</ns4:Identifier>
                 </ns5:PolicyIdentifier>
             </ns5:PolicySet>
             <ns5:Description>Any certificate that is issued under the CA/QC Sdi certificate and that is issued as a QC (i.e. containing a QcCompliance statement) and having its Certificate Policy PolicyIdentifier OID set as 0.4.0.194112.1.3, is to be considered as supported by a QSCD. They are issued for digital stamping according to eIDAS regulation</ns5:Description>
@@ -1676,7 +1676,7 @@
             </ns5:KeyUsage>
             <ns5:PolicySet>
                 <ns5:PolicyIdentifier>
-                    <ns3:Identifier>0.4.0.194112.1.3</ns3:Identifier>
+                    <ns4:Identifier>0.4.0.194112.1.3</ns4:Identifier>
                 </ns5:PolicyIdentifier>
             </ns5:PolicySet>
             <ns5:Description>Any certificate that is issued under the CA/QC Sdi certificate and that is issued as a QC (i.e. containing a QcCompliance statement) and having its Certificate Policy PolicyIdentifier OID set as 0.4.0.194112.1.3, is to be considered as supported by a QSCD. They are issued for digital stamping according to eIDAS regulation</ns5:Description>
@@ -2781,17 +2781,47 @@
                         </TSPServiceDefinitionURI>
                     </ServiceInformation>
                 </TSPService>
+                <TSPService>
+                    <ServiceInformation>
+                        <ServiceTypeIdentifier>http://uri.etsi.org/TrstSvc/Svctype/TSA/QTST</ServiceTypeIdentifier>
+                        <ServiceName>
+                            <Name xml:lang="en">SK Time-Stamping Authority for qualified electronic time stamps (SK-TSA 2020)</Name>
+                        </ServiceName>
+                        <ServiceDigitalIdentity>
+                            <DigitalId>
+<X509Certificate>MIIEFjCCAv6gAwIBAgIQYjZ9dFrZQ6tdpFC5Xj/6bjANBgkqhkiG9w0BAQsFADB1MQswCQYDVQQGEwJFRTEiMCAGA1UECgwZQVMgU2VydGlmaXRzZWVyaW1pc2tlc2t1czEoMCYGA1UEAwwfRUUgQ2VydGlmaWNhdGlvbiBDZW50cmUgUm9vdCBDQTEYMBYGCSqGSIb3DQEJARYJcGtpQHNrLmVlMB4XDTE5MTIzMTIyMDAwMFoXDTI0MTIzMTIyMDAwMFowejEnMCUGA1UEAwweU0sgVElNRVNUQU1QSU5HIEFVVEhPUklUWSAyMDIwMRcwFQYDVQRhDA5OVFJFRS0xMDc0NzAxMzEMMAoGA1UECwwDVFNBMRswGQYDVQQKDBJTSyBJRCBTb2x1dGlvbnMgQVMxCzAJBgNVBAYTAkVFMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxdOHoO/xEAXVYd6m64QhKHoNZhT5L+wEkO59DH4K8lW1r//kEJusfY60zDY8o9s96HYACcQOR9Yltg3T3neqRZJ5GEPt5uFzCWzuSdyxIWMacxu/sSYaln4bqbCd97ML4qVdvwPGLNGRu8Utuy0JyhyuoBICHUcgyw1O2ATlc+95zdhGvKq15gazGXTpVUYgLpInkChp1ojZCv/WFdKN3dNGB5tqn3xsdfUfGDWxe4gLFFLeXjxo0pT2Y+5hJF1+r+PllZRnu1LKXEcrHxeyyZ+KL6wSLUyvfxZ++5hd0wR1pCnVgZ+hfYaGZ+YGRJXtiIA8DFqeKZ6qAhA8a6v99QIDAQABo4GcMIGZMA4GA1UdDwEB/wQEAwIGwDAWBgNVHSUBAf8EDDAKBggrBgEFBQcDCDAdBgNVHQ4EFgQUqD4KKP6RKqGdYfXNlT35pc1GkjEwHwYDVR0jBBgwFoAUEvJaPupWHL/NBqzx8SXJqUvUFJkwLwYIKwYBBQUHAQEEIzAhMB8GCCsGAQUFBzABhhNodHRwOi8vYWlhLnNrLmVlL0NBMA0GCSqGSIb3DQEBCwUAA4IBAQAJ06Qp/kiOhcNbEsDUVGfLuVycKjEbrGGMWnAj18S08aWx7ijXtDD9mY5CxtRUl9IbjB/eyl/Rt8RDVURtIioiNckkxC/bOHxiCj2WNCvRxo8GT/qn4M1vV/Sy8vwx/ZlYsZrlRnuo7/dqPsQyxIgRGbUp12bVKO4KQb4DNOcA6KDwcPd2zv4nBT/4XW7qD07spW9LPVKEvsOU1MV1tznjD0lC5ZL67FdB8kKEJCbbNfqVLVBOYjBopct5qzTLLPB5LTmV8I281XzTEqeFxbFy+wo7VOT6K36OYSd+9CnPn2M/l6VfrSCi3OvaWcq+lggGR1kQzDsS4lN1JoyZqd39</X509Certificate>
+                            </DigitalId>
+                            <DigitalId>
+<X509SubjectName>C=EE, O=SK ID Solutions AS, OU=TSA, OID.2.5.4.97=NTREE-10747013, CN=SK TIMESTAMPING AUTHORITY 2020</X509SubjectName>
+                            </DigitalId>
+                            <DigitalId>
+<X509SKI>qD4KKP6RKqGdYfXNlT35pc1GkjE=</X509SKI>
+                            </DigitalId>
+                        </ServiceDigitalIdentity>
+                        <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted</ServiceStatus>
+                        <StatusStartingTime>2019-12-03T22:00:00Z</StatusStartingTime>
+                        <ServiceSupplyPoints>
+                            <ServiceSupplyPoint>http://tsa.sk.ee</ServiceSupplyPoint>
+                        </ServiceSupplyPoints>
+                        <TSPServiceDefinitionURI>
+                            <URI xml:lang="en">https://sk.ee/en/repository/</URI>
+                            <URI xml:lang="et">https://sk.ee/repositoorium/</URI>
+                        </TSPServiceDefinitionURI>
+                    </ServiceInformation>
+                </TSPService>
             </TSPServices>
         </TrustServiceProvider>
         <TrustServiceProvider>
             <TSPInformation>
                 <TSPName>
-                    <Name xml:lang="en">GuardTime AS</Name>
+                    <Name xml:lang="en">GuardTime OÜ</Name>
                 </TSPName>
                 <TSPTradeName>
                     <Name xml:lang="en">VATEE-101114112</Name>
                     <Name xml:lang="en">GuardTime AS</Name>
                     <Name xml:lang="en">Guardtime</Name>
+                    <Name xml:lang="en">Guardtime OÜ</Name>
+                    <Name xml:lang="en">VATEE-11313216</Name>
                 </TSPTradeName>
                 <TSPAddress>
                     <PostalAddresses>
@@ -2808,7 +2838,7 @@
                     </ElectronicAddress>
                 </TSPAddress>
                 <TSPInformationURI>
-                    <URI xml:lang="en">https://sr.riik.ee/sites/default/files/GuardTime_Timestamping_Policy_200803.pdf</URI>
+                    <URI xml:lang="en">https://guardtime.com/library/tsp</URI>
                 </TSPInformationURI>
             </TSPInformation>
             <TSPServices>
@@ -3460,7 +3490,29 @@
                         </ServiceHistoryInstance>
                     </ServiceHistory>
                 </TSPService>
+                <TSPService>
+                    <ServiceInformation>
+                        <ServiceTypeIdentifier>http://uri.etsi.org/TrstSvc/Svctype/TSA/QTST</ServiceTypeIdentifier>
+                        <ServiceName>
+                            <Name xml:lang="et">Guardtime KSI ajatempliteenus</Name>
+                            <Name xml:lang="en">Guardtime KSI timestamp service</Name>
+                        </ServiceName>
+                        <ServiceDigitalIdentity>
+                            <DigitalId>
+<X509Certificate>MIIFeDCCBGCgAwIBAgIMKvxXwd+2ViRgXqVkMA0GCSqGSIb3DQEBCwUAMEwxCzAJBgNVBAYTAkJFMRkwFwYDVQQKExBHbG9iYWxTaWduIG52LXNhMSIwIAYDVQQDExlHbG9iYWxTaWduIFF1YWxpZmllZCBDQSAxMB4XDTE5MTAwMjEyMDIyM1oXDTIwMTAwMjEyMDIyM1owgaIxCzAJBgNVBAYTAkVFMQ4wDAYDVQQIEwVIYXJqdTEQMA4GA1UEBxMHVGFsbGlubjEVMBMGA1UEChMMR3VhcmR0aW1lIEFTMRUwEwYDVQQDEwxHdWFyZHRpbWUgQVMxKTAnBgkqhkiG9w0BCQEWGnB1YmxpY2F0aW9uc0BndWFyZHRpbWUuY29tMRgwFgYDVQRhEw9WQVRFRS0xMDExMTQxMTIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCt1f0R2cimqb2iM0/zVB00PfcY/w2zkpWSKuHIcyFMyxPaDsUFAxBlHpBn4bk9QEypWB/RpK15SPV1Veb5oL7o7A+62O7SXdA4jEyajyFVvP+mK/cXsSQ/x7Bb7r9woPH2Fmm1zExAkjrpyW2H9jjBav2TSD5sLW1/ANfg0G9c1QgC0niZc2dKMCmXLvB5gVSa4PiZ1RGQ+IcHVzfQhEIrmywpoe9MFfyB22eQfsKqXedopNLF8Ix3iHE9bp75yrhmuOrFG32vDbdgQTGwJBbRc8QDidyVQiuKwiJaYPnhAryZXXgnrI7PIddFib7aE3MQDHEmW4VPqKlfTX2r4HyFAgMBAAGjggIBMIIB/TAOBgNVHQ8BAf8EBAMCBkAwgYUGCCsGAQUFBwEBBHkwdzBABggrBgEFBQcwAoY0aHR0cDovL3NlY3VyZS5nbG9iYWxzaWduLmNvbS9jYWNlcnQvZ3NxY2Exc2hhMmc0LmNydDAzBggrBgEFBQcwAYYnaHR0cDovL29jc3AuZ2xvYmFsc2lnbi5jb20vZ3NxY2Exc2hhMmc0MFkGA1UdIARSMFAwQwYLKwYBBAGgMgEoIwEwNDAyBggrBgEFBQcCARYmaHR0cHM6Ly93d3cuZ2xvYmFsc2lnbi5jb20vcmVwb3NpdG9yeS8wCQYHBACL7EABAzAJBgNVHRMEAjAAMDsGA1UdHwQ0MDIwMKAuoCyGKmh0dHA6Ly9jcmwuZ2xvYmFsc2lnbi5jb20vZ3NxY2Exc2hhMmc0LmNybDAlBgNVHREEHjAcgRpwdWJsaWNhdGlvbnNAZ3VhcmR0aW1lLmNvbTA3BggrBgEFBQcBAwQrMCkwCAYGBACORgEBMAgGBgQAjkYBBDATBgYEAI5GAQYwCQYHBACORgEGAjAgBgNVHSUEGTAXBgkqhkiG9y8BAQUGCisGAQQBgjcKAwwwHwYDVR0jBBgwFoAUrDfbzzLJIRaqCxwGA4bwXcdpzRowHQYDVR0OBBYEFPe+Zbcss+aHPvlOaNUGuBxgwHg1MA0GCSqGSIb3DQEBCwUAA4IBAQALCkY2JkPjPdJV8NS+2gm3MDVurit5dp6AjRLIEoo2tmgQkosYnfyPXaJH4iF9ik2EB8K4piO+9ASIjEewIfGaHABpfY9IXYM87RRbuw2Q1YScog4ev6NdvhJZjSTQzu5wJ//dJB5rE9JPtN9eAY3ihQXB/IhSuX1M2p82wCBma51+jZnyQgOVwXXgX/+RqotnAznRt63NqfAQkAOp3NPW2EPkeoFz1Lv5eBxGZapggF0I5alhYWhR/96McP3isQAtftLnakwAPgHvJ9rxWnTAhOB6N0kWRiEClgnGxOnZT1TQVVTDpXwBYsgiZ1cv82ag2sH75vCKnyFlxHHlgCo+</X509Certificate>
+                            </DigitalId>
+                            <DigitalId>
+<X509SubjectName>OID.2.5.4.97=VATEE-101114112, EMAILADDRESS=publications@guardtime.com, CN=Guardtime AS, O=Guardtime AS, L=Tallinn, ST=Harju, C=EE</X509SubjectName>
+                            </DigitalId>
+                            <DigitalId>
+<X509SKI>975ltyyz5oc++U5o1Qa4HGDAeDU=</X509SKI>
+                            </DigitalId>
+                        </ServiceDigitalIdentity>
+                        <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted</ServiceStatus>
+                        <StatusStartingTime>2020-04-07T21:00:00Z</StatusStartingTime>
+                    </ServiceInformation>
+                </TSPService>
             </TSPServices>
         </TrustServiceProvider>
     </TrustServiceProviderList>
-<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="id-7fdf19312af387fc1d5f0de28a80d0f7"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><ds:Reference Id="xml_ref_id" Type="" URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>0bnXb4joWEdo0McOTFur9qv4OUgRH2BRIVZsSqvosg4=</ds:DigestValue></ds:Reference><ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xades-id-7fdf19312af387fc1d5f0de28a80d0f7"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>63d6Kszu3xub1vN6d+CATjDOMs6rIo74dfHsu4gzc6c=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue Id="value-id-7fdf19312af387fc1d5f0de28a80d0f7">hpk7sRyFSdrCzLPhjrwJ7rQZUtFbktOcoReM0FGJmlr6lMbCP12ZZbM+Ekf7N7E87GXnjR3xPYYLXh66zOsdoqjVpWLYVTyWQycpul7qn8Z2aUSjBuDkqqUbWPs3fwHOOlXoaTM3OiwrCMt3TymTpBiEHMNr2iDa8hVCZx+Mm+6XtC178RvEXpPZa0Ov0MtJdc71aaCC7Nd/VRgPtBuMEf8+Z23lXNdoGNE8g1YH2X+6rlJWK3CJgvcHdRoPU3AOYMCvM9vsVNxjhqy8qfitwA//CRvmIwiY2uvRFJPZuXk0/0OeEMATVABw6CQlwp+/PYJF/K1dJTw+Ngwrs/dapQ==</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIDrDCCApSgAwIBAgIJAJp9F/NFeDmmMA0GCSqGSIb3DQEBDQUAMG0xLjAsBgNVBAMMJUVzdG9uaWFuIFRydXN0ZWQgTGlzdCBTY2hlbWUgT3BlcmF0b3IxCzAJBgNVBAYTAkVFMS4wLAYDVQQKDCVFc3RvbmlhbiBJbmZvcm1hdGlvbiBTeXN0ZW0gQXV0aG9yaXR5MB4XDTE5MDEyNTA5NDAwNloXDTI4MDcyNDA5NDAwNlowbTEuMCwGA1UEAwwlRXN0b25pYW4gVHJ1c3RlZCBMaXN0IFNjaGVtZSBPcGVyYXRvcjELMAkGA1UEBhMCRUUxLjAsBgNVBAoMJUVzdG9uaWFuIEluZm9ybWF0aW9uIFN5c3RlbSBBdXRob3JpdHkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDBMux4ivfdlZy9W75NgMWfD7ahajygYHCp8Tw9LxQ0vkmpuyaNNlXU+uj+yffWfekVgMoLaQrCpVIN0FF8ZMnnlsK600hpgnQNI+snPxU1u9BK6P87ZpoQU2wvan2oqjWflm06ybLzvvJrPJVNoVelrUDTY6SPngMbyqqpsdXo+dW8916ZoRUcEkTFWjQXVjhY1Lqsorbpaop1iv9BV2SXmsh4szRlqpu4dDSElWViBn0+A1ptiSAt7JINr0DDjfswqE+dhvjf6xq+IEaqUoMtGPKgz7SDqKKyg/KBO1ZGunUZE+91HKUASt+sPy3O3wMZM1SpZe1INEXQ0EQ4gytdAgMBAAGjTzBNMAwGA1UdEwQFMAMCAQAwCwYDVR0PBAQDAgeAMB0GA1UdDgQWBBScAndEhykw8vEHVFuQ7XPtHnqFajARBgNVHSUECjAIBgYEAJE3AwAwDQYJKoZIhvcNAQENBQADggEBAHaLcIDZmUA9Bcv7TjuQW2Q3cFWFSmKc8aT5HaRKBxRRy10j9czqT439w/smT4De8JYyULXU+SoUX6/5sjmcpYxczFIC6imH8XLTgOca3vRAhek5iM80+h6v8CvxQHrsqNiSrLImE4LWfXWhQ/WPcyQdNrHCFrynJ9Gf6Q1DzQBRstpj5I8WjE+ME+w+vDj+VHHjI4wd5NkJhwwaF5PFB6uRrdb95e1dqLe4CTALe6+dh2QYhzSWZ+AZ2GaF+LlFreHhyV0sl+KwcNKSzSotStHL0zPTnq/yxPNaihhFmAlPdZdwq7vTN+yn5PAqEcfhTn06Gf5yDZjrmf5JO5eMpzM=</ds:X509Certificate></ds:X509Data></ds:KeyInfo><ds:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" Target="#id-7fdf19312af387fc1d5f0de28a80d0f7"><xades:SignedProperties Id="xades-id-7fdf19312af387fc1d5f0de28a80d0f7"><xades:SignedSignatureProperties><xades:SigningTime>2019-03-11T09:27:49Z</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>BrGrpy+CsBEehixeRl9mTwuZgLM=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>O=Estonian Information System Authority,C=EE,CN=Estonian Trusted List Scheme Operator</ds:X509IssuerName><ds:X509SerialNumber>11132080187539732902</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate></xades:SignedSignatureProperties><xades:SignedDataObjectProperties><xades:DataObjectFormat ObjectReference="#xml_ref_id"><xades:MimeType>text/xml</xades:MimeType></xades:DataObjectFormat></xades:SignedDataObjectProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object></ds:Signature></TrustServiceStatusList>
+<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="id-2d14fd0e48130afc1bd0509dd84b0870"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><ds:Reference Id="xml_ref_id" URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>HsmiT3uUOE4L5jtDm/IyJij/JIQqWWbiO3Awi4StnAc=</ds:DigestValue></ds:Reference><ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xades-id-2d14fd0e48130afc1bd0509dd84b0870"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>r97LsmxowZ2iU/oKaDtX6L1MUrpPXBie6sHQbjJ2ufk=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue Id="value-id-2d14fd0e48130afc1bd0509dd84b0870">QmBXJxfRxYoKqTbE6qdVGVwFaVPuibmEjGMvHNbBmq5JnhZzX5KmT/GsN1yJgs8bDc0QQ2/IxPk2mkICQgeU2jNxubvz/N/RacMkKY+4rQt2mSyonwhtFWKPBZJ/zEGa5wB74758d7UtRZ5g8xxS9mpQTZ6DluBj/YqUvA41PVcTW7NNxDDryqQ5zXQjcHkJ0DF5HU6erPZ5RM7wOk+QetBGHnhlqSr6JN+gJUWV7iy8QOg8a75z3dO0I8rAUjx8pn5hxPy+ePvsxBCpzLansVkTLPGPAuu5qbEYC/ctKsnUXDJKjJvikrlD1I2QaLyzG97b1j9M1t+a1TRM/99wrA==</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIDrDCCApSgAwIBAgIJAJp9F/NFeDmmMA0GCSqGSIb3DQEBDQUAMG0xLjAsBgNVBAMMJUVzdG9uaWFuIFRydXN0ZWQgTGlzdCBTY2hlbWUgT3BlcmF0b3IxCzAJBgNVBAYTAkVFMS4wLAYDVQQKDCVFc3RvbmlhbiBJbmZvcm1hdGlvbiBTeXN0ZW0gQXV0aG9yaXR5MB4XDTE5MDEyNTA5NDAwNloXDTI4MDcyNDA5NDAwNlowbTEuMCwGA1UEAwwlRXN0b25pYW4gVHJ1c3RlZCBMaXN0IFNjaGVtZSBPcGVyYXRvcjELMAkGA1UEBhMCRUUxLjAsBgNVBAoMJUVzdG9uaWFuIEluZm9ybWF0aW9uIFN5c3RlbSBBdXRob3JpdHkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDBMux4ivfdlZy9W75NgMWfD7ahajygYHCp8Tw9LxQ0vkmpuyaNNlXU+uj+yffWfekVgMoLaQrCpVIN0FF8ZMnnlsK600hpgnQNI+snPxU1u9BK6P87ZpoQU2wvan2oqjWflm06ybLzvvJrPJVNoVelrUDTY6SPngMbyqqpsdXo+dW8916ZoRUcEkTFWjQXVjhY1Lqsorbpaop1iv9BV2SXmsh4szRlqpu4dDSElWViBn0+A1ptiSAt7JINr0DDjfswqE+dhvjf6xq+IEaqUoMtGPKgz7SDqKKyg/KBO1ZGunUZE+91HKUASt+sPy3O3wMZM1SpZe1INEXQ0EQ4gytdAgMBAAGjTzBNMAwGA1UdEwQFMAMCAQAwCwYDVR0PBAQDAgeAMB0GA1UdDgQWBBScAndEhykw8vEHVFuQ7XPtHnqFajARBgNVHSUECjAIBgYEAJE3AwAwDQYJKoZIhvcNAQENBQADggEBAHaLcIDZmUA9Bcv7TjuQW2Q3cFWFSmKc8aT5HaRKBxRRy10j9czqT439w/smT4De8JYyULXU+SoUX6/5sjmcpYxczFIC6imH8XLTgOca3vRAhek5iM80+h6v8CvxQHrsqNiSrLImE4LWfXWhQ/WPcyQdNrHCFrynJ9Gf6Q1DzQBRstpj5I8WjE+ME+w+vDj+VHHjI4wd5NkJhwwaF5PFB6uRrdb95e1dqLe4CTALe6+dh2QYhzSWZ+AZ2GaF+LlFreHhyV0sl+KwcNKSzSotStHL0zPTnq/yxPNaihhFmAlPdZdwq7vTN+yn5PAqEcfhTn06Gf5yDZjrmf5JO5eMpzM=</ds:X509Certificate></ds:X509Data></ds:KeyInfo><ds:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" Target="#id-2d14fd0e48130afc1bd0509dd84b0870"><xades:SignedProperties Id="xades-id-2d14fd0e48130afc1bd0509dd84b0870"><xades:SignedSignatureProperties><xades:SigningTime>2020-04-07T08:00:23Z</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><ds:DigestValue>R14uA1QdIRBhGMN270QwubqLrkRR+Vg+UPT+uSs7gebBC1+F+qyvGFWCwonfGaYPDppY0O4KYJW6HA01hHWOvw==</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>O=Estonian Information System Authority,C=EE,CN=Estonian Trusted List Scheme Operator</ds:X509IssuerName><ds:X509SerialNumber>11132080187539732902</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate></xades:SignedSignatureProperties><xades:SignedDataObjectProperties><xades:DataObjectFormat ObjectReference="#xml_ref_id"><xades:MimeType>text/xml</xades:MimeType></xades:DataObjectFormat></xades:SignedDataObjectProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object></ds:Signature></TrustServiceStatusList>
