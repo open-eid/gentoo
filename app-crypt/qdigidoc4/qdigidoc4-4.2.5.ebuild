@@ -24,6 +24,7 @@ RDEPEND="dev-libs/openssl:=
 	dev-qt/qtwidgets:5
 	dev-qt/qtnetwork:5
 	dev-qt/qtprintsupport:5
+	net-nds/openldap
 	!app-crypt/qdigidoc:3"
 
 DEPEND="${RDEPEND}
@@ -41,7 +42,7 @@ src_prepare() {
 
 	# TSL.qrc: https://github.com/open-eid/qdigidoc/wiki/DeveloperTips#building-in-sandboxed-environment
 	# EE.xml: https://sr.riik.ee/tsl/estonian-tsl.xml
-	# tl-mp.xml: https://ec.europa.eu/information_society/policy/esignature/trusted-list/tl-mp.xml
+	# eu-lotl.xml: https://ec.europa.eu/tools/lotl/eu-lotl.xml
 	cp "${FILESDIR}"/{TSL.qrc,EE.xml,eu-lotl.xml}	"${S}"/client/
 	# https://id.eesti.ee/config.{json,rsa,pub}
 	cp "${FILESDIR}"/config.{json,rsa,pub}		"${S}"/common/
