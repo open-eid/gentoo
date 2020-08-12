@@ -1,0 +1,22 @@
+diff --git a/host-linux/Signer.h b/host-linux/Signer.h
+index 039199e..8548250 100644
+--- a/host-linux/Signer.h
++++ b/host-linux/Signer.h
+@@ -159,10 +159,17 @@ public:
+     }
+ 
+ private:
++#if (QT_VERSION == QT_VERSION_CHECK(5, 15, 0))
++    static QString toHex(const std::vector<unsigned char> &data)
++    {
++        return QString(QByteArray::fromRawData((const char*)data.data(), int(data.size())).toHex());
++    }
++#else
+     static QByteArray toHex(const std::vector<unsigned char> &data)
+     {
+         return QByteArray::fromRawData((const char*)data.data(), int(data.size())).toHex();
+     }
++#endif
+ 
+     static std::vector<unsigned char> fromHex(const QString &data)
+     {
