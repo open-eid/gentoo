@@ -1,13 +1,13 @@
-# Copyright 1999-2019 Gentoo Foundation
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
 inherit qmake-utils
 
 DESCRIPTION="eID signatures WebExtension native host component"
 HOMEPAGE="https://github.com/open-eid/chrome-token-signing/wiki"
-EID_INSTALLER_VERSION=18.10
+EID_INSTALLER_VERSION=20.09
 SRC_URI="https://github.com/open-eid/chrome-token-signing/archive/v${PV}.tar.gz -> chrome-token-signing-${PV}.tar.gz
 	https://github.com/open-eid/linux-installer/archive/v${EID_INSTALLER_VERSION}.tar.gz -> eid-installer-${EID_INSTALLER_VERSION}.tar.gz"
 LICENSE="LGPL-2.1+"
@@ -15,15 +15,17 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE="+chrome +firefox"
 
-RDEPEND="dev-qt/qtwidgets:5
+DEPEND="dev-qt/qtwidgets:5
 	dev-qt/qtnetwork:5
 	dev-libs/openssl:=
 	>=dev-libs/opensc-0.14[pcsc-lite]
 	app-crypt/ccid
-	chrome? ( dev-libs/nss[utils] )
-	firefox? ( www-plugins/firefox-pkcs11-loader )"
+"
 
-DEPEND="${RDEPEND}"
+RDEPEND="${DEPEND}
+	chrome? ( dev-libs/nss[utils] )
+	firefox? ( www-plugins/firefox-pkcs11-loader )
+"
 
 PATCHES=(
 	${FILESDIR}/qt-5.15.0-fix.patch
