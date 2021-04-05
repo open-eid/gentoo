@@ -16,6 +16,7 @@ IUSE=""
 MY_PV=$(ver_rs 3-4 _)
 
 SRC_URI="https://github.com/open-eid/DigiDoc4-Client/releases/download/v${MY_PV}/${P}.tar.gz"
+S="${WORKDIR}/${PN}"
 
 RDEPEND="dev-libs/openssl:=
 	>=dev-libs/opensc-0.18[pcsc-lite]
