@@ -35,7 +35,7 @@ append-cppflags "-DOF=_Z_OF"
 
 src_prepare() {
 	if ! has_version app-editors/vim-core; then
-		epatch "${FILESDIR}/xxdi.patch"
+		eapply "${FILESDIR}/xxdi.patch"
 	fi
 	cmake_src_prepare
 }
