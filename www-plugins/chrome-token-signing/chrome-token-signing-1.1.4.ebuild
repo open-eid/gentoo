@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -7,7 +7,7 @@ inherit qmake-utils
 
 DESCRIPTION="eID signatures WebExtension native host component"
 HOMEPAGE="https://github.com/open-eid/chrome-token-signing/wiki"
-EID_INSTALLER_VERSION=20.09
+EID_INSTALLER_VERSION=21.02
 SRC_URI="https://github.com/open-eid/chrome-token-signing/archive/v${PV}.tar.gz -> chrome-token-signing-${PV}.tar.gz
 	https://github.com/open-eid/linux-installer/archive/v${EID_INSTALLER_VERSION}.tar.gz -> eid-installer-${EID_INSTALLER_VERSION}.tar.gz"
 LICENSE="LGPL-2.1+"

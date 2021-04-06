@@ -1,9 +1,9 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="6"
+EAPI="7"
 
-inherit cmake-utils flag-o-matic git-r3 eutils
+inherit cmake flag-o-matic git-r3 eutils
 
 DESCRIPTION="Library for handling digitally signed documents"
 HOMEPAGE="https://github.com/open-eid/libdigidocpp"
@@ -35,15 +35,15 @@ append-cppflags "-DOF=_Z_OF"
 
 src_prepare() {
 	if ! has_version app-editors/vim-core; then
-		epatch "${FILESDIR}/xxdi.patch"
+		eapply "${FILESDIR}/xxdi.patch"
 	fi
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
 	local mycmakeargs=(
-		$(cmake-utils_use_find_package pdf PoDoFo)
-		$(cmake-utils_use_find_package java SWIG)
+		$(cmake_use_find_package pdf PoDoFo)
+		$(cmake_use_find_package java SWIG)
 	)
-	cmake-utils_src_configure
+	cmake_src_configure
 }
