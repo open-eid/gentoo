@@ -38,6 +38,7 @@ append-cppflags "-DOF=_Z_OF"
 
 src_prepare() {
 	eapply --fuzz=3 "${FILESDIR}/sandbox-compat.patch"
+	eapply "${FILESDIR}/qt5.15.patch"
 
 	cmake_src_prepare
 
