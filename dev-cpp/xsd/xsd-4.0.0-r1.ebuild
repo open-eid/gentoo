@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -11,14 +11,13 @@ SRC_URI="https://www.codesynthesis.com/download/${PN}/$(get_version_component_ra
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~x86"
-IUSE="ace doc examples test zlib"
+IUSE="doc examples test zlib"
 
 RDEPEND="
 	>=dev-libs/xerces-c-3.0.0
-	dev-libs/boost:=[threads]
+	dev-libs/boost:=[threads(+)]
 	dev-cpp/libcutl
 	>=dev-cpp/libxsd-frontend-2.0.0
-	ace? ( dev-libs/ace )
 	zlib? ( sys-libs/zlib )"
 DEPEND="${RDEPEND}
 	dev-util/build
@@ -41,7 +40,6 @@ src_configure() {
 
 	cat >> build/configuration-dynamic.make <<- EOF || die
 		xsd_with_zlib := $(usex zlib y n)
-		xsd_with_ace := $(usex ace y n)
 		xsd_with_xdr := y
 		xsd_with_xqilla := y
 		xsd_with_boost_date_time := y

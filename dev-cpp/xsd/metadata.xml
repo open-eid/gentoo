@@ -2,7 +2,4 @@
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<!-- maintainer-needed -->
-	<use>
-		<flag name="ace">Enable support for serializing to/from an ACE CDR stream</flag>
-	</use>
 </pkgmetadata>
