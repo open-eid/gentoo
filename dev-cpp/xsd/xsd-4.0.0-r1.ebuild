@@ -52,7 +52,7 @@ src_configure() {
 		cxx_debug    := n
 		cxx_rpath    := n
 		cxx_pp_extra_options :=
-		cxx_extra_options    := ${CXXFLAGS}
+		cxx_extra_options    := ${CXXFLAGS} -std=gnu++14
 		cxx_ld_extra_options := ${LDFLAGS}
 		cxx_extra_libs       :=
 		cxx_extra_lib_paths  :=
