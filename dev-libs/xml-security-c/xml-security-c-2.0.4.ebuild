@@ -19,9 +19,6 @@ RDEPEND=">=dev-libs/xerces-c-3.2
 	xalan? ( dev-libs/xalan-c )"
 DEPEND="${RDEPEND}"
 BDEPEND="virtual/pkgconfig"
-PATCHES=(
-	"${FILESDIR}/${P}-libressl.patch"
-)
 
 DOCS=( CHANGELOG.txt NOTICE.txt )
 
