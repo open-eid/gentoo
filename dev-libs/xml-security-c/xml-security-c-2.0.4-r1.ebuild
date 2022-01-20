@@ -19,7 +19,7 @@ RDEPEND=">=dev-libs/xerces-c-3.2
 	nss? ( dev-libs/nss )"
 DEPEND="${RDEPEND}"
 BDEPEND="virtual/pkgconfig
-		dev-libs/xalan-c"
+	dev-libs/xalan-c"
 
 DOCS=( CHANGELOG.txt NOTICE.txt )
 
