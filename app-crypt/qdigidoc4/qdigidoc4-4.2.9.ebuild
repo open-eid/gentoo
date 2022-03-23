@@ -16,7 +16,7 @@ IUSE=""
 MY_PV=$(ver_rs 3-4 _)
 
 SRC_URI="https://github.com/open-eid/DigiDoc4-Client/releases/download/v${MY_PV}/${P}.tar.gz"
-S="${WORKDIR}/${PN}"
+S="${WORKDIR}/${PN}-${PV}"
 
 RDEPEND="dev-libs/openssl:=
 	>=dev-libs/opensc-0.18[pcsc-lite]
@@ -38,7 +38,6 @@ append-cppflags "-DOF=_Z_OF"
 
 src_prepare() {
 	eapply --fuzz=3 "${FILESDIR}/sandbox-compat.patch"
-	eapply "${FILESDIR}/qt5.15.patch"
 
 	cmake_src_prepare
 
