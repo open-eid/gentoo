@@ -22,6 +22,7 @@ SRC_URI="https://github.com/open-eid/${PN}/releases/download/v${MY_PV}/${MY_P}.t
 RDEPEND="dev-libs/libxml2
 	>=dev-libs/xml-security-c-2.0.4
 	>=dev-libs/opensc-0.14
+	dev-libs/xalan-c
 	dev-libs/openssl:=
 	sys-libs/zlib
 	dev-libs/libdigidoc
@@ -44,6 +45,7 @@ src_prepare() {
 	if ! has_version app-editors/vim-core; then
 		eapply "${FILESDIR}/xxdi.patch"
 	fi
+	eapply "${FILESDIR}/openssl-1.1.1m-compat.patch"
 	cmake_src_prepare
 }
 
