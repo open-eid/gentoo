@@ -3,7 +3,7 @@
 
 EAPI="6"
 
-inherit cmake-utils flag-o-matic
+inherit cmake flag-o-matic
 
 DESCRIPTION="Library for handling digitally signed documents"
 HOMEPAGE="https://github.com/open-eid/"
@@ -32,9 +32,9 @@ append-cppflags "-DOF=_Z_OF"
 
 src_configure(){
 	local mycmakeargs=(
-		$(cmake-utils_use_find_package doc Doxygen)
+		$(cmake_use_find_package doc Doxygen)
 		-DCMAKE_INSTALL_SYSCONFDIR="${EPREFIX}/etc"
 		-DCMAKE_INSTALL_DOCDIR="share/doc/${PF}"
 	)
-	cmake-utils_src_configure
+	cmake_src_configure
 }
