@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/open-eid/"
 LICENSE="LGPL-2.1"
 KEYWORDS="~amd64 ~x86"
 SLOT="0"
-IUSE="-doc"
+IUSE="doc"
 
 SRC_URI="https://github.com/open-eid/${PN}/releases/download/v${PV}/${P}.tar.gz"
 
