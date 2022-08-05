@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/open-eid/libdigidocpp"
 LICENSE="LGPL-2.1"
 KEYWORDS="~amd64 ~x86"
 SLOT="0"
-IUSE="-doc -java -pdf"
+IUSE="doc java pdf"
 
 # replace underscore for beta versions
 MY_PV=$(ver_rs 3-4 _)

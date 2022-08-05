@@ -9,7 +9,7 @@ DESCRIPTION="Library for handling digitally signed documents"
 HOMEPAGE="https://github.com/open-eid/libdigidocpp"
 LICENSE="LGPL-2.1"
 SLOT="0"
-IUSE="-pdf -java"
+IUSE="pdf java"
 
 EGIT_REPO_URI="https://github.com/open-eid/${PN}.git"
 
