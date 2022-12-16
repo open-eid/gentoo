@@ -25,7 +25,6 @@ RDEPEND="dev-libs/libxml2
 	dev-libs/xalan-c
 	dev-libs/openssl:=
 	sys-libs/zlib
-	dev-libs/libdigidoc
 	pdf? ( <app-text/podofo-0.9.5 )
 	java? ( virtual/jre:= )"
 
