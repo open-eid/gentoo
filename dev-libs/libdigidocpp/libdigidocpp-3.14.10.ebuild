@@ -45,7 +45,6 @@ src_prepare() {
 	if ! has_version app-editors/vim-core; then
 		eapply "${FILESDIR}/xxdi.patch"
 	fi
-	eapply "${FILESDIR}/openssl-1.1.1m-compat.patch"
 	cmake_src_prepare
 }
 
