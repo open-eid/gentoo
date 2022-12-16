@@ -1,22 +1,25 @@
-diff -u -r qdigidoc4-4.2.9.clean/client/CMakeLists.txt qdigidoc4-4.2.9/client/CMakeLists.txt
---- qdigidoc4-4.2.9.clean/client/CMakeLists.txt	2021-07-14 11:18:32.000000000 +0300
-+++ qdigidoc4-4.2.9/client/CMakeLists.txt	2022-03-23 14:45:31.314146972 +0200
-@@ -1,14 +1,5 @@
+diff --git a/client/CMakeLists.txt b/client/CMakeLists.txt
+index 151e779..d687c7c 100644
+--- a/client/CMakeLists.txt
++++ b/client/CMakeLists.txt
+@@ -1,16 +1,5 @@
  set_app_name( PROGNAME qdigidoc4 )
  
 -add_executable( TSLDownload TSLDownload.cpp )
--target_link_libraries( TSLDownload Qt5::Network )
+-target_link_libraries(TSLDownload Qt${QT_VERSION_MAJOR}::Network)
+-get_target_property(qtCore_install_prefix Qt${QT_VERSION_MAJOR}::qmake IMPORTED_LOCATION)
+-get_filename_component(qtCore_install_prefix ${qtCore_install_prefix} DIRECTORY)
 -add_custom_command(
 -	OUTPUT TSL.qrc
 -	DEPENDS TSLDownload
 -	COMMAND $<TARGET_FILE:TSLDownload> "${CMAKE_CURRENT_BINARY_DIR}" ${TSL_URL} ${TSL_INCLUDE}
--	WORKING_DIRECTORY ${_qt5Core_install_prefix}/bin
+-	WORKING_DIRECTORY ${qtCore_install_prefix}
 -)
 -
  configure_file( translations/tr.qrc tr.qrc COPYONLY )
- qt5_add_translation( SOURCES translations/en.ts translations/et.ts translations/ru.ts )
+ qt_add_translation(SOURCES translations/en.ts translations/et.ts translations/ru.ts)
  
-@@ -19,7 +10,7 @@
+@@ -20,7 +9,7 @@ add_executable( ${PROGNAME} WIN32 MACOSX_BUNDLE
  	images/images.qrc
  	fonts/fonts.qrc
  	${CMAKE_CURRENT_BINARY_DIR}/tr.qrc
@@ -25,10 +28,12 @@ diff -u -r qdigidoc4-4.2.9.clean/client/CMakeLists.txt qdigidoc4-4.2.9/client/CM
  	main.cpp
  	Application.cpp
  	CheckConnection.cpp
-diff -u -r qdigidoc4-4.2.9.clean/common/CMakeLists.txt qdigidoc4-4.2.9/common/CMakeLists.txt
---- qdigidoc4-4.2.9.clean/common/CMakeLists.txt	2021-07-14 11:18:36.000000000 +0300
-+++ qdigidoc4-4.2.9/common/CMakeLists.txt	2022-03-23 14:46:28.086150326 +0200
-@@ -37,13 +37,7 @@
+Submodule common contains modified content
+diff --git a/common/CMakeLists.txt b/common/CMakeLists.txt
+index 58c1adb..7a01285 100644
+--- a/common/CMakeLists.txt
++++ b/common/CMakeLists.txt
+@@ -40,13 +40,7 @@ if( CONFIG_URL )
  	if( LAST_CHECK_DAYS )
  		set_source_files_properties( Configuration.cpp PROPERTIES COMPILE_DEFINITIONS "LAST_CHECK_DAYS=${LAST_CHECK_DAYS}" )
  	endif()
@@ -38,7 +43,7 @@ diff -u -r qdigidoc4-4.2.9.clean/common/CMakeLists.txt qdigidoc4-4.2.9/common/CM
 -	string( REPLACE ".json" ".pub" PUB_URL ${CONFIG_URL} )
 -	file( DOWNLOAD ${PUB_URL} ${CMAKE_CURRENT_BINARY_DIR}/config.pub )
 -	configure_file( config.qrc config.qrc COPYONLY )
--	qt5_add_resources( CONFIG_SOURCES ${CMAKE_CURRENT_BINARY_DIR}/config.qrc )
+-	qt_add_resources(CONFIG_SOURCES ${CMAKE_CURRENT_BINARY_DIR}/config.qrc)
 +	qt5_add_resources( CONFIG_SOURCES config.qrc )
  	target_compile_definitions(qdigidoccommon PUBLIC CONFIG_URL="${CONFIG_URL}")
  	target_sources(qdigidoccommon PRIVATE ${CONFIG_SOURCES} Configuration.cpp )
