@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-inherit cmake eutils flag-o-matic xdg-utils
+inherit cmake flag-o-matic xdg
 
 DESCRIPTION="Digidoc4 client"
 HOMEPAGE="https://github.com/open-eid/DigiDoc4-Client"
@@ -39,6 +39,7 @@ append-cppflags "-DOF=_Z_OF"
 
 src_prepare() {
 	eapply --fuzz=3 "${FILESDIR}/sandbox-compat.patch"
+	sed -i 's/ Qt6 / /' CMakeLists.txt # configure fails if Qt6 is installed
 
 	cmake_src_prepare
 
@@ -48,16 +49,4 @@ src_prepare() {
 	cp "${FILESDIR}"/{TSL.qrc,EE.xml,eu-lotl.xml}	"${S}"/client/
 	# https://id.eesti.ee/config.{json,rsa,pub}
 	cp "${FILESDIR}"/config.{json,rsa,pub}		"${S}"/common/
-}
-
-pkg_postinst() {
-	xdg_mimeinfo_database_update
-	xdg_desktop_database_update
-	xdg_icon_cache_update
-}
-
-pkg_postrm() {
-	xdg_mimeinfo_database_update
-	xdg_desktop_database_update
-	xdg_icon_cache_update
 }
