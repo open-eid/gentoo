@@ -8,7 +8,7 @@ inherit cmake flag-o-matic git-r3
 DESCRIPTION="Library for handling digitally signed documents"
 HOMEPAGE="https://github.com/open-eid/libdigidocpp"
 LICENSE="LGPL-2.1"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS=""
 SLOT="0"
 IUSE="doc java pdf"
 
