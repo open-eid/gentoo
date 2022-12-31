@@ -1,13 +1,13 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI="8"
 
-inherit toolchain-funcs versionator
+inherit toolchain-funcs
 
 DESCRIPTION="A compiler frontend for the W3C XML Schema definition language"
 HOMEPAGE="https://www.codesynthesis.com/projects/libxsd-frontend/"
-SRC_URI="https://www.codesynthesis.com/download/${PN}/$(get_version_component_range 1-2)/${P}.tar.bz2"
+SRC_URI="https://www.codesynthesis.com/download/${PN}/$(ver_cut 1-2)/${P}.tar.bz2"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~x86"
