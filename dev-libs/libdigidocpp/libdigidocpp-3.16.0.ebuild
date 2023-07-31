@@ -21,7 +21,7 @@ SRC_URI="https://github.com/open-eid/${PN}/releases/download/v${MY_PV}/${MY_P}.t
 
 RDEPEND="dev-libs/libxml2
 	dev-libs/xml-security-c
-	>=dev-libs/opensc-0.14
+	dev-libs/opensc
 	dev-libs/xalan-c
 	dev-libs/openssl:=
 	sys-libs/zlib
@@ -33,6 +33,7 @@ DEPEND="${RDEPEND}
 	>=dev-cpp/xsd-4.0.0
 	>=dev-cpp/libcutl-1.10.0-r1
 	java? ( dev-lang/swig virtual/jdk:= )
+	test? ( dev-libs/boost )
 	|| ( dev-util/xxdi app-editors/vim-core )"
 
 DOCS="AUTHORS RELEASE-NOTES.md README.md"
@@ -50,6 +51,7 @@ src_configure() {
 		$(cmake_use_find_package doc Doxygen)
 		$(cmake_use_find_package java SWIG)
 		$(cmake_use_find_package pdf PoDoFo)
+		$(cmake_use_find_package test Boost)
 	)
 	cmake_src_configure
 }
