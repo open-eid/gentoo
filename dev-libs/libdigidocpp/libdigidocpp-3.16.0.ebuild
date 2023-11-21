@@ -20,7 +20,7 @@ S="${WORKDIR}/${MY_P}"
 SRC_URI="https://github.com/open-eid/${PN}/releases/download/v${MY_PV}/${MY_P}.tar.gz"
 
 RDEPEND="dev-libs/libxml2
-	>=dev-libs/xml-security-c-2.0.4
+	dev-libs/xml-security-c
 	>=dev-libs/opensc-0.14
 	dev-libs/xalan-c
 	dev-libs/openssl:=
@@ -36,9 +36,6 @@ DEPEND="${RDEPEND}
 	|| ( dev-util/xxdi app-editors/vim-core )"
 
 DOCS="AUTHORS RELEASE-NOTES.md README.md"
-
-# gentoo specific zlib internal macro names
-append-cppflags "-DOF=_Z_OF"
 
 src_prepare() {
 	if ! has_version app-editors/vim-core; then
