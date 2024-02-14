@@ -24,7 +24,7 @@ RDEPEND="dev-libs/libxml2
 	java? ( virtual/jre:= )"
 
 DEPEND="${RDEPEND}
-	doc? ( app-doc/doxygen )
+	doc? ( app-text/doxygen )
 	>=dev-cpp/xsd-4.0.0
 	>=dev-cpp/libcutl-1.10.0-r1
 	java? ( dev-lang/swig virtual/jdk:= )
