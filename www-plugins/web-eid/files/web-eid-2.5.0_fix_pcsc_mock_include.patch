@@ -1,0 +1,10 @@
+--- a/lib/libelectronic-id/lib/libpcsc-cpp/tests/lib/libpcsc-mock/include/pcsc-mock/pcsc-mock.hpp
++++ b/lib/libelectronic-id/lib/libpcsc-cpp/tests/lib/libpcsc-mock/include/pcsc-mock/pcsc-mock.hpp	2023-12-28 17:43:20.824609786 +0100
+@@ -22,6 +22,7 @@
+ 
+ #pragma once
+ 
++#include <cstdint>
+ #include <string>
+ #include <set>
+ #include <map>
