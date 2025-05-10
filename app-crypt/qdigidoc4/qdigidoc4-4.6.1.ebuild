@@ -3,7 +3,7 @@
 
 EAPI="8"
 
-inherit cmake flag-o-matic xdg
+inherit cmake flag-o-matic xdg git-r3
 
 DESCRIPTION="Digidoc4 client"
 HOMEPAGE="https://github.com/open-eid/DigiDoc4-Client"
@@ -15,30 +15,21 @@ IUSE=""
 # replace underscore for beta tarballs
 MY_PV=$(ver_rs 3-4 _)
 
-SRC_URI="https://github.com/open-eid/DigiDoc4-Client/releases/download/v${MY_PV}/${P}.tar.gz"
-S="${WORKDIR}/${PN}-${PV}"
+EGIT_REPO_URI="https://github.com/open-eid/DigiDoc4-Client.git"
+EGIT_COMMIT="v${PV}"
 
 RDEPEND="dev-libs/openssl:=
 	dev-libs/opensc[pcsc-lite]
 	dev-libs/libdigidocpp
 	dev-libs/xerces-c[icu]
-	dev-qt/qtwidgets:5
-	dev-qt/qtnetwork:5
-	dev-qt/qtprintsupport:5
-	dev-qt/qtsvg:5
+	dev-qt/qtsvg:6
 	net-nds/openldap
 	dev-libs/flatbuffers
 "
 
-DEPEND="${RDEPEND}
-	dev-qt/linguist-tools:5"
-
 DOCS="README.md"
 
 src_prepare() {
-	eapply --fuzz=3 "${FILESDIR}/sandbox-compat.patch"
-	sed -i 's/ Qt6 / /' CMakeLists.txt # configure fails if Qt6 is installed
-
 	cmake_src_prepare
 
 	# TSL.qrc: https://github.com/open-eid/qdigidoc/wiki/DeveloperTips#building-in-sandboxed-environment

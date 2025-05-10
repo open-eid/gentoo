@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
-<pkgmetadata>
-<maintainer type="person"><email>urmet.saar@gmail.com</email></maintainer>
-<use>
-	<flag name="chrome">Install Chrome extension and pcks11 setup scripts</flag>
-	<flag name="firefox">Install Firefox extension</flag>
-</use>
-</pkgmetadata>

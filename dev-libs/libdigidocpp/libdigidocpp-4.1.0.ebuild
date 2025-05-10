@@ -3,21 +3,20 @@
 
 EAPI="8"
 
-inherit cmake flag-o-matic git-r3
+inherit cmake flag-o-matic
 
 DESCRIPTION="Library for handling digitally signed documents"
 HOMEPAGE="https://github.com/open-eid/libdigidocpp"
 LICENSE="LGPL-2.1"
-KEYWORDS=""
+KEYWORDS="~amd64 ~x86"
 SLOT="0"
 IUSE="doc java pdf"
 
-EGIT_REPO_URI="https://github.com/open-eid/${PN}.git"
+SRC_URI="https://github.com/open-eid/${PN}/releases/download/v${PV}/${P}.tar.gz -> ${P}.tar"
 
 RDEPEND="dev-libs/libxml2
-	>=dev-libs/xml-security-c-2.0.4
+	dev-libs/xmlsec
 	>=dev-libs/opensc-0.14
-	dev-libs/xalan-c
 	dev-libs/openssl:=
 	sys-libs/zlib
 	pdf? ( <app-text/podofo-0.9.5 )
@@ -25,22 +24,10 @@ RDEPEND="dev-libs/libxml2
 
 DEPEND="${RDEPEND}
 	doc? ( app-doc/doxygen )
-	>=dev-cpp/xsd-4.0.0
-	>=dev-cpp/libcutl-1.10.0-r1
 	java? ( dev-lang/swig virtual/jdk:= )
 	|| ( dev-util/xxdi app-editors/vim-core )"
 
 DOCS="AUTHORS RELEASE-NOTES.md README.md"
-
-# gentoo specific zlib internal macro names
-append-cppflags "-DOF=_Z_OF"
-
-src_prepare() {
-	if ! has_version app-editors/vim-core; then
-		eapply "${FILESDIR}/xxdi.patch"
-	fi
-	cmake_src_prepare
-}
 
 src_configure() {
 	local mycmakeargs=(
