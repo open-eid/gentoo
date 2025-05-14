@@ -12,34 +12,21 @@ KEYWORDS="~amd64 ~x86"
 SLOT="0"
 IUSE=""
 
-# replace underscore for beta tarballs
-MY_PV=$(ver_rs 3-4 _)
-
-SRC_URI="https://github.com/open-eid/DigiDoc4-Client/releases/download/v${MY_PV}/${P}.tar.gz"
-S="${WORKDIR}/${PN}-${PV}"
+SRC_URI="https://github.com/open-eid/DigiDoc4-Client/releases/download/v${PV}/${P}.tar.gz -> ${P}.tar"
 
 RDEPEND="dev-libs/openssl:=
-	>=dev-libs/opensc-0.18[pcsc-lite]
-	>=dev-libs/libdigidocpp-3.14.4
-	dev-libs/xerces-c[icu]
-	dev-qt/qtwidgets:5
-	dev-qt/qtnetwork:5
-	dev-qt/qtprintsupport:5
-	dev-qt/qtsvg:5
+	dev-libs/opensc[pcsc-lite]
+	dev-libs/libdigidocpp
+	dev-qt/qtbase:6[gui,network,widgets]
+	dev-qt/qtsvg:6
 	net-nds/openldap
+	dev-libs/flatbuffers
 "
-
-DEPEND="${RDEPEND}
-	dev-qt/linguist-tools:5"
 
 DOCS="README.md"
 
-# gentoo specific zlib internal macro names
-append-cppflags "-DOF=_Z_OF"
-
 src_prepare() {
-	eapply --fuzz=3 "${FILESDIR}/sandbox-compat.patch"
-	sed -i 's/ Qt6 / /' CMakeLists.txt # configure fails if Qt6 is installed
+        eapply --fuzz=3 "${FILESDIR}/qt6only.patch"
 
 	cmake_src_prepare
 
