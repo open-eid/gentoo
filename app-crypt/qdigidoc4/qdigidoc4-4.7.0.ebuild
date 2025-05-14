@@ -26,7 +26,7 @@ RDEPEND="dev-libs/openssl:=
 DOCS="README.md"
 
 src_prepare() {
-        eapply --fuzz=3 "${FILESDIR}/qt6only.patch"
+        #eapply --fuzz=3 "${FILESDIR}/qt6only.patch"
 
 	cmake_src_prepare
 
