@@ -12,7 +12,7 @@ KEYWORDS="~amd64 ~x86"
 SLOT="0"
 IUSE="doc java pdf"
 
-SRC_URI="https://github.com/open-eid/${PN}/releases/download/v${PV}/${P}.tar.gz -> ${P}.tar"
+SRC_URI="https://github.com/open-eid/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar"
 
 RDEPEND="dev-libs/libxml2
 	dev-libs/xmlsec
