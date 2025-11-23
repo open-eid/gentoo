@@ -8,6 +8,9 @@ PYTHON_COMPAT=( python3_{11..14} )
 JAVA_PKG_WANT_SOURCE="11"
 JAVA_PKG_WANT_TARGET="11"
 
+# tests require network access
+PROPERTIES=test_network
+
 inherit cmake flag-o-matic python-single-r1 java-pkg-opt-2
 
 DESCRIPTION="Library for handling digitally signed documents"
