@@ -1,16 +1,12 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 EAPI="8"
 
 inherit cmake
 
-LEIDV="1.2.0"
+LEIDV="2.8.0"
 LEIDF="libelectronic-id-${LEIDV}"
-LPCV="1.2.0"
-LPCF="libpcsc-cpp-${LPCV}"
-LPMV="1.0.0"
-LPMF="libpcsc-mock-${LPMV}"
-XPIV="2.2.1"
+XPIV="2.4.1"
 XPIF="web_eid_webextension-${XPIV}.xpi"
 
 if [[ ${PV} == *"9999" ]]; then
@@ -20,15 +16,9 @@ if [[ ${PV} == *"9999" ]]; then
 else
 	SRC_URI="https://github.com/web-eid/web-eid-app/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
 		https://github.com/web-eid/libelectronic-id/archive/refs/tags/v${LEIDV}.tar.gz -> ${LEIDF}.tar.gz
-		https://github.com/web-eid/libpcsc-cpp/archive/refs/tags/v${LPCV}.tar.gz -> ${LPCF}.tar.gz
-		https://github.com/web-eid/libpcsc-mock/archive/refs/tags/${LPMV}.tar.gz -> ${LPMF}.tar.gz
 		https://addons.mozilla.org/firefox/downloads/latest/web-eid-webextension/${XPIF}"
 	S="${WORKDIR}/${PN}-app-${PV}"
 	MYCMAKEARGS="-DBUNDLE_XPI=OFF"
-	PATCHES=(
-		"${FILESDIR}/${P}_fix_pcsc_mock_include.patch"
-		"${FILESDIR}/${P}_fix_native_messaging.patch"
-	)
 	KEYWORDS="~amd64"
 fi
 
@@ -59,14 +49,18 @@ DOCS="README.md"
 if [[ ${PV} != *"9999" ]]; then
 	src_unpack() {
 		default
-		rmdir "${WORKDIR}/${LPCF}/tests/lib/libpcsc-mock"
-		rmdir "${WORKDIR}/${LEIDF}/lib/libpcsc-cpp"
 		rmdir "${S}/lib/libelectronic-id"
-		mv "${WORKDIR}/${LPMF}" "${WORKDIR}/${LPCF}/tests/lib/libpcsc-mock"
-		mv "${WORKDIR}/${LPCF}" "${WORKDIR}/${LEIDF}/lib/libpcsc-cpp"
 		mv "${WORKDIR}/${LEIDF}" "${S}/lib/libelectronic-id"
 	}
 fi
+
+src_configure() {
+	local mycmakeargs=(
+		-DCMAKE_INSTALL_SYSCONFDIR="${EPREFIX}/etc"
+	)
+	cmake_src_configure
+}
+
 src_install() {
 	default
 	cmake_src_install
