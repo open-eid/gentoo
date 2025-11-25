@@ -26,22 +26,20 @@ DESCRIPTION="Web eID browser extension and helper application"
 HOMEPAGE="https://web-eid.eu/"
 LICENSE="MIT"
 SLOT="0"
-IUSE=""
+IUSE="test"
 
-RDEPEND="
-	sys-apps/pcsc-lite
-	>=dev-libs/openssl-1.1.1:=
-	dev-qt/qtcore
-	dev-qt/qtwidgets
-	dev-qt/qtnetwork
-	dev-qt/qtsvg
-"
+RDEPEND="dev-libs/openssl:0=
+        dev-qt/qtbase:6=[network,widgets]
+        dev-qt/qtsvg:6=
+        sys-apps/pcsc-lite"
 
-DEPEND="
-	${RDEPEND}
-	dev-qt/linguist-tools
-	dev-qt/qttest
-	dev-cpp/gtest
+
+DEPEND="${RDEPEND}"
+
+BDEPEND="
+	dev-qt/qttools:6[linguist]
+	virtual/pkgconfig
+	test? ( dev-cpp/gtest:0= )
 "
 
 DOCS="README.md"
@@ -53,6 +51,20 @@ if [[ ${PV} != *"9999" ]]; then
 		mv "${WORKDIR}/${LEIDF}" "${S}/lib/libelectronic-id"
 	}
 fi
+
+src_prepare() {
+	default
+	if [[ ${PV} != *"9999" ]]; then
+		# The bundled xpi is outdated, replace it with the latest one
+		mv "${WORKDIR}/${XPIF}" "${S}/install/${XPIF}"
+	fi
+
+	if ! use test ; then
+			sed -i '/enable_testing()/,$d' {,lib/libelectronic-id/,lib/libelectronic-id/lib/libpcsc-cpp/,lib/libelectronic-id/lib/libpcsc-cpp/tests/lib/libpcsc-mock/}CMakeLists.txt \
+			|| die "sed failed"
+    fi
+	cmake_src_prepare
+}
 
 src_configure() {
 	local mycmakeargs=(
