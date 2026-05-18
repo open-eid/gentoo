@@ -4,7 +4,7 @@ EAPI="8"
 
 inherit cmake
 
-LEIDV="2.8.0"
+LEIDV="2.9.0"
 LEIDF="libelectronic-id-${LEIDV}"
 XPIV="2.4.1"
 XPIF="web_eid_webextension-${XPIV}.xpi"
