@@ -33,5 +33,5 @@ src_prepare() {
 	# eu-lotl.xml: https://ec.europa.eu/tools/lotl/eu-lotl.xml
 	cp "${FILESDIR}"/{TSL.qrc,EE.xml,eu-lotl.xml}	"${S}"/client/
 	# https://id.eesti.ee/config.{json,rsa,pub}
-	cp "${FILESDIR}"/config.{json,rsa,pub}		"${S}"/common/
+	cp "${FILESDIR}"/config.{json,ecc,ecpub}	"${S}"/common/
 }
