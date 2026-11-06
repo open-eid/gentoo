@@ -16,7 +16,7 @@ SRC_URI="https://github.com/open-eid/DigiDoc4-Client/releases/download/v${PV}/${
 
 RDEPEND="dev-libs/openssl:=
 	dev-libs/opensc[pcsc-lite]
-	dev-libs/libdigidocpp
+	>=dev-libs/libdigidocpp-4.5.0
 	dev-qt/qtbase:6[gui,network,widgets]
 	dev-qt/qtsvg:6
 	net-nds/openldap

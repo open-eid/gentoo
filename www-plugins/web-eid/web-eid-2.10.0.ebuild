@@ -4,9 +4,9 @@ EAPI="8"
 
 inherit cmake
 
-LEIDV="2.9.0"
+LEIDV="2.10.0"
 LEIDF="libelectronic-id-${LEIDV}"
-XPIV="2.4.1"
+XPIV="2.5.0"
 XPIF="web_eid_webextension-${XPIV}.xpi"
 
 if [[ ${PV} == *"9999" ]]; then
