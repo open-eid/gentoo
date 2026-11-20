@@ -1,0 +1,45 @@
+From 89d2a49d978bef19a2927302b07f5231a426265a Mon Sep 17 00:00:00 2001
+From: Dmitri Smirnov <dmitri@smirnov.ee>
+Date: Wed, 28 Oct 2026 15:45:45 +0100
+Subject: [PATCH] OpenSSL 4 compatibility (use accessors instead of fields on
+ opaque structures) (#1478)
+
+---
+ client/SslCertificate.cpp | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/client/SslCertificate.cpp b/client/SslCertificate.cpp
+index 8c4a10144..8472cd63d 100644
+--- a/client/SslCertificate.cpp
++++ b/client/SslCertificate.cpp
+@@ -51,7 +51,9 @@ struct free_argument<R (&)(T *)>
+ template<class T>
+ static auto toQByteArray(T &x)
+ {
+-	return QByteArray((const char*)x->data, x->length);
++    const auto *str = std::to_address(x);
++    return QByteArray((const char*)ASN1_STRING_get0_data(str),
++                      ASN1_STRING_length(str));
+ }
+ 
+ template <auto Func, typename Arg>
+diff --git a/cdoc/Certificate.cpp b/cdoc/Certificate.cpp
+index 1c047a41..6ff2d291 100644
+--- a/client/libcdoc/cdoc/Certificate.cpp
++++ b/client/libcdoc/cdoc/Certificate.cpp
+@@ -35,13 +35,13 @@ std::string Certificate::getName(int NID) const
+     std::string cn;
+     if(!cert)
+         return cn;
+-    X509_NAME *name = X509_get_subject_name(cert.get());
++    const X509_NAME *name = X509_get_subject_name(cert.get());
+     if(!name)
+         return cn;
+     int pos = X509_NAME_get_index_by_NID(name, NID, -1);
+     if(pos == -1)
+         return cn;
+-    X509_NAME_ENTRY *e = X509_NAME_get_entry(name, pos);
++    const X509_NAME_ENTRY *e = X509_NAME_get_entry(name, pos);
+     if(!e)
+         return cn;
+     char *data = nullptr;

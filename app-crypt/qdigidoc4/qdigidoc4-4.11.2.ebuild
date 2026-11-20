@@ -26,6 +26,8 @@ RDEPEND="dev-libs/openssl:=
 DOCS="README.md"
 
 src_prepare() {
+
+	eapply "${FILESDIR}/openssl-4-compat.patch"
 	cmake_src_prepare
 
 	# TSL.qrc: https://github.com/open-eid/qdigidoc/wiki/DeveloperTips#building-in-sandboxed-environment
